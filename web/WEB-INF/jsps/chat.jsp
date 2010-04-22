@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
 		  xmlns:c="http://java.sun.com/jsp/jstl/core"
-		  xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
+		  xmlns:chat="urn:jsptagdir:/WEB-INF/tags"
 		  version="2.1">
-
-	<c:if test="${sessionScope.user == null}">
-		<c:redirect url="login.jsp" />
-	</c:if>
 
     <jsp:directive.page contentType="text/html; charset=utf-8" />
     <jsp:output doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
@@ -38,9 +34,9 @@
 			<script type="text/javascript" src="js/behavior.js"><!-- --></script>
 		</head>
 
-		<body>
+		<body id="page-chat">
 			<div id="main">
-				<form id="send" action="send" method="post">
+				<form id="send" action="send.do" method="post">
 					<p>
 						<input id="send-text" type="text" name="text" maxlength="150" />
 						<input type="submit" name="submit" value="Pošli" />
@@ -48,29 +44,38 @@
 				</form>
 
 				<ul id="messages">
-					<jsp:useBean id="chatService" scope="application"
-								 type="sk.hasto.semchat.application.ChatReadService" />
-					<c:forEach var="message" items="${chatService.lastMessages}">
-						<li>
-							<span class="meta">
-								<c:out value="${message.user.name} " />
-								<fmt:formatDate type="time"
-												pattern="H.mm"
-												value="${message.time}" />:
-							</span>
-							<c:out value="${message.text}" />
-						</li>
+					<c:forEach var="message" items="${messages}">
+						<li><chat:message message="${message}" showTime="true" /></li>
 					</c:forEach>
 				</ul>
 			</div>
 	
 			<div id="sidebar">
-				<a id="logout" href="logout">Log out</a>
+				<a id="logout" href="logout.do">Log out</a>
 
-				<ul id="segments">
-					<c:forEach var="segment" items="${chatService.segmentsSimilarToCurrent}">
+				<h2>Current discussion (ID "${currentSegment.id})</h2>
+				<h3>Concepts: </h3>
+				<c:forEach var="oUri" items="${currentSegment.ontology.classes}"
+						   varStatus="status">
+					${oUri.resourceName}
+					<c:if test="${not status.last}">, </c:if>
+				</c:forEach>
+
+				<h2>Similar discussions</h2>
+				<ul id="similar-segments">
+					<c:forEach var="similarity" items="${similarSegments}">
 						<li>
-							<c:out value="${segment.key} ${segment.value}" />
+							<h3>Discussion ${similarity.target.id}</h3>
+
+							<h4>Similarity: </h4>
+							${similarity.value}
+
+							<h4>Common concepts: </h4>
+							<c:forEach var="oUri" items="${similarity.classesJoin}"
+									   varStatus="status">
+								${oUri.resourceName}
+								<c:if test="${not status.last}">, </c:if>
+							</c:forEach>
 						</li>
 					</c:forEach>
 				</ul>

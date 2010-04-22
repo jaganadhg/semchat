@@ -17,28 +17,18 @@ public final class MessageRenderer
 
 
 	/**
-	 * Vyrenderuje spravu do retazca.
+	 * Vyrenderuje meta data v sprave.
+	 * Za meta data sa tu povazuje informacia o autorovi a cas.
 	 * @param message
 	 * @return
 	 */
-	public static String render(Message message)
+	public static String renderMetaData(Message message)
 	{
 		Validate.notNull(message, "Message must not be null.");
 
-		String text = message.getText();
 		String userName = message.getUser().getName();
 		String time = shortTimeFormat.format(message.getTime());
-
-		StringBuilder bldr 
-				= new StringBuilder(text.length() + userName.length() + time.length() + 30);
-		bldr.append("<span class=\"meta\">");
-		bldr.append(userName);
-		bldr.append(' ');
-		bldr.append(time);
-		bldr.append("</span>");
-		bldr.append(text);
-
-		return bldr.toString();
+		return userName + " " + time;
 	}
 
 }

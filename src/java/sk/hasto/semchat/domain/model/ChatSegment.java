@@ -3,6 +3,7 @@ package sk.hasto.semchat.domain.model;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 import org.apache.commons.lang.Validate;
 
@@ -116,12 +117,28 @@ public final class ChatSegment
 	}
 
 
+	/**
+	 * @return zoznam sprav v segmente
+	 */
+	public List<Message> getMessages()
+	{
+		return Collections.unmodifiableList(messages);
+	}
+
+
+	/**
+	 * Nastavi id segmentu.
+	 * @param id
+	 */
 	public void setId(long id)
 	{
 		this.id = id;
 	}
 
 
+	/**
+	 * @return id segmentu
+	 */
 	public long getId()
 	{
 		return id;

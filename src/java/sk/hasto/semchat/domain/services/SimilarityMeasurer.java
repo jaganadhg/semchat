@@ -11,10 +11,10 @@ public interface SimilarityMeasurer
 {
 
 	/**
-	 * @param segment1
-	 * @param segment2
+	 * @param source
+	 * @param target
 	 * @return podobnost segmentov
 	 */
-	Similarity measure(ChatSegment segment1, ChatSegment segment2);
+	Similarity measure(ChatSegment source, ChatSegment target);
 
 }

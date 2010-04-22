@@ -4,13 +4,12 @@ import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
 import com.db4o.config.EmbeddedConfiguration;
 import com.db4o.config.ObjectClass;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.Map;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.commons.lang.Validate;
-import sk.hasto.java.collections.MapUtils;
 import sk.hasto.semchat.domain.model.ChatSegment;
 import sk.hasto.semchat.domain.model.Similarity;
 import sk.hasto.semchat.domain.services.SimilarityMeasurer;
@@ -65,29 +64,27 @@ public final class ChatSegmentRepositoryDb4o implements ChatSegmentRepository
 	}
 
 
-	public LinkedHashMap<ChatSegment, Similarity> getSimilarSegments(ChatSegment segment,
-																	 Similarity minSimilarity)
+	public List<Similarity> getSimilarSegments(ChatSegment segment,
+											   float minSimilarity)
 	{
-		Validate.notNull(minSimilarity, "Minimal similarity must not be null.");
-
 		if (segment == null) {
-			return new LinkedHashMap<ChatSegment, Similarity>();
+			return Collections.emptyList();
 		}
 
-		List<ChatSegment> allSegments = db.query(ChatSegment.class);
-		Map<ChatSegment, Similarity> segments
-				= new HashMap<ChatSegment, Similarity>(allSegments.size());
+		List<ChatSegment> dbSegments = db.query(ChatSegment.class);
 
-		for (ChatSegment dbSegment : allSegments) {
+		List<Similarity> results = new ArrayList<Similarity>(dbSegments.size());
+		for (ChatSegment dbSegment : dbSegments) {
 			if (!segment.equals(dbSegment)) {
 				Similarity similarity = measurer.measure(segment, dbSegment);
-				if (similarity.compareTo(minSimilarity) >= 0) {
-					segments.put(dbSegment, similarity);
+				if (similarity.getValue() >= minSimilarity) {
+					results.add(similarity);
 				}
 			}
 		}
 
-		return MapUtils.sortMapByValue(segments);
+		Collections.sort(results, Collections.reverseOrder());
+		return results;
 	}
 
 
@@ -95,6 +92,19 @@ public final class ChatSegmentRepositoryDb4o implements ChatSegmentRepository
 	{
 		Validate.notNull(segment, "Segment must not be null.");
 		db.store(segment);
+	}
+
+
+	public ChatSegment getById(long id)
+	{
+		try {
+			ChatSegment segment =  db.ext().getByID(id);
+			db.activate(segment, 15);
+			return segment;
+		} catch (Exception ex) {
+			logger.log(Level.WARNING, "Invalid segment id: " + id, ex);
+			return null;
+		}
 	}
 
 

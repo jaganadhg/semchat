@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 import org.apache.commons.lang.Validate;
+import sk.hasto.java.collections.SetUtils;
 import sk.hasto.semchat.domain.model.ChatSegment;
 import sk.hasto.semchat.domain.model.ChatSegmentOntology;
 import sk.hasto.semchat.domain.model.Similarity;
@@ -19,49 +20,24 @@ public final class SimpleSimilarityMeasurer implements SimilarityMeasurer
 	private static final Logger logger = Logger.getLogger(SimpleSimilarityMeasurer.class.getName());
 
 
-	public Similarity measure(ChatSegment segment1, ChatSegment segment2)
+	public Similarity measure(ChatSegment source, ChatSegment target)
 	{
-		logger.finest("Segment1: " + segment1 + "\nSegment2: " + segment2);
-		Validate.notNull("First segment must not be null.");
-		Validate.notNull("Second segment must not be null.");
-		Validate.isTrue(segment1.hasOntology(), "First segment has no ontology assigned.");
-		Validate.isTrue(segment2.hasOntology(), "Second segment has no ontology assigned.");
+		logger.finest("Segment1: " + source + "\nSegment2: " + target);
+		Validate.notNull("Source segment must not be null.");
+		Validate.notNull("Target segment must not be null.");
+		Validate.isTrue(source.hasOntology(), "Source segment has no ontology assigned.");
+		Validate.isTrue(target.hasOntology(), "Target segment has no ontology assigned.");
 
-		float similarity = measure(segment1.getOntology(), segment2.getOntology());
+		Set<OURI> classes1 = source.getOntology().getClasses();
+		Set<OURI> classes2 = target.getOntology().getClasses();
+
+		Set<OURI> join = SetUtils.join(classes1, classes2);
+		Set<OURI> union = SetUtils.union(classes1, classes2);
+		
+		float similarity = join.size() / (float) union.size();
 		logger.fine("Computed similarity: " + similarity);
 
-		return new Similarity(similarity);
+		return new Similarity(source, target, similarity, join);
 	}
-
-
-	/**
-	 * Vypocita podobnost medzi dvomi segmentovymi ontologiami.
-	 * @param ontology1
-	 * @param ontology2
-	 * @return vypocitana podobnost
-	 */
-	private float measure(ChatSegmentOntology ontology1, ChatSegmentOntology ontology2)
-	{
-		if (ontology1 == ontology2) {
-			return 1;
-		}
-
-		Set<OURI> classes1 = ontology1.getClasses();
-		Set<OURI> classes2 = ontology2.getClasses();
-
-		if (classes1.equals(classes2)) {
-			return 1;
-		}
-
-		Set<OURI> union = new HashSet<OURI>(classes1);
-		union.addAll(classes2);
-
-		Set<OURI> join = new HashSet<OURI>(classes1);
-		join.retainAll(classes2);
-
-		return join.size() / (float) union.size();
-	}
-
-
 
 }

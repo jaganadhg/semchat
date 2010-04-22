@@ -19,6 +19,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import sk.hasto.semchat.application.ChatService;
 import sk.hasto.semchat.presentation.dwr.CometMessageAddedEventHandler;
 import sk.hasto.semchat.application.impl.ChatServiceImpl;
 import sk.hasto.semchat.domain.common.Events;
@@ -64,7 +65,7 @@ public final class SemchatInitializer implements ServletContextListener
 			SimilarityMeasurer measurer = new SimpleSimilarityMeasurer();
 			segmentRepository = new ChatSegmentRepositoryDb4o(measurer);
 			messageRepository = new MessageRepositoryDb4o();
-			ChatServiceImpl chatService = new ChatServiceImpl(chatSegmenter, ontologyGenerator,
+			ChatService chatService = new ChatServiceImpl(chatSegmenter, ontologyGenerator,
 					segmentRepository, messageRepository);
 
 			

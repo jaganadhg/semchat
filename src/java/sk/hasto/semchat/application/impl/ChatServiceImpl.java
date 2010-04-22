@@ -1,16 +1,12 @@
 package sk.hasto.semchat.application.impl;
 
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import sk.hasto.semchat.application.ChatWriteService;
 import org.apache.commons.lang.Validate;
-import sk.hasto.semchat.application.ChatReadService;
-import sk.hasto.semchat.domain.common.Events;
+import sk.hasto.semchat.application.ChatService;
 import sk.hasto.semchat.domain.model.ChatSegment;
 import sk.hasto.semchat.domain.model.Message;
-import sk.hasto.semchat.domain.model.MessageAddedEvent;
 import sk.hasto.semchat.domain.model.Similarity;
 import sk.hasto.semchat.domain.model.User;
 import sk.hasto.semchat.domain.services.ChatSegmenterException;
@@ -23,7 +19,7 @@ import sk.hasto.semchat.domain.services.ChatSegmenter;
  * Implementuje sluzby chatu.
  * @author Branislav Hasto
  */
-public class ChatServiceImpl implements ChatReadService, ChatWriteService
+public class ChatServiceImpl implements ChatService
 {
 	/** pocet zobrazovanych sprav */
 	private static final int MESSAGES_COUNT = 30;
@@ -60,7 +56,7 @@ public class ChatServiceImpl implements ChatReadService, ChatWriteService
 
 		Message message = new Message(text, user);
 		messageRepository.store(message);
-		Events.raise(new MessageAddedEvent(message));
+		// Events.raise(new MessageAddedEvent(message));
 		updateSegments(message);
 	}
 
@@ -71,14 +67,23 @@ public class ChatServiceImpl implements ChatReadService, ChatWriteService
 	}
 
 
-	public LinkedHashMap<ChatSegment, Similarity> getSegmentsSimilarToCurrent()
+	public List<Similarity> getSegmentsSimilarToCurrent()
 	{
 		ChatSegment lastSegment = segmentRepository.getLast();
+		logger.info("Current segment: " + lastSegment);
+		return segmentRepository.getSimilarSegments(lastSegment, MIN_SIMILARITY);
+	}
 
-		logger.fine("Current segment: " + lastSegment);
 
-		Similarity minSimilarity = new Similarity(MIN_SIMILARITY);
-		return segmentRepository.getSimilarSegments(lastSegment, minSimilarity);
+	public ChatSegment getSegment(long id)
+	{
+		return segmentRepository.getById(id);
+	}
+
+
+	public ChatSegment getCurrentSegment()
+	{
+		return segmentRepository.getLast();
 	}
 
 
@@ -90,9 +95,15 @@ public class ChatServiceImpl implements ChatReadService, ChatWriteService
 	{
 		try {
 			ChatSegment lastSegment = segmentRepository.getLast();
+
+			logger.info("Last segment: " + lastSegment);
+
 			ChatSegment newSegment = chatSegmenter.determineSegment(message, lastSegment);
 			newSegment.addMessage(message);
 			ontologyGenerator.generate(newSegment);
+
+			logger.info("New segment: " + newSegment);
+
 			segmentRepository.store(newSegment);
 		}
 

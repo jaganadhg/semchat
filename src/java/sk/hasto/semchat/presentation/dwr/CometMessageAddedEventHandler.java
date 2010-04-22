@@ -44,7 +44,7 @@ public final class CometMessageAddedEventHandler implements Handler<MessageAdded
 		final String[] items = new String[messages.size()];
 		int index = 0;
 		for(Message message : messages) {
-			items[index++] = MessageRenderer.render(message);
+			// items[index++] = MessageRenderer.render(message);
 		}
 
 		// vykona upravy vo vsetkych pripojenych browseroch

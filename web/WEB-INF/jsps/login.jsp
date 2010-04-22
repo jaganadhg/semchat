@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
 		  xmlns:c="http://java.sun.com/jsp/jstl/core"
-		  xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
 		  version="2.1">
-
-	<c:if test="${sessionScope.user != null}">
-		<c:redirect url="" />
-	</c:if>
 
     <jsp:directive.page contentType="text/html; charset=utf-8" />
     <jsp:output doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
@@ -28,10 +23,10 @@
 			<![endif]-->
 		</head>
 
-		<body>
-			<form id="login" action="login" method="post">
+		<body id="page-login">
+			<form id="login" action="login.do" method="post">
 				<p>
-					<input id="login-name" type="text" name="name" maxlength="15" />
+					<input id="login-name" type="text" name="name" maxlength="10" />
 					<input type="submit" name="submit" value="Log in" />
 				</p>
 			</form>

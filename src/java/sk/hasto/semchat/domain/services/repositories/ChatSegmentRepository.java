@@ -1,7 +1,7 @@
 package sk.hasto.semchat.domain.services.repositories;
 
+import java.util.List;
 import sk.hasto.semchat.domain.common.Repository;
-import java.util.LinkedHashMap;
 import sk.hasto.semchat.domain.model.ChatSegment;
 import sk.hasto.semchat.domain.model.Similarity;
 
@@ -13,21 +13,22 @@ public interface ChatSegmentRepository extends Repository<ChatSegment>
 {
 
 	/**
-	 * Vrati posledny segment.
-	 * @return
+	 * @return najnovsi (aktualny) segment
 	 */
 	ChatSegment getLast();
 
 
 	/**
-	 * Vrati mapu s polozkami (segment, podobnost), kde podobnost
-	 * je vacsia alebo rovnaka ako minimalna pozadovana podobnost.
+	 * Vrati vysledky hladania podobnych segmentov.
+	 * Vysledky su zoradene podla miery podobnosti zostupne.
+	 * Vo vysledkoch su len tie, kde podobnost so zadanym
+	 * segmentom je vacsia alebo rovna ako zadana minimalna podobnost.
 	 * @param segment segment, pre ktory hladame podobne segmenty
 	 * @param minSimilarity minimalna pozadovana podobnost
-	 * @return
+	 * @return zoradene vysledky hladania
 	 */
-	LinkedHashMap<ChatSegment, Similarity> getSimilarSegments(ChatSegment segment,
-															  Similarity minSimilarity);
+	List<Similarity> getSimilarSegments(ChatSegment segment,
+			                            float minSimilarity);
 
 
 	/**
@@ -35,5 +36,15 @@ public interface ChatSegmentRepository extends Repository<ChatSegment>
 	 * @param updatedSegment
 	 */
 	void store(ChatSegment segment);
+
+
+	/**
+	 * Vrati segment podla identifikatora.
+	 * Ak sa segment nenajde, mal by vratit null.
+	 * @param id id segmentu
+	 * @return segment so zadanym id, alebo null,
+	 * ak segment so zadanym id nie je v databaze
+	 */
+	public ChatSegment getById(long id);
 
 }
