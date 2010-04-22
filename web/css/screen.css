@@ -1,0 +1,151 @@
+/***************************************************************
+ *               Author: Branislav Hasto
+ *               Author URI: http://bhasto.info
+ ***************************************************************/ 
+
+/***************************************************************
+ *               LAYOUT POSITIONS AND DIMENSIONS
+ ***************************************************************/ 
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 97%;
+	overflow: hidden; /* clearing floats */
+}
+
+#main {
+	float: left;
+	padding-top: 60px;
+	width: 700px;
+	height: 100%;
+	position: relative;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+
+	form#login {
+		position: relative; top: 50%;
+		margin: -50px auto 0;
+		width: 250px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+	}
+
+
+
+	form#send {
+		position: absolute; top: 0; left: 0;
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+	}
+
+		#send p {
+			font-size: 13px;
+			font-weight: bold;
+			color: white;
+		}
+
+		#send input {
+			vertical-align: middle;
+		}
+
+		#send input[type=text] {
+			margin-left: 5px;
+			padding: 6px 3px;
+			width: 575px;
+		}
+
+		#send input[type=submit] {
+			width: 70px;
+			height: 32px;
+		}
+
+		
+	#messages {
+		margin: 0;
+		padding: 0 0 0 25px;
+		max-height: 100%;
+		overflow: auto;
+		list-style: none none;
+	}
+
+		#messages li {
+			margin-top: 7px;
+		}
+
+		#messages li:first-child {
+			margin-top: 12px;
+		}
+
+		#messages li:last-child {
+			margin-bottom: 10px;
+		}
+
+		#messages .meta {
+			font-weight: bold;
+			color: blue;
+		}
+
+
+#sidebar {
+	float: right;
+	width: 300px;
+	height: 100%;
+}
+
+	#logout {
+		display: block;
+		padding: 4px;
+		text-align: right;
+		color: #4b7a9e;
+	}
+
+
+
+/***************************************************************
+ *                      LAYOUT COLORS
+ ***************************************************************/ 
+html {
+	background: url("img/background.png") repeat left top;
+}
+
+body {
+	background: white;
+	
+	/* rounded corners */
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	
+	/* shadows */
+	-moz-box-shadow: 4px 4px 4px #888;
+	-webkit-box-shadow: 4px 4px 4px #888;
+}
+
+form#send, form#login {
+	background: #4b7a9e;
+	
+	/* rounded corners */
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+}
+
+form#login {
+	/* rounded corners */
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
