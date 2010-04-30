@@ -1,0 +1,93 @@
+Cosmology
+From CreationWiki, the encyclopedia of creation science
+Jump to: navigation, search
+
+Cosmology is a branch of astronomy that deals with the origin, structure and space-time relationships of the universe. It is derived from two Greek words, cosmos meaning "universe" or "order," and logos meaning "word."
+
+Creation Cosmology
+
+    Main Article: Creation cosmology 
+
+To creationists this study encompasses not only the observable physical or natural world but also the metaphysical means by which God governs and sustains creation. Cosmology therefore deals with time and seeks to understand God's relationship with His creation, from the beginning to the end of time.
+The Hubble Deep Field
+
+The commonly accepted age of the universe is far beyond what a typical creation scientist would countenance. In response, several young universe creation cosmologies have been proposed.
+C-decay
+
+    Main Article: C-decay 
+
+A number of theorists suggest that the speed of light is continuously decaying and hence was far faster during creation than it is today. This would explain the age of the universe (and earth) due to radiometric dating, and also indicates that the doppler shift, the common method of dating far objects, is not caused by kinematic or relativistic redshift. This cosmology has the merit of explaining quantized redshift, which most present cosmologies fail to explain.
+White Hole Cosmology
+
+    Main Article: White hole cosmology 
+
+A white hole near the earth (or the center of the galaxy) at the beginning of the universe has been proposed to explain the existence of distant starlight in a young universe. This would cause, due to relativistic considerations, a change in apparent time. While this model is acceptable to those assuming a creationist paradigm, it has been attacked on anthropocentric grounds by secular science. Russell Humphreys, the author of this cosmology, has been criticized by those upset by his model.
+Cosmic Center Model
+
+Robert Gentry has also suggested an anthropocentric cosmology, based on a static universe with a shell of matter creating cavity energy in our region. His theory is sophisticated and appeals to a gravitational and relativistic redshift caused by vacuum gravity repulsion. His theory is explained in detail in several papers available at the Orion Foundation. Andrew Repp, a creationist, has posted a challenge to his cosmology in the Creation Society Research Quarterly. Gentry responds to this and other criticism in Big Bang Collapse [1] and other reports found on his Published Reports Page [2]. Brian Pitts has also criticized Gentry's model.
+Cosmological relativity
+
+    Main Article: Cosmological relativity 
+
+Dr. John Hartnett has developed a young Earth creation cosmology based on Dr. Moshe Carmeli's theory of Cosmological relativity. Like Russell Humphreys' white hole cosmology, Dr. Hartnett's model uses time dilation in a bounded universe. But this dilation results from a rapid expansion of space rather than the gravity of a white hole.
+
+Hartnett’s cosmology readily fits and explains the large scale structure of the universe without either dark mater or dark energy.
+Historical Cosmology
+
+    Main Article: Geocentricity 
+
+Beginning with Aristotle, Western philosophers typically believed that the earth was the center of the cosmos. This idea, called geocentricity, followed naturally from the intuitive appreciation of the Earth as a fixed object and of the "natural places" of the elements (believed to be earth, water, air, and fire). Yet as astronomical observations became more sophisticated and precise, this system became less satisfactory. The moon, of course, describes a circular path around the earth. The sun could also be described as orbiting the earth, if one believed that the sun was made entirely of fire and had no appreciation of the sun's tremendous mass in relation to the mass of the earth (an insight that would probably have to wait for Sir Isaac Newton before enjoying wide appreciation). But the other planets do not move, in relation to the earth, with the regularity with which they move in relation to the sun. At least one of the planets (Mars) appears to stop and reverse direction in relation to the earth.
+
+In the centuries following Aristotle, and Hipparchus, who developed the first technical geocentric model, scientists would make at least two attempts to solve the mathematical paradoxes before Nicolaus Copernicus would advocate discarding geocentricity entirely.
+Ptolemaic system
+The geocentric universe according to Peter Apian, from Cosmographicus Liber (1539). Visible are the inner spheres of earth, water, air, and fire - the 4 basic substances of which all things were thought to consist.[3]
+
+Claudius Ptolemy was the first astronomer to attempt to solve the problem. He began with the system of concentric spheres invented by Hipparchus and added several mathematical modifications to explain the pecular irregular movements. In his system, the positional elements of each celestial body were:
+
+   1. The eccentric, or the displacement of the center of the body's heavenly sphere from the earth itself.
+   2. The epicycle, a smaller "circle upon a circle" centered on a point on the great sphere. The body involved moved on the epicycle, and the epicycle's center orbited the earth.
+   3. The equant, or the displacement of the center of motion of the epicycle (above) from the geometric center of the heavenly body's sphere.[4] 
+
+With this system, Ptolemy could predict the motions of the Moon, the planets Mercury and Venus, the Sun, and the planets Mars, Jupiter, and Saturn to the limits of the accuracy of astronomical observations of his day.[5] But in the process he violated Aristotle's strict geocentrism and also violated Occam's razor. This was the primary reason why Ptolemy's contemporaries were not completely satisfied with his system, even before the telescope would destroy the Ptolemaic system's predictive value.
+Tychonian system
+Tychonian system
+
+Tycho Brahe developed some of the first instruments that enabled astronomers to achieve previously unprecedented accuracy. He realized early that the Ptolemaic system simply could not predict the motions of the celestial bodies once those motions were known with the enhanced accuracy now achievable. Yet he was not willing, as Copernicus was, to discard the notion of the earth as the center of the universe. Doing so would violate Aristotelian physics, with its tremendous emphasis on the "natural place" of all things.
+
+So Tycho compromised. In his system, the Earth remained at the center, with the Moon and Sun orbiting the earth and the fixed stars in a sphere centered at the earth. But the planets Mercury, Venus, Mars, Jupiter, Saturn, and the one comet then known, orbited the sun, not the earth.[6]
+Modern Cosmology
+
+To secular scientists, cosmology is the study of the origin, current state, and future of the cosmos. It applies astrophysical measurements and analysis to understand the history, structure, and constituent dynamics of our universe.
+Big Bang
+
+    Main Article: Big bang 
+
+The most widely accepted theory on the origin of the universe is called the Big Bang. It posits that all of the matter in the universe started as a point of infinite density and temperature known as a singularity. It is believed that approximately 13.7 billion years ago this singularity experienced a rapid inflation of matter that eventually evolved into stars, galaxies, and planets. The Big Bang was not an explosion in the conventional sense of the term, but an expansion of space and time. However, like an explosion, it was highly energetic and chaotic.
+String Theory
+
+String theory is either "a theory in physics [under which] all elementary particles are manifestations of the vibrations of one-dimensional strings."[7] or a "concept that all particles can be represented as strings or string-loops of incredibly minute length, oscillating at various frequencies."[8] Such strings, the theory states, exist within ten or eleven dimensions of which six or seven are inconceivably minute structures attached to every point in our four-dimensional spacetime.
+
+String theory is assumed to explain everything from relativity and quantum mechanics to the very existence of basic particles. It is now a main focus of physics. Although it is celebrated in the modern scientific establishment one can clearly tell that it deals more with origins science than with operational science. One of the most prominent followers and now sceptics of string theory is Lee Smolin, who in his book, The Trouble with Physics as Martin Gardner states in a review, now says that string theory is
+“ 	... only a set of curious conjectures in search of a theory. True, it has great explanatory power, but a viable theory must have more than that. It must make predictions which can be falsified or confirmed.[9] 	”
+Cosmology News
+
+    * 'Dark' matter and energy 'proof' exaggerated—again. Astronomers find the same apparent ratio of "dynamical" to "luminous" mass at the edge of the universe as near to us. As ever, they insist that this somehow "proves" the existence of "dark matter"—when in fact it proves no such thing. Creationism Examiner, 26 January 2010
+    * Did our cosmos exist before the big bang? Loop quantum cosmology suggests a theory of a recycling universe, which bounces and starts expanding again. by Anil Ananthaswamy. New Scientist. December 10, 2008
+    * Science's Alternative to an Intelligence Creator: the Multiverse Theory The physical constants of the universe are too finely tuned for life to be coincidental. So scientists speculate on an infinite variety of universes to account for our presence without a Creator. Discover November 10, 2008
+    * Scientists: Earth May Exist in Giant Cosmic Bubble Scientists say Earth may be trapped in an abnormal bubble of space-time that is particularly devoid of matter. Fox News. September 30, 2008
+    * 'Big Bang' Machine Passes Major Tests The world's largest particle collider brings scientists hope to understanding the makeup of the universe. AOL News. September 10, 2008
+    * Earth, Mars, Moon Have Different Origin, Study Says. In a direct challenge to the nebula hypothesis, French geologist Guillaume Caro says that the chemistries of these three bodies are inconsistent with, and unexplainable by, that model. National Geographic. March 19, 2008.
+    * Hubble Detects Organic Molecule on an Extrasolar Planet. The molecule involved is methane (CH4), and the planet involved is too close to its primary to be hospitable for life. NASA press release. March 14, 2008.
+    * Creation Cosmologies Solve Spacecraft Mystery. D. Russell Humphreys, PhD, shows that the apparent "slowdown" of the spacecraft Pioneer 10 and 11 is actually evidence of an acceleration of the speed of light in extrasolar space. This in turn is evidence in favor of a straightforward Biblical interpretation of the description of the "firmament of heaven" on Creation Days 2 and 3. Impact articles, Institute for Creation Research, October 1, 2007.
+    * The Big Bang and the Bucks Set to Collide in Inner Space Scientists in Beijing unveiled a design for a machine 20 miles long that will slam together electrons and positrons, "to produce fireballs of energy recreating conditions when the universe was only a trillionth of a second old." Reportedly, the project will cost $6.7 billion and 13,000 "person-years" of labor to construct. NY Times. February 9, 2007.
+    * Big Bang Afterglow Fails An Intergalactic Shadow Test The apparent absence of shadows where shadows were expected to be is raising new questions about the faint glow of microwave radiation once hailed as proof that the universe was created by a "Big Bang." Moondaily. September 3, 2006.
+    * On July 23, 2005 the Crisis in Cosmology conference was held in Portugal by the Alternative Cosmology Group to consider the present state of understanding of the universe in the light of the increasing number of observations that challenge the conventional cosmological model.
+    * Mystery of extrasolar planets' eccentric orbits - evidence suggests that, as far as planetary systems go, our solar system might be special indeed. April 19, 2005
+    * Discovery By UCSD Astronomers Poses A Cosmic Puzzle: Can A 'Distant' Quasar Lie Within A Nearby Galaxy? An international team of astronomers has discovered within the heart of a nearby spiral galaxy a quasar whose light spectrum indicates that it is billions of light years away. By Kim McDonald. UDSD News January 10, 2005
+    * On May 22, 2004 An Open Letter to the Scientific Community was published in New Scientist, challenging the hypotheticals that bridge the gap between this theory and observations.
+    * Mysterious cosmos Why is our Universe so exquisitely tuned to host life? We are lucky to be alive. Extraordinarily lucky. Nature August 6th 2004.
+    * Glimpse At Early Universe Reveals Surprisingly Mature Galaxies A rare glimpse back in time into the universe's early evolution has revealed something startling: mature, fully formed galaxies where scientists expected to discover little more than infants. Space Daily July 8th 2004
+    * Speed of Light May Have Changed Recently not in some far corner of the universe, but right here on Earth. New Scientist June 30th 2004
+    * Massive Black Hole Stumps Researchers - astronomers have found a colossal black hole so ancient, they're not sure how it had enough time to grow to its current size June 28th 2004
+    * Newly Discovered Baby Planet Confounds Expectations Raw Materials For Habitable Planets Around Surprisingly Young Stars. Science Daily June 11th 2004 
+

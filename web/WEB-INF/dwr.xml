@@ -3,10 +3,12 @@
 <dwr>
 	<allow>
 		<create creator="new" javascript="chatService">
-			<param name="class" value="sk.semchat.presentation.dwr.ChatServiceDwrProxy" />
+			<param name="class" value="sk.hasto.semchat.presentation.dwr.ChatServiceDwrProxy" />
 			<include method="addMessage" />
 		</create>
 
-		<convert match="java.lang.Exception" converter="exception" />
+		<convert match="java.lang.Exception" converter="exception">
+			<param name="include" value="message,lineNumber" />
+		</convert>
 	</allow>
 </dwr>

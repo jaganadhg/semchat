@@ -16,27 +16,21 @@ public final class OntologyAnnotation
 	/** URI konceptu */
 	private final OURI uri;
 
-	/** urcuje, ci je anotaciou triedy, alebo instancie */
-	private final boolean isClassAnnotation;
+	/** urcuje typ anotacie (anotacia triedy alebo instancie) */
+	private final ConceptType type;
 
 
 	/**
 	 * @param uri uri konceptu, ktory anotacia zachytava
 	 * @parm type typ konceptu, ktory anotacia zachytava
 	 */
-	public OntologyAnnotation(OURI uri, ChatSegmentOntology.ConceptType type)
+	public OntologyAnnotation(OURI uri, ConceptType type)
 	{
-		Validate.notNull(uri, "Uri must not be null.");
-		Validate.notNull(type, "Type must not be null.");
+		Validate.notNull(uri, "Uri is null.");
+		Validate.notNull(type, "Concept type is null.");
 
 		this.uri = uri;
-
-		/*
-		 * toto prepisanie na boolean je hlavne z dovodu, ze
-		 * pouzita objektova databaza ma problemy pri enum typoch
-		 * TODO: zistit preco, potom implementovat cistejsie
-		 */
-		isClassAnnotation = (type == ConceptType.CLASS);
+		this.type = type;
 	}
 
 
@@ -45,8 +39,7 @@ public final class OntologyAnnotation
 	 */
 	public ChatSegmentOntology.ConceptType getType()
 	{
-		return isClassAnnotation
-			   ? ConceptType.CLASS : ConceptType.INSTANCE;
+		return type;
 	}
 
 
@@ -76,22 +69,19 @@ public final class OntologyAnnotation
 			return false;
 		}
 		final OntologyAnnotation other = (OntologyAnnotation) obj;
-		if (uri != other.uri && !uri.equals(other.uri)) {
+		if (this.uri != other.uri && (this.uri == null || !this.uri.equals(other.uri))) {
 			return false;
 		}
-
-		return isClassAnnotation == other.isClassAnnotation;
+		return true;
 	}
 
 
 	@Override
 	public int hashCode()
 	{
-		int hash = 3;
-		hash = 23 * hash + uri.hashCode();
-		hash = 23 * hash + (isClassAnnotation ? 1 : 0);
+		int hash = 7;
+		hash = 59 * hash + (this.uri != null ? this.uri.hashCode() : 0);
 		return hash;
 	}
-
 
 }

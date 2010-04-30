@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp1 (http://www.altova.com) by Ed Shaya (U. of Maryland) -->
+<rdf:RDF xmlns="http://archive.astro.umd.edu/ont/quantity.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:ivoao="http://archive.astro.umd.edu/ont/IVOAO.owl#" xmlns:u="http://archive.astro.umd.edu/ont/units.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:stat="http://archive.astro.umd.edu/ont/statistics.owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ui="http://archive.astro.umd.edu/ont/unitsInstances.owl#" xml:base="http://archive.astro.umd.edu/ont/quantity.owl">
+	<owl:Ontology rdf:about="">
+		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ed Shaya, University of Maryland</dc:creator>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/units.owl"/>
+		<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quantity.owl</dc:title>
+		<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology covers classes and properties in the quantity model developed for astronomical data. It includes terms from the IVOA Thesaurus plus terms from the UMD astronomical ontology</dc:description>
+	</owl:Ontology>
+	<owl:Class rdf:ID="abstractFormat">
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="accuracy">
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="algorithmOutput">
+		<rdfs:subClassOf rdf:resource="#values"/>
+	</owl:Class>
+	<owl:Class rdf:ID="axis">
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A table can be formed by a Quantity hasAxis Axis.  Here Axis contains the Quantities (or columns) of the table.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="compositeQuantity">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasQuantity"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:maxCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasValues"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="dataFormat">
+		<rdfs:subClassOf rdf:resource="#abstractFormat"/>
+	</owl:Class>
+	<owl:Class rdf:ID="float">
+		<rdfs:subClassOf rdf:resource="#nonInteger"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:cardinality>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#hasDouble"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="floatFormat">
+		<rdfs:subClassOf rdf:resource="#dataFormat"/>
+	</owl:Class>
+	<owl:Class rdf:ID="index">
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="integer">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#hasBoolean"/>
+				</owl:onProperty>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:cardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#hasDouble"/>
+				</owl:onProperty>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:cardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:cardinality>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#hasFloat"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#number"/>
+	</owl:Class>
+	<owl:Class rdf:ID="integerFormat">
+		<rdfs:subClassOf rdf:resource="#dataFormat"/>
+	</owl:Class>
+	<owl:Class rdf:ID="interval">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#maxValue"/>
+				</owl:onProperty>
+				<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#minValue"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#values"/>
+	</owl:Class>
+	<owl:Class rdf:ID="irrational">
+		<rdfs:subClassOf rdf:resource="#nonInteger"/>
+	</owl:Class>
+	<owl:Class rdf:ID="mapping">
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="nonInteger">
+		<rdfs:subClassOf rdf:resource="#number"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:cardinality>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#hasInteger"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#hasBoolean"/>
+				</owl:onProperty>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:cardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="note">
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Need a locator into the ValueList</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="number">
+		<rdfs:subClassOf rdf:resource="#numeric"/>
+	</owl:Class>
+	<owl:Class rdf:ID="numeric">
+		<rdfs:subClassOf rdf:resource="#values"/>
+	</owl:Class>
+	<owl:Class rdf:ID="numericSetting">
+		<rdfs:subClassOf rdf:resource="#numeric"/>
+	</owl:Class>
+	<owl:Class rdf:ID="polynomial">
+		<rdfs:subClassOf rdf:resource="#mapping"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#coefficient"/>
+				</owl:onProperty>
+				<owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="quantity">
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="quantityEntity"/>
+	<owl:Class rdf:ID="string">
+		<rdfs:subClassOf rdf:resource="#values"/>
+	</owl:Class>
+	<owl:Class rdf:ID="stringFormat">
+		<rdfs:subClassOf rdf:resource="#dataFormat"/>
+	</owl:Class>
+	<owl:Class rdf:ID="tupleDeclaration">
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="valueList">
+		<rdfs:subClassOf rdf:resource="#values"/>
+	</owl:Class>
+	<owl:Class rdf:ID="values">
+		<rdfs:subClassOf rdf:resource="#quantityEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="vectorDeclaration">
+		<rdfs:subClassOf rdf:resource="#tupleDeclaration"/>
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="hasAccuracy">
+		<rdfs:domain rdf:resource="#quantity"/>
+		<rdfs:range rdf:resource="#accuracy"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasAxis">
+		<rdfs:domain rdf:resource="#quantity"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#index"/>
+					<owl:Class rdf:about="#quantity"/>
+				</owl:intersectionOf>
+			</owl:Class>
+		</rdfs:range>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasComponent">
+		<rdfs:domain rdf:resource="#tupleDeclaration"/>
+		<rdfs:range rdf:resource="#quantity"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasFormat">
+		<rdfs:domain rdf:resource="#values"/>
+		<rdfs:range rdf:resource="#abstractFormat"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasIndex">
+		<rdfs:domain rdf:resource="#algorithmOutput"/>
+		<rdfs:range rdf:resource="#index"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasMapping">
+		<rdfs:domain rdf:resource="#algorithmOutput"/>
+		<rdfs:range rdf:resource="#mapping"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasNote">
+		<rdfs:domain rdf:resource="#values"/>
+		<rdfs:range rdf:resource="#note"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasQuantity">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#compositeQuantity"/>
+					<owl:Class rdf:about="#axis"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#quantity"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasValues">
+		<rdfs:domain rdf:resource="#quantity"/>
+		<rdfs:range rdf:resource="#values"/>
+	</owl:ObjectProperty>
+	<owl:DatatypeProperty rdf:ID="coefficient">
+		<rdfs:domain rdf:resource="#polynomial"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="error">
+		<rdfs:domain rdf:resource="#accuracy"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="hasBoolean">
+		<rdfs:domain rdf:resource="#numeric"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="hasDouble">
+		<rdfs:domain rdf:resource="#numeric"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="hasFloat">
+		<rdfs:domain rdf:resource="#numeric"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="hasInteger">
+		<rdfs:domain rdf:resource="#numeric"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="list">
+		<rdfs:domain rdf:resource="#valueList"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="mark">
+		<rdfs:domain rdf:resource="#note"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="maxValue">
+		<rdfs:domain rdf:resource="#interval"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="minValue">
+		<rdfs:domain rdf:resource="#interval"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="negativeError">
+		<rdfs:domain rdf:resource="#accuracy"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="negativeErrorOnError">
+		<rdfs:domain rdf:resource="#accuracy"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="noteId">
+		<rdfs:domain rdf:resource="#note"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="noteRef">
+		<rdfs:domain rdf:resource="#note"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="positiveError">
+		<rdfs:domain rdf:resource="#accuracy"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="positiveErrorOnError">
+		<rdfs:domain rdf:resource="#accuracy"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="size">
+		<rdfs:domain rdf:resource="#index"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="value">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#valueList"/>
+					<owl:Class rdf:about="#string"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:DatatypeProperty>
+	<owl:FunctionalProperty rdf:ID="errorType">
+		<rdfs:domain rdf:resource="#accuracy"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasUnits">
+		<rdfs:domain rdf:resource="#quantity"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/units.owl#unitless"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="name">
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="NaN">
+		<rdfs:domain rdf:resource="#dataFormat"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="noData">
+		<rdfs:domain rdf:resource="#dataFormat"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="numberOfValueElements">
+		<rdfs:domain rdf:resource="#quantity"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="pad">
+		<rdfs:domain rdf:resource="#dataFormat"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="significantDigits">
+		<rdfs:domain rdf:resource="#accuracy"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="text">
+		<rdfs:domain rdf:resource="#note"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 3.4, Build 128)  http://protege.stanford.edu -->

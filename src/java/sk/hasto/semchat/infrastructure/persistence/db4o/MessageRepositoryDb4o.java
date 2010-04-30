@@ -1,30 +1,24 @@
 package sk.hasto.semchat.infrastructure.persistence.db4o;
 
-import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
 import com.db4o.query.Predicate;
 import java.util.Comparator;
 import java.util.List;
-import org.apache.commons.lang.Validate;
 import sk.hasto.semchat.domain.model.Message;
 import sk.hasto.semchat.domain.services.repositories.MessageRepository;
 
 /**
  * @author Branislav Hasto
  */
-public final class MessageRepositoryDb4o implements MessageRepository
+public final class MessageRepositoryDb4o extends AbstractRepositoryDb4o<Message>
+										 implements MessageRepository
 {
-	/** meno suboru s databazou */
-	private static final String DB_FILENAME = "messages.db4o";
-	
+
 	/** comparator na zoradenie sprav zostupne podla datumu */
 	private static final Comparator<Message> descendingMessageDateComparator;
 
 	/** predikat, ktory vyberie vsetky spravy */
 	private static final Predicate<Message> allMessagesPredicate;
-
-	/** db4o databaza */
-	private final ObjectContainer db;
 
 	
 	static {
@@ -44,16 +38,9 @@ public final class MessageRepositoryDb4o implements MessageRepository
 	}
 
 
-	public MessageRepositoryDb4o()
+	public MessageRepositoryDb4o(ObjectContainer db)
 	{
-		db = Db4oEmbedded.openFile(DB_FILENAME);
-	}
-
-
-	public void store(Message message)
-	{
-		Validate.notNull("Message must not be null.");
-		db.store(message);
+		super(db);
 	}
 
 
@@ -64,13 +51,4 @@ public final class MessageRepositoryDb4o implements MessageRepository
 		return messages.subList(0, toIndex);
 	}
 
-
-	/**
-	 * Zavrie spojenie s databazou.
-	 */
-	public void close()
-	{
-		db.close();
-	}
-	
 }

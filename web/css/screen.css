@@ -27,89 +27,13 @@ body {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-
 }
-
-
-	form#login {
-		position: relative; top: 50%;
-		margin: -50px auto 0;
-		width: 250px;
-		height: 50px;
-		line-height: 50px;
-		text-align: center;
-	}
-
-
-
-	form#send {
-		position: absolute; top: 0; left: 0;
-		width: 100%;
-		height: 60px;
-		line-height: 60px;
-		text-align: center;
-	}
-
-		#send p {
-			font-size: 13px;
-			font-weight: bold;
-			color: white;
-		}
-
-		#send input {
-			vertical-align: middle;
-		}
-
-		#send input[type=text] {
-			margin-left: 5px;
-			padding: 6px 3px;
-			width: 575px;
-		}
-
-		#send input[type=submit] {
-			width: 70px;
-			height: 32px;
-		}
-
-		
-	#messages {
-		margin: 0;
-		padding: 0 0 0 25px;
-		max-height: 100%;
-		overflow: auto;
-		list-style: none none;
-	}
-
-		#messages li {
-			margin-top: 7px;
-		}
-
-		#messages li:first-child {
-			margin-top: 12px;
-		}
-
-		#messages li:last-child {
-			margin-bottom: 10px;
-		}
-
-		#messages .meta {
-			font-weight: bold;
-			color: blue;
-		}
-
 
 #sidebar {
 	float: right;
-	width: 300px;
+	width: 280px;
 	height: 100%;
 }
-
-	#logout {
-		display: block;
-		padding: 4px;
-		text-align: right;
-		color: #4b7a9e;
-	}
 
 
 
@@ -134,9 +58,41 @@ body {
 	-webkit-box-shadow: 4px 4px 4px #888;
 }
 
-form#send, form#login {
+
+
+/***************************************************************
+ *                      PAGE SPECIFIC
+ ***************************************************************/
+
+/** Login page ---------------------------------------- */
+form#login {
+	position: relative; top: 50%;
+	margin: -50px auto 0;
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+form#login {
 	background: #4b7a9e;
-	
+	/* rounded corners */
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+
+
+/** Chat page ------------------------------------------ */
+
+/* Message send form */
+form#send {
+	position: absolute; top: 0; left: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #4b7a9e;
 	/* rounded corners */
 	-moz-border-radius-topright: 7px;
 	-moz-border-radius-bottomright: 7px;
@@ -144,8 +100,127 @@ form#send, form#login {
 	-webkit-border-bottom-right-radius: 7px;
 }
 
-form#login {
-	/* rounded corners */
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
+	#send p {
+		font-size: 13px;
+		font-weight: bold;
+		color: white;
+	}
+
+	#send input {
+		vertical-align: middle;
+	}
+
+	#send input[type=text] {
+		margin-left: 5px;
+		padding: 6px 3px;
+		width: 575px;
+	}
+
+	#send input[type=submit] {
+		width: 70px;
+		height: 32px;
+	}
+
+	
+/* Messages list */
+#messages {
+	margin: 0;
+	padding: 0 0 0 25px;
+	max-height: 100%;
+	overflow: auto;
+	list-style: none none;
+}
+
+	#messages li {
+		margin-top: 7px;
+	}
+
+	#messages li:first-child {
+		margin-top: 12px;
+	}
+
+	#messages li:last-child {
+		margin-bottom: 10px;
+	}
+
+	#messages .meta {
+		font-weight: bold;
+		color: blue;
+	}
+
+
+/* Sidebar */
+#logout {
+	display: block;
+	padding: 4px 10px;
+	text-align: right;
+	text-decoration: none;
+	color: #4b7a9e;
+}
+
+#sidebar h2 {
+	margin: 0.7em 0 0.1em;
+	font-size: 135%;
+	font-weight: bold;
+}
+
+#sidebar dl .item {
+	margin: 0 7px;
+}
+
+	#sidebar dt {
+		display: inline;
+		margin: 0 5px 0 0;
+		font-size: 100%;
+		font-weight: bold;
+		color: #404040;
+	}
+
+	#sidebar dd {
+		display: inline;
+		margin: 0;
+	}
+
+
+#sidebar #similar-segments {
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+	#similar-segments li {
+		list-style: none none;
+	}
+
+	#similar-segments dl .item {
+		margin-left: 0;
+	}
+
+	#similar-segments h3 {
+		margin: 7px 0 6px;
+		font-size: 110%;
+	}
+
+		#similar-segments h3 a {
+			font-weight: bold;
+			color: #4b7a9e;
+		}
+
+
+
+/** Single discussion page ------------------------------------- */
+#page-segment #main {
+	padding-top: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+#page-segment #main :first-child,
+#page-segment #sidebar :first-child {
+	margin-top: 10px;
+}
+
+#page-segment #main h1 {
+	font-size: 165%;
+	margin: 0 20px;
 }

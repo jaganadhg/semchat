@@ -30,18 +30,16 @@ public final class SimpleOntologyGenerator implements OntologyGenerator
 
 	public SimpleOntologyGenerator(Ontology ontology)
 	{
-		Validate.notNull(ontology, "Ontology must not be null.");
+		Validate.notNull(ontology, "Ontology is null.");
 		this.ontology = ontology;
 	}
 
 
 	public ChatSegmentOntology generate(ChatSegment segment)
 	{
-		logger.finest("Segment: " + segment.toString());
-		Validate.notNull(segment, "Segment must not be null.");
+		Validate.notNull(segment, "Segment is null.");
 
-		ChatSegmentOntology generated
-				= segment.hasOntology() ? segment.getOntology() : new ChatSegmentOntology();
+		ChatSegmentOntology generated = new ChatSegmentOntology();
 
 		// prida triedy zo segmentovych anotacii a rozvinie ich
 		Set<OURI> classUris = getOClassUrisFromSegment(segment);
@@ -53,12 +51,12 @@ public final class SimpleOntologyGenerator implements OntologyGenerator
 		// prida instancie zo segmentovych anotacii a rozvinie ich
 		Set<OURI> instanceUris = getInstanceUrisFromSegment(segment);
 		for (OURI uri : instanceUris) {
+			generated.addInstance(uri);
 			addClassesToOntology(generated, getAllSuperClasses(uri));
 		}
 
 		logger.fine("Generated ontology: " + generated.toString());
 
-		segment.setOntology(generated);
 		return generated;
 	}
 
@@ -77,9 +75,7 @@ public final class SimpleOntologyGenerator implements OntologyGenerator
 		if (ontology.containsOInstance(uri)) {
 			OInstance originalInstance = ontology.getOInstance(uri);
 			return originalInstance.getOClasses(Closure.TRANSITIVE_CLOSURE);
-		}
-
-		else {
+		} else {
 			OClass originalClass = ontology.getOClass(uri);
 			return originalClass.getSuperClasses(Closure.TRANSITIVE_CLOSURE);
 		}

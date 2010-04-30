@@ -1,0 +1,19 @@
+# mappings file - used to load ontologies from this
+# machine instead of connecting to Ontology URI
+
+http://archive.astro.umd.edu/ont/quantity.owl
+http://archive.astro.umd.edu/ont/operation.owl
+http://archive.astro.umd.edu/ont/physics.owl
+http://archive.astro.umd.edu/ont/instruments.owl
+http://archive.astro.umd.edu/ont/chemistry.owl
+http://archive.astro.umd.edu/ont/IVOAO.owl
+http://archive.astro.umd.edu/ont/physicalTheory.owl
+http://archive.astro.umd.edu/ont/geometry.owl
+http://archive.astro.umd.edu/ont/astronomy.owl			astronomy.xml
+http://archive.astro.umd.edu/ont/skos-core.owl
+http://archive.astro.umd.edu/ont/statistics.owl
+http://archive.astro.umd.edu/ont/astroOperation.owl
+
+# the next mapping should ignore the given import URI
+http://archive.astro.umd.edu/ont/units.owl
+http://archive.astro.umd.edu/ont/unitsInstances.owl

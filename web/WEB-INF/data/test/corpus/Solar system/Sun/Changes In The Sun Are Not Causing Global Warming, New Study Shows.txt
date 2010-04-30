@@ -1,0 +1,15 @@
+Changes In The Sun Are Not Causing Global Warming, New Study Shows
+
+ScienceDaily (May 12, 2009) — With the U.S. Congress beginning to consider regulations on greenhouse gases, a troubling hypothesis about how the sun may impact global warming is finally laid to rest.
+
+Carnegie Mellon University's Peter Adams along with Jeff Pierce from Dalhousie University in Halifax, Canada, have developed a model to test a controversial hypothesis that says changes in the sun are causing global warming.
+
+The hypothesis they tested was that increased solar activity reduces cloudiness by changing cosmic rays. So, when clouds decrease, more sunlight is let in, causing the earth to warm. Some climate change skeptics have tried to use this hypothesis to suggest that greenhouse gases may not be the global warming culprits that most scientists agree they are.
+
+In research published in Geophysical Research Letters, and highlighted in the May 1 edition of Science, Adams and Pierce report the first atmospheric simulations of changes in atmospheric ions and particle formation resulting from variations in the sun and cosmic rays. They find that changes in the concentration of particles that affect clouds are 100 times too small to affect the climate.
+
+"Until now, proponents of this hypothesis could assert that the sun may be causing global warming because no one had a computer model to really test the claims," said Adams, a professor of civil and environmental engineering at Carnegie Mellon.
+
+"The basic problem with the hypothesis is that solar variations probably change new particle formation rates by less than 30 percent in the atmosphere. Also, these particles are extremely small and need to grow before they can affect clouds. Most do not survive to do so," Adams said.
+
+Despite remaining questions, Adams and Pierce feel confident that this hypothesis should be laid to rest. "No computer simulation of something as complex as the atmosphere will ever be perfect," Adams said. "Proponents of the cosmic ray hypothesis will probably try to question these results, but the effect is so weak in our model that it is hard for us to see this basic result changing."

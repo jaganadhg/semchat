@@ -1,0 +1,110 @@
+Meteoroid
+
+A meteoroid is a sand- to boulder-sized particle of debris in the Solar System. The visible path of a meteoroid that enters Earth's (or another body's) atmosphere is called a meteor, or colloquially a shooting star or falling star. If a meteor reaches the ground and survives impact, then it is called a meteorite. Many meteors appearing seconds or minutes apart are called a meteor shower. The root word meteor comes from the Greek meteoros, meaning "high in the air".
+
+The current official definition of a meteoroid from the International Astronomical Union is "a solid object moving in interplanetary space, of a size considerably smaller than an asteroid and considerably larger than an atom."[1] The Royal Astronomical Society has proposed a new definition where a meteoroid is between 100 µm and 10 m across.[2] The NEO definition includes larger objects, up to 50 m in diameter, in this category. Very small meteoroids are known as micrometeoroids (see also interplanetary dust).
+
+The composition of meteoroids can be determined as they pass through Earth's atmosphere from their trajectories and the light spectra of the resulting meteor. Their effects on radio signals also give information, especially useful for daytime meteors which are otherwise very difficult to observe. From these trajectory measurements, meteoroids have been found to have many different orbits, some clustering in streams (see Meteor showers) often associated with a parent comet, others apparently sporadic. Debris from meteoroid streams may eventually be scattered into other orbits. The light spectra, combined with trajectory and light curve measurements, have yielded various compositions and densities, ranging from fragile snowball-like objects with density about a quarter that of ice,[3] to nickel-iron rich dense rocks.
+
+Meteoroids travel around the sun in a variety of orbits and at various velocities. The fastest ones move at about 26 miles per second (42 kilometers per second) through space in the vicinity of Earth's orbit. The earth travels at about 18 miles per second (29 kilometers per second). Thus, when meteoroids meet the Earth's atmosphere head-on (which would only occur if the meteor were in a retrograde orbit), the combined speed may reach about 44 miles per second (71 kilometers per second).
+[edit] Meteor
+
+    "Meteor" and "Meteors" redirect here. For other uses, see Meteor (disambiguation).
+    See also Hydrometeor.
+
+Comet 17P/Holmes and Geminid.
+
+A meteor is the visible streak of light that occurs when a meteoroid enters the Earth's atmosphere. Meteors typically occur in the mesosphere, and most range in altitude from 75 km to 100 km.[4] Millions of meteors occur in the Earth's atmosphere every day. Most meteoroids that cause meteors are about the size of a pebble. They become visible between about 40 and 75 miles (65 and 120 kilometers) above the earth. They disintegrate at altitudes of 30 to 60 miles (50 to 95 kilometers). Meteors have roughly a fifty percent chance of a daylight (or near daylight) collision with the Earth as the Earth orbits in the direction of roughly west at noon.[clarification needed] Most meteors are, however, observed at night as low light conditions allow fainter meteors to be observed.
+
+For bodies with a size scale larger than the atmospheric mean free path (10 cm to several metres)[clarification needed] the visibility is due to the atmospheric ram pressure (not friction) that heats the meteoroid so that it glows and creates a shining trail of gases and melted meteoroid particles. The gases include vaporized meteoroid material and atmospheric gases that heat up when the meteoroid passes through the atmosphere. Most meteors glow for about a second. A relatively small percentage of meteoroids hit the Earth's atmosphere and then pass out again: these are termed Earth-grazing fireballs.
+
+Meteors may occur in showers, which arise when the Earth passes through a trail of debris left by a comet, or as "random" or "sporadic" meteors, not associated with a specific single cause. A number of specific meteors have been observed, largely by members of the public and largely by accident, but with enough detail that orbits of the incoming meteors or meteorites have been calculated. All of them came from orbits from the vicinity of the asteroid belt.[5]
+[edit] Fireball
+
+A fireball is a brighter-than-usual meteor. The International Astronomical Union defines a fireball as "a meteor brighter than any of the planets" (magnitude -4 or greater).[6] The International Meteor Organization (an amateur organization that studies meteors) has a more rigid definition. It defines a fireball as a meteor that would have a magnitude of -3 or brighter if seen at zenith. This definition corrects for the greater distance between an observer and a meteor near the horizon. For example, a meteor of magnitude -1 at 5 degrees above the horizon would be classified as a fireball because if the observer had been directly below the meteor it would have appeared as magnitude -6.[7]
+[edit] Bolide
+For the Swedish guided missile BOLIDE, see RBS 70.
+
+The word bolide comes from the Greek ß????, (bolis) which can mean a missile or to flash. The IAU has no official definition of bolide and generally considers the term synonymous with fireball. The bolide term is generally used for fireballs reaching magnitude -14 or brighter.[8] The term is more often used among geologists than astronomers where it means a very large impactor. For example, the USGS uses the term to mean a generic large crater-forming projectile "to imply that we do not know the precise nature of the impacting body ... whether it is a rocky or metallic asteroid, or an icy comet, for example".[9] Astronomers tend to use the term to mean an exceptionally bright fireball, particularly one that explodes (sometimes called a detonating fireball).
+[edit] Superbolide
+
+If the magnitude of a bolide reaches -17 or brighter it is known as a superbolide.[8][10]
+[edit] Meteorite
+Main article: meteorite
+
+A meteorite is a portion of a meteoroid or asteroid that survives its passage through the atmosphere and impact with the ground without being destroyed.[11] Meteorites are sometimes, but not always, found in association with hypervelocity impact craters; during energetic collisions, the entire impactor may be vaporized, leaving no meteorites.
+[edit] Tektite
+Main article: tektite
+Two tektites.
+
+Molten terrestrial material "splashed" from a meteorite impact crater can cool and solidify into an object known as a tektite. These are often mistaken for meteorites.
+[edit] Meteoric dust
+
+Most meteoroids are destroyed when they enter the atmosphere. The left-over debris is called meteoric dust or just meteor dust. Meteor dust particles can persist in the atmosphere for up to several months. These particles might affect climate, both by scattering electromagnetic radiation and by catalyzing chemical reactions in the upper atmosphere.[12]
+[edit] Ionization trails
+
+During the entry of a meteoroid or asteroid into the upper atmosphere, an ionization trail is created, where the molecules in the upper atmosphere are ionized by the passage of the meteor. Such ionization trails can last up to 45 minutes at a time. Small, sand-grain sized meteoroids are entering the atmosphere constantly, essentially every few seconds in a given region,[clarification needed] and thus ionization trails can be found in the upper atmosphere more or less continuously. When radio waves are bounced off these trails, it is called meteor burst communications.
+
+Meteor radars can measure atmospheric density and winds by measuring the decay rate and Doppler shift of a meteor trail.
+[edit] Color
+
+The visible light produced by a meteor may take on various hues, depending on the chemical composition of the meteoroid, and its speed through the atmosphere. As layers of the meteoroid are stripped off and ionized, the color of the light emitted may change according to the layering of minerals. Some of the possible colors and the compounds responsible for them are: orange/yellow (sodium); yellow (iron); blue/green (magnesium); violet (calcium); and red (silicate).
+[edit] Sound
+
+Any sound generated by a meteor in the upper atmosphere, such as a sonic boom, should not be heard until many seconds after the meteor disappeared. However, in certain instances, for example during the Leonid meteor shower of 2001, several people reported sounds described as "crackling", "swishing", or "hissing"[13] occurring at the same instant as a meteor flare. Similar sounds have also been reported during intense displays of Earth's auroras[citation needed].
+
+Sound recordings made under controlled conditions in Mongolia in 1998 by a team led by Slaven Garaj, a physicist at the Swiss Federal Institute of Technology at Lausanne, support the contention that the sounds are real.[14]
+
+How these sounds could be generated, assuming they are in fact real, remains something of a mystery. It has been hypothesized by some scientists at NASA as that the turbulent ionized wake of a meteor interacts with the magnetic field of the Earth, generating pulses of radio waves. As the trail dissipates, megawatts of electromagnetic energy could be released, with a peak in the power spectrum at audio frequencies. Physical vibrations induced by the electromagnetic impulses would then be heard if they are powerful enough to make grasses, plants, eyeglass frames, and other conductive materials vibrate.[15][16][17][18] This proposed mechanism, although proven to be plausible by laboratory work, remains unsupported by corresponding measurements in the field.
+[edit] Frequency of large meteors
+
+    See also: Planet Earth collision probability with near-Earth objects
+
+The biggest asteroid to hit Earth on any given day is likely to be about 40 centimeters, in a given year about 4 meters, and in a given century about 20 meters. These statistics are obtained by the following:
+
+Over at least the range from 5 centimeters (2 inches) to roughly 300 meters (1,000 feet), the rate at which Earth receives meteors obeys a power-law distribution as follows:
+
+    N(>D) = 37 D^{-2.7}\ 
+
+where N(>D) is the expected number of objects larger than a diameter of D meters to hit Earth in a year.[19] This is based on observations of bright meteors seen from the ground and space, combined with surveys of near Earth asteroids. Above 300 meters in diameter, the predicted rate is somewhat higher, with a two-kilometer asteroid (one million-megaton TNT equivalent) every couple of million years — about 10 times as often as the power-law extrapolation would predict.
+[edit] Notable meteors
+
+    See also: Planet Earth collision probability with near-Earth objects
+
+Perhaps the best-known meteor/meteorite fall is the Peekskill Meteorite, filmed on October 9, 1992 by at least 16 independent videographers.[20]
+
+Eyewitness accounts indicate that the fireball entry of the Peekskill meteorite started over West Virginia at 23:48 UT (±1 min). The fireball, which traveled in a northeasterly direction had a pronounced greenish colour, and attained an estimated peak visual magnitude of -13. During a luminous flight time that exceeded 40 seconds the fireball covered a ground path of some 700 to 800 km.[21]
+
+One meteorite recovered at Peekskill, New York, for which the event and object gained its name, had a mass of 12.4 kg (27 lb) and was subsequently identified as an H6 monomict breccia meteorite.[22] The video record suggests that the Peekskill meteorite probably had several companions over a wide area, especially in the harsh terrain in the vicinity of Peekskill.
+
+A large fireball was observed in the skies near Bone, Indonesia on October 8, 2009. This was thought to be caused by an asteroid approximately 10 meters in diameter. The fireball contained an estimated energy of 50 kilotons of TNT, or about twice the Hiroshima atomic bomb. No injuries were reported.[23]
+
+A large bolide was reported on November 18, 2009 over southeastern California, Northern Arizona, Utah, Wyoming, Idaho and Colorado. At 12:07 a.m., a security camera at the high altitude W. L. Eccles Observatory (9600 ft above sea level) recorded a movie of the passage of the object to the north.[24][25] Of particular note in this video is the spherical "ghost" image slightly trailing the main object (this is likely a lens reflection of the intense fireball), and the bright fireball explosion associated with the breakup of a substantial fraction of the object. An object trail can be seen to continue northward after the bright fireball event. The shock from the final breakup triggered seven seismological stations in Northern Utah; a timing fit to the seismic data yielded a terminal location of the object at 40.286 N, -113.191 W, altitude 27 km.[26] This is above the Dugway Proving Grounds, a closed Army testing base.
+[edit] History
+
+Although meteors have been known since ancient times, they were not known to be an astronomical phenomenon until early in the 19th century. Prior to that, they were seen in the West as an atmospheric phenomenon, like lightning, and were not connected with strange stories of rocks falling from the sky. Thomas Jefferson wrote "I would more easily believe that (a) Yankee professor would lie than that stones would fall from heaven."[27] He was referring to Yale chemistry professor Benjamin Silliman' investigation of an 1807 meteorite that fell in Weston, Connecticut.[27] Silliman believed the meteor had a cosmic origin, but meteors did not attract much attention from astronomers until the spectacular meteor storm of November 1833.[28] People all across the eastern United States saw thousands of meteors, radiating from a single point in the sky. Astute observers noticed that the radiant, as the point is now called, moved with the stars, staying in the constellation Leo.[29]
+
+The astronomer Denison Olmsted made an extensive study of this storm, and concluded it had a cosmic origin. After reviewing historical records, Heinrich Wilhelm Matthias Olbers predicted its return in 1867, which drew the attention of other astronomers. Hubert A. Newton's more thorough historical work led to a refined prediction of 1866, which proved to be correct.[28] With Giovanni Schiaparelli's success in connecting the Leonids (as they are now called) with comet Tempel-Tuttle, the cosmic origin of meteors was now firmly established. Still, they remain an atmospheric phenomenon, and retain their name "meteor" from the Greek word for "atmospheric".[30]
+[edit] Gallery
+
+Orionid
+	
+
+Orionid
+	
+
+Two Orionids and Milky Way
+	
+
+Multi-colored Orionid
+
+Orionid
+	
+
+The brightest meteor, a fireball, leaves a smoky, persistent trail drifting in high-altitude winds, which is seen at the right-hand side of the image left by Orionid.
+	
+
+Animated illustration of differences between a meteoroid, meteor and meteorite
+	
+
+A photograph of a Leonid meteor showing a meteor, its afterglow, and its wake.

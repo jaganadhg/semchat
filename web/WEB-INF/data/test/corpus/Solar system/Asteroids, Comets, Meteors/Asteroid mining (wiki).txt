@@ -1,0 +1,53 @@
+Asteroid mining
+
+Asteroid mining refers to the possibility of exploiting raw materials from asteroids and planetoids in space, especially near-Earth objects. Minerals and volatiles could be mined from an asteroid or spent comet to provide space construction material (e.g., iron, nickel, titanium), to extract water and oxygen to sustain the lives of prospector-astronauts on site, as well as hydrogen and oxygen for use as rocket fuel. In space exploration, these activities are referred to as in-situ resource utilization.
+
+Some day, the platinum, cobalt and other valuable elements from asteroids may even be returned to Earth for profit. At today's prices, a relatively small metallic asteroid with a diameter of 1 mile contains more than $20 trillion US dollars worth of industrial and precious metals.[1] In fact, all the gold, cobalt, iron, manganese, molybdenum, nickel, osmium, palladium, platinum, rhenium, rhodium and ruthenium that we now mine from the Earth's crust, and that are essential for our economic and technological development, came originally from the rain of asteroids that hit the Earth after the crust cooled.[2][3] This is because, while asteroids and the Earth congealed from the same starting materials, Earth's massive gravity pulled all such siderophilic (iron loving) elements into the planet's core during its molten youth more than four billion years ago. This left the crust depleted of such valuable elements. Most asteroids, on the other hand, have little gravity and therefore never underwent such differentiation.
+
+In 2004, the world production of iron ore exceeded a billion metric tons.[4] In comparison, a comparatively small M-type asteroid with a mean diameter of 1 km could contain more than two billion metric tons of iron-nickel ore,[5] or two to three times the annual production for 2004. The asteroid 16 Psyche is believed to contain 1.7×1019 kg of nickel-iron, which could supply the 2004 world production requirement for several million years. A small portion of the extracted material would also contain precious metals.
+
+In 2006, the Keck Observatory announced that the binary Trojan asteroid 617 Patroclus,[6] and possibly large numbers of other Jupiter Trojan asteroids, are likely extinct comets and consist largely of water ice. Similarly, Jupiter-family comets, and possible near-Earth asteroids which are defunct comets, might also economically provide water. The process of bootstrapping—using materials native to space for propellant, tankage, radiation shielding, and other high-mass components of space infrastructure—could lead to radical reductions in its cost.
+
+An important factor to consider in target selection is orbital economics, in particular the delta-v (?v) and travel time to and from the target. More of the extracted native material must be expended as propellant in higher ?v trajectories, thus less returned as payload. Direct Hohmann trajectories are faster than Hohmann trajectories assisted by planetary and/or lunar flybys, which in turn are faster than those of the Interplanetary Transport Network, but the latter have lower ?v than the former.
+
+Currently, the quality of the ore and the consequent cost and mass of equipment required to extract it are unknown. However, potential markets for materials can be identified and profit estimated. For example, the delivery of multiple tonnes of water to low earth orbit (LEO) in a space tourism economy could generate a significant profit.[7]
+
+Near-Earth asteroids are considered likely candidates for early mining activity. Their low ?v location makes them suitable for use in extracting construction materials for near-Earth space-based facilities, greatly reducing the economic cost of transporting supplies into Earth orbit.
+Comparison of Delta-v Requirements Mission 	?v
+Earth surface to LEO 	8.0 km/s
+LEO to near-earth asteroid 	5.5 km/s[a]
+LEO to lunar surface 	6.3 km/s
+LEO to moons of Mars. 	8.0 km/s
+
+The table at right shows a comparison of ?v requirements for various missions. In terms of propulsion energy requirements, a mission to a near-earth asteroid compares favorably to alternative mining missions.
+
+An example of a potential target for an early asteroid mining expedition is 4660 Nereus. This body has a very low ?v compared to lifting materials from the surface of the Moon. However it would require a much longer round-trip to return the material.
+[edit] Mining
+
+There are three options for mining:
+
+   1. Bring back raw asteroidal material.
+   2. Process it on-site to bring back only processed materials, and perhaps produce fuel propellant for the return trip.
+   3. Transport the asteroid to a safe orbit around the Moon or Earth. This can hypothetically allow for most materials to be used and not wasted.
+
+Processing in situ for the purpose of extracting high-value minerals will reduce the energy requirements for transporting the materials, although the processing facilities must first be transported to the mining site.
+
+Mining operations require special equipment to handle the extraction and processing of ore in outer space. The machinery will need to be anchored to the body, but once in place, the ore can be moved about more readily due to the lack of gravity. Docking with an asteroid can be performed using a harpoon-like process, where a projectile penetrates the surface to serve as an anchor then an attached cable is used to winch the vehicle to the surface, if the asteroid is rigid enough for a harpoon to be effective.
+
+There are several options for material extraction:
+
+   1. Material is successively scraped off the surface in a process comparable to strip mining. There is strong evidence that many asteroids consist of rubble piles,[8] making this approach feasible.
+   2. Asteroids with a high metal content may be covered in loose grains that can be gathered by means of a magnet.[9]
+   3. For volatile materials in extinct comets, heat can be used to melt and vaporize the matrix.[10]
+   4. A mine can be dug into the asteroid, and the material extracted through the shaft. This requires a transportation system to carry the ore to the processing facility.
+
+Due to the distance from Earth to an asteroid selected for mining, the round-trip time for communications will be several minutes or more, except during occasional close approaches to Earth by near-Earth asteroids. Thus any mining equipment will either need to be highly automated, or a human presence will be needed nearby. Humans would also be useful for troubleshooting problems and for maintaining the equipment. On the other hand, multi-minute communications delays have not prevented the success of robotic exploration of Mars, and automated systems would be much less expensive to build and deploy.[11]
+[edit] See also
+
+    * Colonization of the asteroids
+    * Colonization of Ceres
+    * Mining the Sky: Untold Riches from the Asteroids, Comets, and Planets
+    * Space manufacturing
+    * Space-based industry
+    * In-Situ Resource Utilization
+    * Asteroids in fiction

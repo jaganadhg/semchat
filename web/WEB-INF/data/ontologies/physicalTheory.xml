@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by Ed Shaya (U. of Maryland) -->
+<rdf:RDF xmlns:q="http://archive.astro.umd.edu/ont/quantity.owl#" xmlns:phy="http://archive.astro.umd.edu/ont/physics.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ivoao="http://archive.astro.umd.edu/ont/IVOAO.owl#" xmlns="http://archive.astro.umd.edu/ont/physicalTheory.owl#" xmlns:inst="http://archive.astro.umd.edu/ont/instrument.owl#" xmlns:geo="http://archive.astro.umd.edu/ont/geometry.owl#" xmlns:ast="http://archive.astro.umd.edu/ont/astronomy.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:u="http://archive.astro.umd.edu/ont/units.owl#" xmlns:stat="http://archive.astro.umd.edu/ont/statistics.owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ui="http://archive.astro.umd.edu/ont/unitsInstances.owl#" xml:base="http://archive.astro.umd.edu/ont/physicalTheory.owl">
+	<owl:Ontology rdf:about="">
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2</owl:versionInfo>
+		<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology covers classes and properties in the theoretical/simulations of physics and astronomy. It includes terms from the IVOA Thesaurus plus terms from the UMD astronomical ontology</dc:description>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl"/>
+		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ed Shaya, University of Maryland</dc:creator>
+		<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physicalTheory.owl</dc:title>
+	</owl:Ontology>
+	<owl:Class rdf:ID="axisymmetricSystem">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#particleSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BernoulliEquation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#NavierStokes"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="calculusOfVariation">
+		<rdfs:subClassOf rdf:resource="#dynamicsCode"/>
+	</owl:Class>
+	<owl:Class rdf:ID="centrallyDirectedForce">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#force"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="chemicalEvolution">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="http://archive.astro.umd.edu/ont/IVOAO.owl#computerProgram"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#astronomyEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="collisionlessBoltzmannEquation">
+		<rdfs:subClassOf rdf:resource="#FokkerPlanckEquation"/>
+		<owl:equivalentClass rdf:resource="#VlasovEquation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CoulombForce">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#electroMagnetics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="coupledEquations">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#computerProgram"/>
+	</owl:Class>
+	<owl:Class rdf:ID="derivativeTypeCode">
+		<rdfs:subClassOf rdf:resource="#dynamicsCode"/>
+	</owl:Class>
+	<owl:Class rdf:ID="differentialEquations">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="http://archive.astro.umd.edu/ont/IVOAO.owl#computerProgram"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="directPairGravityCalculation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#gravity"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="discreteParticleCode">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mechanics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="dynamicsCode">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mechanics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="electroMagnetics">
+		<rdfs:subClassOf rdf:resource="#force"/>
+	</owl:Class>
+	<owl:Class rdf:ID="EulerEquation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fluidFlow"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EulerianDerivativeCode">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#derivativeTypeCode"/>
+		</rdfs:subClassOf>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Code in which one follows particles and derivatives are on a per particle basis</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="firstOrderDifferentialEquation">
+		<rdfs:subClassOf rdf:resource="#differentialEquations"/>
+	</owl:Class>
+	<owl:Class rdf:ID="firstOrderPerturbationAnalysis">
+		<rdfs:subClassOf rdf:resource="#StackelPotential"/>
+	</owl:Class>
+	<owl:Class rdf:ID="FloquetAnalysis">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#firstOrderPerturbationAnalysis"/>
+		</rdfs:subClassOf>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determines stability of closed orbits by means of 1st order perturbation analysis.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="fluidFlow">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrodynamics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="FokkerPlanckEquation">
+		<rdfs:subClassOf rdf:resource="#dynamicsCode"/>
+	</owl:Class>
+	<owl:Class rdf:ID="force">
+		<rdfs:subClassOf rdf:resource="#physicalTheoryEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="FourierTransformGravityCalculation">
+		<rdfs:subClassOf rdf:resource="#gravity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="FreemanBar">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#triaxialSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="generalRelativity">
+		<rdfs:subClassOf rdf:resource="#gravity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="gravity">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#force"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="HamiltonianEquation">
+		<rdfs:subClassOf rdf:resource="#calculusOfVariation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="homogeneousEquation">
+		<rdfs:subClassOf rdf:resource="#differentialEquations"/>
+	</owl:Class>
+	<owl:Class rdf:ID="hydrodynamics">
+		<rdfs:subClassOf rdf:resource="#magnetoHydroDynamics"/>
+	</owl:Class>
+	<owl:Class rdf:ID="hydrostatics">
+		<rdfs:subClassOf rdf:resource="#statics"/>
+	</owl:Class>
+	<owl:Class rdf:ID="incompressibleBernoulliEquation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BernoulliEquation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="isothermalSphere">
+		<rdfs:subClassOf rdf:resource="#sphericalSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="JacobiEllipsoid">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#triaxialSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="jeansEquation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#dynamicsCode"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="KalnajsDisk">
+		<rdfs:subClassOf rdf:resource="#axisymmetricSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="KAM_Theory">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#firstOrderPerturbationAnalysis"/>
+		</rdfs:subClassOf>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolmogorov, Arnold, and Moser Theory.  Analysis to find quasi-periodic orbits by splitting potential into regular potentials plus perturbation potential.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="KeplerForceLaw">
+		<rdfs:subClassOf rdf:resource="#NewtonianGravity"/>
+		<rdfs:subClassOf rdf:resource="#centrallyDirectedForce"/>
+	</owl:Class>
+	<owl:Class rdf:ID="KingModel">
+		<rdfs:subClassOf rdf:resource="#sphericalSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="LagrangianDerivativeCode">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#derivativeTypeCode"/>
+		</rdfs:subClassOf>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Code in which derivatives are fixed in space and one is not following the individual particles.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="LagrangianEquation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#calculusOfVariation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LaplaceSeries">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#multipoleExpansion"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LegendreExpansion">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#multipoleExpansion"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="loweredIsothermalModel">
+		<rdfs:subClassOf rdf:resource="#sphericalSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="MaclaurinSpheroid">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#triaxialSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="magneticForce">
+		<rdfs:subClassOf rdf:resource="#electroMagnetics"/>
+	</owl:Class>
+	<owl:Class rdf:ID="magnetoHydroDynamics">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#dynamicsCode"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="mechanics">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="http://archive.astro.umd.edu/ont/IVOAO.owl#computerProgram"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="mestelDisk">
+		<rdfs:subClassOf rdf:resource="#axisymmetricSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="MichieModel">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#sphericalSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MOND">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#gravity"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="multipoleExpansion">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="http://archive.astro.umd.edu/ont/IVOAO.owl#computerProgram"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="NavierStokes">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrodynamics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="nbody">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:someValuesFrom rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#mass"/>
+				<owl:onProperty rdf:resource="http://archive.astro.umd.edu/ont/operation.owl#input"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:someValuesFrom rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#duration"/>
+				<owl:onProperty rdf:resource="http://archive.astro.umd.edu/ont/operation.owl#takesSetting"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://archive.astro.umd.edu/ont/operation.owl#input"/>
+				<owl:someValuesFrom rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#velocity"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://archive.astro.umd.edu/ont/operation.owl#output"/>
+				<owl:someValuesFrom rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#velocity"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://archive.astro.umd.edu/ont/operation.owl#input"/>
+				<owl:someValuesFrom rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#position"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://archive.astro.umd.edu/ont/operation.owl#output"/>
+				<owl:someValuesFrom rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#position"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#dynamicsCode"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://archive.astro.umd.edu/ont/operation.owl#takesSetting"/>
+				<owl:someValuesFrom rdf:resource="#timeStep"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="NewtonianGravity">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#gravity"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="nonDiscreteParticleCode">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mechanics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="nonHomogeneousEquation">
+		<rdfs:subClassOf rdf:resource="#differentialEquations"/>
+	</owl:Class>
+	<owl:Class rdf:ID="orbitalDynamics">
+		<rdfs:subClassOf rdf:resource="#dynamicsCode"/>
+	</owl:Class>
+	<owl:Class rdf:ID="ordinaryDifferentialEquation">
+		<rdfs:subClassOf rdf:resource="#differentialEquations"/>
+	</owl:Class>
+	<owl:Class rdf:ID="OsipkovMerrittModel">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#sphericalSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="partialDifferentialEquation">
+		<rdfs:subClassOf rdf:resource="#differentialEquations"/>
+	</owl:Class>
+	<owl:Class rdf:ID="particleMeshNbody">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom rdf:resource="#EulerianDerivativeCode"/>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#typeOfDerivative"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#nbody"/>
+	</owl:Class>
+	<owl:Class rdf:ID="particleSystem">
+		<rdfs:subClassOf rdf:resource="#physicalTheoryEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="perturbationAnalysis">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mechanics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="physicalTheory">
+		<rdfs:subClassOf rdf:resource="#physicalTheoryEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="physicalTheoryEntity"/>
+	<owl:Class rdf:ID="PlummerModel">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#sphericalSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="polytrope">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#sphericalSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="potential">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mechanics"/>
+		</rdfs:subClassOf>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential Energy.  May rotate (hasRotation).  hasForce</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="potentialGradient">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#force"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="pressureGradient">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#force"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="relativisticElectroDynamics">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#electroMagnetics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="RiemannEllipsoid">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#triaxialSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="secondOrderPerturbationAnalysis">
+		<rdfs:subClassOf rdf:resource="#perturbationAnalysis"/>
+	</owl:Class>
+	<owl:Class rdf:ID="singularIsothermalSphere">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#isothermalSphere"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="smoothParticleHydrodynamics">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#pressureGradient"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="sphericalHarmonicExpansion">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#multipoleExpansion"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="sphericalSystem">
+		<rdfs:subClassOf rdf:resource="#particleSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="SphNbody">
+		<rdfs:subClassOf rdf:resource="#nbody"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#usesForce"/>
+				</owl:onProperty>
+				<owl:someValuesFrom>
+					<owl:Class rdf:about="#smoothParticleHydrodynamics"/>
+				</owl:someValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="StackelPotential">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#potential"/>
+		</rdfs:subClassOf>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of simple potentials that support a finit number of orbit families</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="statics">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mechanics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="stellarEvolution">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#astronomyEntity"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="http://archive.astro.umd.edu/ont/IVOAO.owl#computerProgram"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="stickyParticleNbody">
+		<rdfs:subClassOf rdf:resource="#nbody"/>
+	</owl:Class>
+	<owl:Class rdf:ID="threeBodyCode">
+		<rdfs:subClassOf rdf:resource="#nbody"/>
+	</owl:Class>
+	<owl:Class rdf:ID="timeStep">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#duration"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#physicalTheoryEntity"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="treeCodeCalculation">
+		<rdfs:subClassOf rdf:resource="#gravity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="triaxialSystem">
+		<rdfs:subClassOf rdf:resource="#particleSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="twoBodyCode">
+		<rdfs:subClassOf rdf:resource="#nbody"/>
+	</owl:Class>
+	<owl:Class rdf:ID="VanDerWaals">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#force"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="virialAnalysis">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#statics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="VlasovEquation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#FokkerPlanckEquation"/>
+		</rdfs:subClassOf>
+		<owl:equivalentClass>
+			<owl:Class rdf:about="#collisionlessBoltzmannEquation"/>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="hasCenterOfForce">
+		<rdfs:domain rdf:resource="#centrallyDirectedForce"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/geometry.owl#point"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasForce">
+		<rdfs:domain rdf:resource="#potential"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#force"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="typeOfDerivative">
+		<rdfs:domain rdf:resource="#mechanics"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#LagrangianDerivativeCode"/>
+					<owl:Class rdf:about="#EulerianDerivativeCode"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="usesForce">
+		<rdfs:domain rdf:resource="#mechanics"/>
+		<rdfs:range rdf:resource="#force"/>
+	</owl:ObjectProperty>
+	<owl:FunctionalProperty rdf:ID="hasRotation">
+		<rdfs:domain rdf:resource="#potential"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/geometry.owl#rotation"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+</rdf:RDF>

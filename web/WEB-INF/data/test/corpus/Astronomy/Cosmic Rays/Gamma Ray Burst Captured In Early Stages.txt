@@ -1,0 +1,21 @@
+Gamma Ray Burst Captured In Early Stages
+
+ScienceDaily (Mar. 3, 2009) — UK astronomers, using a telescope aboard the NASA Swift Satellite, have captured information from the early stages of a gamma ray burst - the most violent and luminous explosions occurring in the Universe since the Big Bang.
+
+Swift is able to both locate and point at gamma ray bursts (GRBs) far quicker than any other telescope, so by using its Ultraviolet/Optical Telescope (UVOT) the astronomers were able to obtain an ultraviolet spectrum of a GRB just 251 seconds after its onset - the earliest ever captured. Further use of the instrument in this way will allow them to calculate the distance and brightness of GRBs within a few hundred seconds of their initial outburst, and gather new information about the causes of bursts and the galaxies they originate from.
+
+It is currently thought that some GRBs are caused by immense explosions following the collapse of the core of a rapidly rotating, high-mass star into a black hole, but there are still many mysteries surrounding them.
+
+"The UVOT's wavelength range, coupled with the fact that Swift is a space observatory with a speedy response rate, unconstrained by time of day or weather, has allowed us to collect this early ultraviolet spectrum," said Martin Still from the Mullard Space Science Laboratory (MSSL) at UCL.
+
+Paul Kuin, also from MSSL, who works on the calibration of the UVOT instrument explained: "By looking at these earlier moments of gamma ray bursts, we will not only be able to better calculate things such as the luminosity and distance of a burst, but to find out more about the galaxies that play host to them and the impact these explosions have on their environments. Once this new technique is applied to much brighter bursts, we'll have a wealth of new data."
+
+Massimiliano De Pasquale, a GRB scientist of the UVOT team from MSSL, added, "The UVOT instrument is particularly suited to study bursts with an average to high redshift (1) – a part of the ultraviolet spectrum that is difficult for even the very big ground-based telescopes to study. Using UVOT with Swift, we can now find redshifts for bursts that were difficult to capture in the past and find out more about their distant host galaxies, about ten billion light years away."
+
+Professor Keith Mason, Chief Executive of the Science and Technology Facilities Council, said, "This is an amazing first for the UVOT instrument and an exciting new development in the study of these most violent and energetic explosions. Thanks to the hard work of our UK scientists at MSSL, and their partners, we can now gather far more information about gamma ray bursts and the early Universe."
+
+Since its launch in 2004, the Swift satellite has provided the most comprehensive study so far of GRBs and their afterglows. Using the UVOT to obtain ultraviolet spectrums, the Swift team will be able to build on this study and even determine more about the host galaxies' chemistry.
+
+Paul Kuin said, "The new spectrum has not only allowed us to determine the distance of the gamma ray burst's host galaxy but has revealed the density of its hydrogen clouds. Learning more about these far-away galaxies helps us to understand how they formed during the early universe. The gamma ray burst observed on this occasion originated in a galaxy 8 billion light years from Earth."
+
+Swift is a NASA mission in collaboration with the STFC in the UK and the Italian Space Agency (ASI)

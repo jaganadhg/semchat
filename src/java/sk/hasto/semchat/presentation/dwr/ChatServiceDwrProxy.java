@@ -22,7 +22,8 @@ public final class ChatServiceDwrProxy
 		ChatWriteService chatService = (ChatWriteService) context.getAttribute("chatService");
 		User user = (User) session.getAttribute("user");
 
-		if (user != null && !text.trim().isEmpty()) {
+		text = text.trim();
+		if (user != null && !text.isEmpty() && text.length() <= 150) {
 			chatService.addMessage(text, user);
 		}
 	}

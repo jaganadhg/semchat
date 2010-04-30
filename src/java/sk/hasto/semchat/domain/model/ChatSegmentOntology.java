@@ -25,13 +25,25 @@ public final class ChatSegmentOntology
 	/** URIs tried v ontologii */
 	private final Set<OURI> classes = new HashSet<OURI>();
 
+	/** URIs instancii v ontologii */
+	private final Set<OURI> instances = new HashSet<OURI>();
+
 
 	/**
-	 * @return mnozina URI tried v ontologii
+	 * @return mnozina URIs vsetkych tried v ontologii
 	 */
 	public Set<OURI> getClasses()
 	{
 		return Collections.unmodifiableSet(classes);
+	}
+
+
+	/**
+	 * @return mnozina URIs vsetkych instancii v ontologii
+	 */
+	public Set<OURI> getInstances()
+	{
+		return Collections.unmodifiableSet(instances);
 	}
 
 
@@ -41,15 +53,69 @@ public final class ChatSegmentOntology
 	 */
 	public void addClass(OURI uri)
 	{
-		Validate.notNull(uri, "URI must not be null.");
+		Validate.notNull(uri, "Uri is null.");
 		classes.add(uri);
+	}
+
+	
+	/**
+	 * Prida instanciu do onotlogie.
+	 * @param uri uri instancie
+	 */
+	public void addInstance(OURI uri)
+	{
+		Validate.notNull(uri, "Uri is null.");
+		instances.add(uri);
+	}
+
+
+	/**
+	 * Updates this ontology with data from other ontology.
+	 * @param other
+	 */
+	public void updateWith(ChatSegmentOntology other)
+	{
+		Validate.notNull(other, "Other ontology is null.");
+		for (OURI classUri : other.classes) {
+			classes.add(classUri);
+		}
+		for (OURI instanceUri : other.instances) {
+			instances.add(instanceUri);
+		}
 	}
 
 
 	@Override
 	public String toString()
 	{
-		return classes.toString();
+		return "Classes: " + classes + "\nInstances: " + instances;
+	}
+
+
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (obj == null || getClass() != obj.getClass()) {
+			return false;
+		}
+		final ChatSegmentOntology other = (ChatSegmentOntology) obj;
+		if (classes != other.classes && (!classes.equals(other.classes))) {
+			return false;
+		}
+		if (instances != other.instances && (!instances.equals(other.instances))) {
+			return false;
+		}
+		return true;
+	}
+
+
+	@Override
+	public int hashCode()
+	{
+		int hash = 7;
+		hash = 37 * hash + classes.hashCode();
+		hash = 37 * hash + instances.hashCode();
+		return hash;
 	}
 
 }

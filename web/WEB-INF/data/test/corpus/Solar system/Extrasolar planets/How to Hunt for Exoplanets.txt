@@ -1,0 +1,11 @@
+How to Hunt for Exoplanets
+
+ScienceDaily (Mar. 3, 2010) — A new report launched by the Institute of Physics (IOP) Exoplanets -- The search for planets beyond our solar system explains how new technological advances have seen the discovery of more than 400 exoplanets to date, a number expected to rise to thousands in the next few years.
+
+The report details how new techniques and instruments are providing growing observational evidence that our home galaxy -- the Milky Way with its 100 billion stars -- could contain millions of solar systems.
+Discovering a distant exoplanet should be almost impossible but astronomers have used their understanding of physics, combined with sophisticated instrumentation and data analysis, to detect signals indicating the presence of a planet.
+The first exoplanets were discovered in 1991 using radial velocity measurements, the detecting and measuring of the gravitational tug that expolanets exert on their parent stars, which causes the stars to wobble.
+Other detection methods include transit observation (measuring the dimming of a star's brightness as a planet passes in front of it) or nulling interferometry (where light waves received by several telescopes are combined to give a proportionately higher-resolution image).
+Today, direct detection of the visible and infrared light from giant planets in wide orbits is becoming increasingly possible.
+In particular, UK researchers have been heavily involved in a new adaptive optics system, the Gemini Plant Imager, which will enable vastly more sensitive searches for fainter planets in closer orbits -- and take us one step closer to discovering a second Earth.
+Dr Robert Kirby-Harris, chief executive at IOP, said: "This report outlines exciting developments in detecting planets which might -- just might -- be able to support life in distant solar systems. It provides yet another illustration of how the techniques and knowledge provided by physics which help us to further our understanding of the universe."

@@ -2,11 +2,9 @@ package sk.hasto.semchat.presentation.servlets;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
-import javax.servlet.UnavailableException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import sk.hasto.semchat.application.ChatService;
 import sk.hasto.semchat.domain.model.User;
 
 /**
@@ -16,21 +14,6 @@ import sk.hasto.semchat.domain.model.User;
 public abstract class BaseServlet extends HttpServlet
 {
 	private static final long serialVersionUID = 2714154953289631596L;
-
-	/* chat sluzba */
-	protected ChatService chatService;
-
-
-	@Override
-	public void init() throws ServletException
-	{
-		// IoC through Service Locator
-		chatService = (ChatService) getServletContext().getAttribute("chatService");
-
-		if (chatService == null) {
-			throw new UnavailableException("Chat service is not available.");
-		}
-	}
 
 
 	/**
@@ -56,8 +39,7 @@ public abstract class BaseServlet extends HttpServlet
 
 
 	/**
-	 * Forwards a request from a servlet to resource on the given path.
-	 * Path must begin with / and is interpreted as relative to the current context root.
+	 * Forwards the request from this servlet to resource on the given path.
 	 * @param path destination resource path
 	 * @param request
 	 * @param response
@@ -68,7 +50,23 @@ public abstract class BaseServlet extends HttpServlet
 								   HttpServletResponse response)
 								   throws IOException, ServletException
 	{
-		getServletContext().getRequestDispatcher(path).forward(request, response);
+		request.getRequestDispatcher(path).forward(request, response);
+	}
+
+
+	/**
+	 * Includes the response from the given resource within this servlet response.
+	 * @param path included resource path
+	 * @param request
+	 * @param response
+	 * @throws IOException
+	 * @throws ServletException
+	 */
+	protected final void include(String path, HttpServletRequest request,
+								 HttpServletResponse response)
+								 throws IOException, ServletException
+	{
+		request.getRequestDispatcher(path).include(request, response);
 	}
 
 }

@@ -1,0 +1,1262 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by Ed Shaya (U. of Maryland) -->
+<!DOCTYPE rdf:RDF [
+	<!ENTITY ui "http://archive.astro.umd.edu/ont/unitsInstances.owl#">
+	<!ENTITY ivoao "http://archive.astro.umd.edu/ont/IVOAO.owl#">
+	<!ENTITY chem "http://archive.astro.umd.edu/ont/chemistry.owl#">
+	<!ENTITY geo "http://archive.astro.umd.edu/ont/geometry.owl#">
+	<!ENTITY phy "http://archive.astro.umd.edu/ont/physics.owl#">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns/">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xmlns:q="http://archive.astro.umd.edu/ont/quantity.owl#" xmlns="http://archive.astro.umd.edu/ont/geometry.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:u="http://archive.astro.umd.edu/ont/units.owl#" xmlns:ivoao="http://archive.astro.umd.edu/ont/IVOAO.owl#" xmlns:skos="http://archive.astro.umd.edu/ont/skos-core.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:daml="http://www.daml.org/2001/03/daml+oil#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ui="http://archive.astro.umd.edu/ont/unitsInstances.owl#" xml:base="http://archive.astro.umd.edu/ont/geometry.owl">
+	<owl:Ontology rdf:about="">
+		<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometry.owl</dc:title>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2</owl:versionInfo>
+		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ed Shaya, University of Maryland</dc:creator>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/units.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/unitsInstances.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/skos-core.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl"/>
+		<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology covers geometry basic constructs</dc:description>
+	</owl:Ontology>
+	<owl:Class rdf:ID="acuteAngle">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#angle"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle less than 90 degree
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="amplitude">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amplitude of a vector</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="angle">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consists of two rays with the same endPoint</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="angleDescription"/>
+	<owl:Class rdf:ID="angleOfRotation">
+		<rdfs:subClassOf rdf:resource="#angle"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angle swept out by a ray with endPoint at center of rotation
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="angularCoordinate">
+		<rdfs:subClassOf rdf:resource="#coordinate"/>
+		<rdfs:subClassOf rdf:resource="#angle"/>
+	</owl:Class>
+	<owl:Class rdf:ID="any-D_Shape">
+		<rdfs:subClassOf rdf:resource="#shape"/>
+	</owl:Class>
+	<owl:Class rdf:ID="arcLength">
+		<rdfs:subClassOf rdf:resource="#length"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The length of a section of a circl
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="area">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#surfaceArea"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometric area of a 2-d  region.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="axis">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#vector"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vector from origin in a fiducial direction</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="axonometricProjection">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#orthographicProjection"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arbitrary oriented projectino plane</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="azimuthalAngle">
+		<rdfs:subClassOf rdf:resource="#angularCoordinate"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angle from a fiducial direction (usually the x-direction).  In astronomy, the angle to a celstial object, for an observer, measured along the the horizon clockwise from North to the zenith line (A line perpendicular to the horizon to the object).</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="boundary">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="cabinetProjection">
+		<rdfs:subClassOf rdf:resource="#obliqueProjection"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CartesianCoordinate">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#coordinate"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CartesianCoordinateSystem">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#CartesianCoordinate"/>
+				</owl:allValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#coordinateSystem"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate System with orthogonal coordinates</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="cavalierProjection">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#obliqueProjection"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="center">
+		<rdfs:subClassOf rdf:resource="#point"/>
+	</owl:Class>
+	<owl:Class rdf:ID="centerOfMass">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#center"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Center found by weighting each point by its mass density.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="centerOfRotation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#center"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="centralAngleOfCircle">
+		<rdfs:subClassOf rdf:resource="#angle"/>
+	</owl:Class>
+	<owl:Class rdf:ID="chord">
+		<rdfs:subClassOf rdf:resource="#lineSegment"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chord of a cirlce.  Endpoints are on the circle.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="circle">
+		<rdfs:subClassOf rdf:resource="#ellipse"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:FunctionalProperty rdf:about="#hasPerimeter"/>
+				</owl:onProperty>
+				<owl:allValuesFrom rdf:resource="#circumference"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="circularCone">
+		<rdfs:subClassOf rdf:resource="#cone"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Base is circle</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="circumference">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#perimeter"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="closedCurve">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#curveOnPlane"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="component">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Component of a vector</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="concavePolygon">
+		<rdfs:subClassOf rdf:resource="#polygon"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polygon with at least one obtuse interior angle
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="cone">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#three-D_Shape"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="conicSection">
+		<rdfs:subClassOf rdf:resource="#curveOnPlane"/>
+	</owl:Class>
+	<owl:Class rdf:ID="convexPolygon">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#polygon"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polygon with all internal angles acute.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="coordinate">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For example the xCoordinate or the r-radius.  Not it's value.  That would be the coordinateComponent.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="coordinates">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#position"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#geometricEntity"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#component"/>
+				</owl:allValuesFrom>
+				<owl:onProperty rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl#hasQuantity"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl#compositeQuantity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="coordinateSystem">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="coordinateTransformation">
+		<rdfs:subClassOf rdf:resource="#transformation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="crossSection">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#area"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">area of a slice through a solid</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="cube">
+		<rdfs:subClassOf rdf:resource="#rectangularPrism"/>
+	</owl:Class>
+	<owl:Class rdf:ID="curve">
+		<rdfs:subClassOf rdf:resource="#any-D_Shape"/>
+	</owl:Class>
+	<owl:Class rdf:ID="curveOnPlane">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#two-D_Shape"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="cylindricalCoordinateSystem">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:someValuesFrom rdf:resource="#zCoordinate"/>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</owl:cardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+				<owl:someValuesFrom rdf:resource="#cylindricalRadius"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#coordinateSystem"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+				<owl:someValuesFrom>
+					<owl:Class rdf:about="#azimuthalAngle"/>
+				</owl:someValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r,z,Theta system</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="cylindricalRadialCoordinate">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radialCoordinate"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="cylindricalRadius">
+		<rdfs:subClassOf rdf:resource="#length"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radius"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="diagonal">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#lineSegment"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LineSegment that joins two non-consecutive vertices in a Polygo
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="diameter">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#chord"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chord going through the center of the circle or sphere</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="dilation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#transformation"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shrinks Shape toward a center point.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="direction">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A (usually, unit) vector in a given direction, defined as the direction along
+the line from fromPoint to toPoint.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="directrix">
+		<rdfs:subClassOf rdf:resource="#line"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A parabola is the set of points equidistant from the focus and the directrix line.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="eccentricity">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="edge">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#side"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LineSegment at the intersection of two faces of a Polyhedron.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="ellipse">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#closedCurve"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#conicSection"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="endPoint">
+		<rdfs:subClassOf rdf:resource="#point"/>
+	</owl:Class>
+	<owl:Class rdf:ID="equilateralTriangle">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#triangle"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triangle with 3 equal side
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="face">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#region">
+				<rdfs:subClassOf>
+					<owl:Class rdf:about="#geometricEntity"/>
+				</rdfs:subClassOf>
+			</owl:Class>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polygon bounding a polyhedron</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="focusPoint">
+		<rdfs:subClassOf rdf:resource="#point"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ParabolaFocus: Parabola is set of points equidistant from focus and directric
+Ellipse: Ellipse is set of points equidistant from two foci
+Hyperbola: Hyperbola is set of points whose difference in distance from two foci is a constant.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="fractal">
+		<rdfs:subClassOf rdf:resource="#geometricalObject"/>
+	</owl:Class>
+	<owl:Class rdf:ID="geometricalObject">
+		<rdfs:subClassOf rdf:resource="&ivoao;mathematicalConcept"/>
+	</owl:Class>
+	<owl:Class rdf:ID="geometricCenter">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#center"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Center found by weighing all points in the shape equally.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="geometricEntity">
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anything in Geometry</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="greatCircle">
+		<rdfs:subClassOf rdf:resource="#circle"/>
+	</owl:Class>
+	<owl:Class rdf:ID="harmonograph">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#curveOnPlane"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Path of double pendulum at a right angle
+Curves generated by the parametric equations
+x(t) = A(t)cos(wx*t - deltax
+y(t) = B(t)sin(wy*t - deltay
+Where A and B decay exponentially with time.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="height">
+		<rdfs:subClassOf rdf:resource="#length"/>
+	</owl:Class>
+	<owl:Class rdf:ID="hexagon">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#convexPolygon"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 sided Polygo
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="hyperbola">
+		<rdfs:subClassOf rdf:resource="#conicSection"/>
+	</owl:Class>
+	<owl:Class rdf:ID="hyperboloid">
+		<rdfs:subClassOf rdf:resource="#three-D_Shape"/>
+	</owl:Class>
+	<owl:Class rdf:ID="intercept">
+		<rdfs:subClassOf rdf:resource="#shape"/>
+	</owl:Class>
+	<owl:Class rdf:ID="intersection">
+		<rdfs:subClassOf rdf:resource="#region"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Set of points that two Regions or Shapes have in common.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="isometric">
+		<rdfs:subClassOf rdf:resource="#axonometricProjection"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Projection plane intersects the three coordinate axes at the same distance from the origin.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="isoscelesTriangle">
+		<rdfs:subClassOf rdf:resource="#triangle"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triangle with 2 equal side
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="latitudeAngle">
+		<rdfs:subClassOf rdf:resource="#angularCoordinate"/>
+	</owl:Class>
+	<owl:Class rdf:ID="length">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#geometricEntity"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="line">
+		<rdfs:subClassOf rdf:resource="#one-D_Shape"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An infinite continuous straight collection of point
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="linearCoordinateSystem">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:cardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#coordinateSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="lineSegment">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#definedBy"/>
+				</owl:onProperty>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</owl:cardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#endPoint"/>
+				</owl:allValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#definedBy"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#one-D_Shape"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LineSegment is defined by its two endpoint
+
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="LissajousCurve">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#harmonograph"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curves generated by the parametric equations
+x(t) = Acos(wx*t - deltax
+y(t) = Bsin(wy*t - deltay
+Circle and ellipse are subclasses.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="localCoordinate">
+		<rdfs:subClassOf rdf:resource="#coordinate"/>
+	</owl:Class>
+	<owl:Class rdf:ID="localCoordinates">
+		<rdfs:subClassOf rdf:resource="#coordinates"/>
+	</owl:Class>
+	<owl:Class rdf:ID="localCoordinateSystem">
+		<rdfs:subClassOf rdf:resource="#coordinateSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="longitudeAngle">
+		<rdfs:subClassOf rdf:resource="#angularCoordinate"/>
+	</owl:Class>
+	<owl:Class rdf:ID="multiviewProjection">
+		<rdfs:subClassOf rdf:resource="#orthographicProjection"/>
+	</owl:Class>
+	<owl:Class rdf:ID="oblateSpheroid">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#spheroid"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="obliqueProjection">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#parallelProjection"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="obtuseAnge">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#angle"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angle greater than 90 degree
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="octagon">
+		<rdfs:subClassOf rdf:resource="#convexPolygon"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 sided polygon</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="octahedron">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#polyhedron"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyhedron with 8 faces.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="one-D_Shape">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#shape"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="origin">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#point"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Origin of CoordinateSystem</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="originOfLongitude">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#direction"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="orthographicProjection">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#parallelProjection"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Projection lines are perpendicular to the projection plane.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="parabaloid">
+		<rdfs:subClassOf rdf:resource="#three-D_Shape"/>
+	</owl:Class>
+	<owl:Class rdf:ID="parabola">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#conicSection"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="parallelogram">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#quadralateral"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quadralateral with 2 pairs of parallel sides</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="parallelProjection">
+		<rdfs:subClassOf rdf:resource="#projection"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Projection lines parallel</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="pentagon">
+		<rdfs:subClassOf rdf:resource="#convexPolygon"/>
+	</owl:Class>
+	<owl:Class rdf:ID="perimeter">
+		<rdfs:subClassOf rdf:resource="#length"/>
+	</owl:Class>
+	<owl:Class rdf:ID="perspectiveProjection">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#projection"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Projection lines not parallel</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="planarProjection">
+		<rdfs:subClassOf rdf:resource="#projection"/>
+	</owl:Class>
+	<owl:Class rdf:ID="plane">
+		<rdfs:subClassOf rdf:resource="#two-D_Shape"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-d shape that extends without end in two directions.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="point">
+		<rdfs:subClassOf rdf:resource="#shape"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#position"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:cardinality>
+				<owl:onProperty>
+					<owl:InverseFunctionalProperty rdf:about="#embeds"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#region"/>
+	</owl:Class>
+	<owl:Class rdf:ID="polarAngle">
+		<rdfs:subClassOf rdf:resource="#angularCoordinate"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angle measured from a Polar Direction (usually the z-axis).</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="polarAxis">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#direction"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="polarCoordinateSystem">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+				<owl:someValuesFrom>
+					<owl:Class rdf:about="#azimuthalAngle"/>
+				</owl:someValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</owl:cardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#coordinateSystem"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:someValuesFrom>
+					<owl:Class rdf:about="#radialCoordinate"/>
+				</owl:someValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="polarRadialCoordinate">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radialCoordinate"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="pole">
+		<rdfs:label rdf:datatype="&xsd;string">pole</rdfs:label>
+		<rdfs:subClassOf rdf:resource="&geo;point"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of 2 points on a sphere where the normal intersects the equator at a right angle.  Also, the direction in spherical coordinates where the theta is + or - 90 degrees and phi is undefined. 
+		</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="polygon">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#two-D_Shape"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="polyhedron">
+		<rdfs:subClassOf rdf:resource="#three-D_Shape"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A 3-D shape of polygons called faces enclosing a solid region.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="prism">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#polyhedron"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyhedron with two Congruent faces and with the other faces Parallelograms.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="projection">
+		<rdfs:subClassOf rdf:resource="#shape"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ProjectorShape is projected geometrically onto a Projection Shape.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="projectionOnto3D_Shape">
+		<rdfs:subClassOf rdf:resource="#three-D_Shape"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#projection"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="prolateSpheroid">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#spheroid"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="pyramid">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#polyhedron"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyhedron in which the base is a polygon and the lateral faces are triangles with a common vertex.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="quadralateral">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#convexPolygon"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="radialCoordinate">
+		<rdfs:subClassOf rdf:resource="#coordinate"/>
+	</owl:Class>
+	<owl:Class rdf:ID="radius">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radius</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#length"/>
+	</owl:Class>
+	<owl:Class rdf:ID="ray">
+		<rdfs:subClassOf rdf:resource="#one-D_Shape"/>
+	</owl:Class>
+	<owl:Class rdf:ID="rectangle">
+		<rdfs:subClassOf rdf:resource="#parallelogram"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parallelogram with interior angles being right angles.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="rectangularPrism">
+		<rdfs:subClassOf rdf:resource="#prism"/>
+	</owl:Class>
+	<owl:Class rdf:ID="reflection">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#transformation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="region">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#geometricEntity"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="rhombus">
+		<rdfs:subClassOf rdf:resource="#parallelogram"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Parallelogram with 4 congruent sides.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="rightAngle">
+		<rdfs:subClassOf rdf:resource="#angle"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angle of 90 degrees</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="rightTriangle">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#triangle"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triangle with a RightAngle</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="rotation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#transformation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="semimajorAxis">
+		<rdfs:subClassOf rdf:resource="#length"/>
+	</owl:Class>
+	<owl:Class rdf:ID="semimajorRadius">
+		<rdfs:subClassOf rdf:resource="#length"/>
+	</owl:Class>
+	<owl:Class rdf:ID="semiminorAxis">
+		<rdfs:subClassOf rdf:resource="#length"/>
+	</owl:Class>
+	<owl:Class rdf:ID="semiminorRadius">
+		<rdfs:subClassOf rdf:resource="#length"/>
+	</owl:Class>
+	<owl:Class rdf:ID="shape">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#geometricEntity"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="side">
+		<rdfs:subClassOf rdf:resource="#lineSegment"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LineSegment of a Polygon
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="solidAngle">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+	</owl:Class>
+	<owl:Class rdf:ID="space">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of orthogonal dimensions</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="sphere">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#spheroid"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="sphericalCoordinateSystem">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:someValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+							<owl:Class rdf:about="#latitudeAngle"/>
+							<owl:Class rdf:about="#polarAngle"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:someValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:someValuesFrom>
+					<owl:Class rdf:about="#azimuthalAngle"/>
+				</owl:someValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#coordinateSystem"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+				<owl:someValuesFrom>
+					<owl:Class rdf:about="#radialCoordinate"/>
+				</owl:someValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</owl:cardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasCoordinate"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="sphericalRadialCoordinate">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radialCoordinate"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="spheroid">
+		<rdfs:subClassOf rdf:resource="#three-D_Shape"/>
+	</owl:Class>
+	<owl:Class rdf:ID="square">
+		<rdfs:subClassOf rdf:resource="#rhombus"/>
+		<rdfs:subClassOf rdf:resource="#rectangle"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rectangle with all 4 sides equal</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="surfaceArea">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Area of any surface
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="three-D_Shape">
+		<rdfs:subClassOf rdf:resource="#shape"/>
+	</owl:Class>
+	<owl:Class rdf:ID="torus">
+		<rdfs:subClassOf rdf:resource="#geometricalObject"/>
+	</owl:Class>
+	<owl:Class rdf:ID="transformation">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="translation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#transformation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="trapezoid">
+		<rdfs:subClassOf rdf:resource="#quadralateral"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quadrilateral with 2 parallel side
+</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="triangle">
+		<rdfs:subClassOf rdf:resource="#convexPolygon"/>
+	</owl:Class>
+	<owl:Class rdf:ID="two-D_Shape">
+		<rdfs:subClassOf rdf:resource="#shape"/>
+	</owl:Class>
+	<owl:Class rdf:ID="union">
+		<rdfs:subClassOf rdf:resource="#region"/>
+	</owl:Class>
+	<owl:Class rdf:ID="unitVector">
+		<rdfs:subClassOf rdf:resource="#vector"/>
+	</owl:Class>
+	<owl:Class rdf:ID="vector">
+		<rdfs:subClassOf rdf:resource="#geometricEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="vertex">
+		<rdfs:subClassOf rdf:resource="#point"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Point where two LineSeqments meet.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="vertexOfParabola">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#point"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Point on a parabola with normal that passes through the focus.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="volume">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#geometricEntity"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="width">
+		<rdfs:subClassOf rdf:resource="#length"/>
+	</owl:Class>
+	<owl:Class rdf:ID="x">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#coordinate"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:FunctionalProperty rdf:about="#alongAxis"/>
+				</owl:onProperty>
+				<owl:hasValue>
+					<axis rdf:about="xAxis"/>
+				</owl:hasValue>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Value along X-axis</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="xCoordinate">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CartesianCoordinate"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="y">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#coordinate"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:FunctionalProperty rdf:about="#alongAxis"/>
+				</owl:onProperty>
+				<owl:hasValue>
+					<axis rdf:about="yAxis"/>
+				</owl:hasValue>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Value along Y-axis</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="yCoordinate">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CartesianCoordinate"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="z">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#coordinate"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:hasValue>
+					<axis rdf:about="zAxis"/>
+				</owl:hasValue>
+				<owl:onProperty>
+					<owl:FunctionalProperty rdf:about="#alongAxis"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Value along Z-axis</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="zCoordinate">
+		<rdfs:subClassOf rdf:resource="#CartesianCoordinate"/>
+	</owl:Class>
+	<owl:Class rdf:ID="zenithAngle">
+		<rdfs:subClassOf rdf:resource="#angularCoordinate"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minimum gngle from the tangent plane to a sphere to a point off the sphere.  In astronomy the angle from the celestial object to the horizon.</skos:definition>
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="definedBy">
+		<rdfs:domain rdf:resource="#shape"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#intersection"/>
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/IVOAO.owl#expression"/>
+					<owl:Class rdf:about="#lineSegment"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasAmplitude">
+		<rdfs:range rdf:resource="#amplitude"/>
+		<rdfs:domain rdf:resource="#vector"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasArea">
+		<rdfs:domain rdf:resource="#two-D_Shape"/>
+		<rdfs:range rdf:resource="#area"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasBase">
+		<rdfs:range rdf:resource="#circle"/>
+		<rdfs:domain rdf:resource="#circularCone"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasCenter">
+		<rdfs:domain rdf:resource="#dilation"/>
+		<rdfs:range rdf:resource="#center"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasCenterOfRotation">
+		<rdfs:range rdf:resource="#centerOfRotation"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#angleOfRotation"/>
+					<owl:Class rdf:about="#rotation"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasCoordinate">
+		<rdfs:domain rdf:resource="#coordinates"/>
+		<rdfs:range rdf:resource="#coordinate"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasCoordinates">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#vector"/>
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/IVOAO.owl#position"/>
+					<owl:Class rdf:about="#coordinateSystem"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#coordinates"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasDimension">
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl#quantity"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gives the Dimensions that span the space.  Must be consistent with the number in hasDimensionality.</rdfs:comment>
+		<rdfs:domain rdf:resource="#space"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasDirection">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#vector"/>
+					<owl:Class rdf:about="#angleDescription"/>
+					<owl:Class rdf:about="#CartesianCoordinate"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#direction"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasFace">
+		<rdfs:range rdf:resource="#face"/>
+		<rdfs:domain rdf:resource="#polyhedron"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasLocation">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#region"/>
+					<owl:Class rdf:about="#shape"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#position"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasPoleDirection">
+		<rdfs:range rdf:resource="#direction"/>
+		<rdfs:domain rdf:resource="#sphericalCoordinateSystem"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasPreimage">
+		<rdfs:domain rdf:resource="#transformation"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#shape"/>
+					<owl:Class rdf:about="#region"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasProjectionShape">
+		<rdfs:domain rdf:resource="#projection"/>
+		<rdfs:range rdf:resource="#shape"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasProjectorShape">
+		<rdfs:range rdf:resource="#shape"/>
+		<rdfs:domain rdf:resource="#projection"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasRegion">
+		<rdfs:range rdf:resource="#region"/>
+		<rdfs:domain rdf:resource="#space"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any section of the Space</rdfs:comment>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasSide">
+		<rdfs:domain rdf:resource="#polygon"/>
+		<rdfs:range rdf:resource="#lineSegment"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasSurfaceArea">
+		<rdfs:range rdf:resource="#area"/>
+		<rdfs:domain rdf:resource="#three-D_Shape"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasVolume">
+		<rdfs:range rdf:resource="#volume"/>
+		<rdfs:domain rdf:resource="#three-D_Shape"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasWidth">
+		<rdfs:domain rdf:resource="#rectangle"/>
+		<rdfs:range rdf:resource="#width"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="inCoordinateSystem">
+		<rdfs:domain rdf:resource="#coordinates"/>
+		<rdfs:range rdf:resource="#coordinateSystem"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="ofCircle">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#centralAngleOfCircle"/>
+					<owl:Class rdf:about="#chord"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#circle"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="ofRegion">
+		<rdfs:domain rdf:resource="#intersection"/>
+		<rdfs:range rdf:resource="#region"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="ofShape">
+		<rdfs:range rdf:resource="#shape"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#boundary"/>
+					<owl:Class rdf:about="#intersection"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="skewTo">
+		<rdfs:range rdf:resource="#line"/>
+		<rdfs:domain rdf:resource="#line"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="toPoint">
+		<rdfs:domain rdf:resource="#direction"/>
+		<rdfs:range rdf:resource="#point"/>
+	</owl:ObjectProperty>
+	<owl:TransitiveProperty rdf:ID="congruentTo">
+		<rdfs:domain rdf:resource="#shape"/>
+		<rdfs:range rdf:resource="#shape"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:TransitiveProperty>
+	<owl:TransitiveProperty rdf:ID="coplanarTo">
+		<rdfs:domain rdf:resource="#line"/>
+		<rdfs:range rdf:resource="#line"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:TransitiveProperty>
+	<owl:TransitiveProperty rdf:ID="embeddedIn">
+		<rdfs:domain rdf:resource="#shape"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#space"/>
+					<owl:Class rdf:about="#region"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<owl:inverseOf>
+			<owl:InverseFunctionalProperty rdf:about="#embeds"/>
+		</owl:inverseOf>
+	</owl:TransitiveProperty>
+	<owl:TransitiveProperty rdf:ID="parallelTo">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#line"/>
+					<owl:Class rdf:about="#lineSegment"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#line"/>
+					<owl:Class rdf:about="#lineSegment"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:TransitiveProperty>
+	<owl:TransitiveProperty rdf:ID="similarTo">
+		<rdfs:domain rdf:resource="#shape"/>
+		<rdfs:range rdf:resource="#shape"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:TransitiveProperty>
+	<owl:FunctionalProperty rdf:ID="fromDirection">
+		<rdfs:domain rdf:resource="#angularCoordinate"/>
+		<rdfs:range rdf:resource="#direction"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="fromPoint">
+		<rdfs:domain rdf:resource="#direction"/>
+		<rdfs:range rdf:resource="#point"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasBoundary">
+		<rdfs:domain rdf:resource="#region"/>
+		<rdfs:range rdf:resource="#shape"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasCoordinateDeclaration">
+		<rdfs:domain rdf:resource="#coordinate"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#direction"/>
+					<owl:Class rdf:about="#angleDescription"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasDimensionality">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#vector"/>
+					<owl:Class rdf:about="#space"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasHeight">
+		<rdfs:domain rdf:resource="#rectangle"/>
+		<rdfs:range rdf:resource="#height"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasLength">
+		<rdfs:domain rdf:resource="#one-D_Shape"/>
+		<rdfs:range rdf:resource="#length"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasOrigin">
+		<rdfs:domain rdf:resource="#coordinateSystem"/>
+		<rdfs:range rdf:resource="#point"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasPerimeter">
+		<rdfs:domain rdf:resource="#two-D_Shape"/>
+		<rdfs:range rdf:resource="#perimeter"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasVertex">
+		<rdfs:domain rdf:resource="#angleDescription"/>
+		<rdfs:range rdf:resource="#point"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="alongAxis">
+		<rdfs:domain rdf:resource="#coordinate"/>
+		<rdfs:range rdf:resource="#axis"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:InverseFunctionalProperty rdf:ID="embeds">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#space"/>
+					<owl:Class rdf:about="#region"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#shape"/>
+		<owl:inverseOf rdf:resource="#embeddedIn"/>
+	</owl:InverseFunctionalProperty>
+	<owl:InverseFunctionalProperty rdf:ID="hasSlice">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<rdfs:domain rdf:resource="#space"/>
+		<rdfs:range rdf:resource="#space"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Says Domain space is superset of Range Space</rdfs:comment>
+		<owl:inverseOf>
+			<owl:InverseFunctionalProperty rdf:about="#sliceOf"/>
+		</owl:inverseOf>
+	</owl:InverseFunctionalProperty>
+	<owl:InverseFunctionalProperty rdf:ID="sliceOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<rdfs:domain rdf:resource="#space"/>
+		<rdfs:range rdf:resource="#space"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inverse of hasSlice.  Points to a larger Space that contains this Space.</rdfs:comment>
+		<owl:inverseOf rdf:resource="#hasSlice"/>
+	</owl:InverseFunctionalProperty>
+	<axis rdf:ID="xAxis"/>
+	<axis rdf:ID="yAxis"/>
+	<axis rdf:ID="zAxis"/>
+</rdf:RDF>

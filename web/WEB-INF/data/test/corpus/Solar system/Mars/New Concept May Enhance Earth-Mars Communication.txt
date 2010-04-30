@@ -1,0 +1,10 @@
+New Concept May Enhance Earth-Mars Communication
+
+
+ScienceDaily (Oct. 16, 2009) — Direct communication between Earth and Mars can be strongly disturbed and even blocked by the Sun for weeks at a time, cutting off any future human mission to the Red Planet. An ESA engineer working with engineers in the UK may have found a solution using a new type of orbit combined with continuous-thrust ion propulsion.
+
+The European researchers studied a possible solution to a crucial problem affecting future human missions to Mars: how to ensure reliable radio communication even when Mars and Earth line up at opposite sides of the Sun, which then blocks any signal between mission controllers on Earth and astronauts on the red surface. The natural alignment, known as a conjunction, happens approximately every 780 days, and would seriously degrade and even block transmission of voice, data and video signals.
+The research findings were released this week at the 60th International Astronautical Congress (IAC), the world's biggest space event, being held in Daejeon, South Korea. This new solution is one result of a €100 000 study funded by ESA's General Studies Programme to catalogue non-traditional orbital zones throughout the Solar System that could be exploited thanks to emerging propulsion technologies.
+According to the paper, "Non-Keplerian Orbits Using Low Thrust, High ISP Propulsion Systems," an innovative solution to the Mars communication problem may be found by placing a pair of communication relay satellites into a very special type of orbit near Mars: a so-called 'B-orbit' (in contrast to an 'A-orbit', based on natural orbital laws).
+However, to counter the effects of gravity and remain in place, they would have to be equipped with cutting-edge electric ion propulsion.
+The ion thrusters, powered by solar electricity and using tiny amounts of xenon gas as propellant, would hold the satellites in a B-orbit in full view of both Mars and Earth. The satellites could then relay radio signals throughout the Mars–Earth conjunction season, ensuring that astronauts at Mars were never out of touch with Earth.

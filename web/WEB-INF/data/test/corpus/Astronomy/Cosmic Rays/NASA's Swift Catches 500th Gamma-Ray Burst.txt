@@ -1,0 +1,79 @@
+NASA's Swift Catches 500th Gamma-Ray Burst
+
+ScienceDaily (Apr. 19, 2010) — In its first five years in orbit, NASA's Swift satellite has given astronomers more than they could have hoped for. Its discoveries range from a nearby nascent supernova to a blast so far away that it happened when our universe was only 5 percent of its present age.
+
+Swift primarily studies gamma-ray bursts (GRBs) -- the biggest and most mysterious explosions in the cosmos. On April 13, the spacecraft's "burst-o-meter" cataloged its 500th GRB.
+
+"On the one hand, it's just a number, but on the other it is a remarkable milestone," said Neil Gehrels, Swift's lead researcher at Goddard Space Flight Center in Greenbelt, Md. "Each burst has turned over a new piece of the puzzle and a clearer picture is emerging."
+
+"Over five years and 500 bursts, Swift has fulfilled every significant promise of its mission and, in addition, brought a wealth of surprises," noted Derek Fox, a Swift team member at Penn State in University Park, Pa.
+
+Burst 500, officially known as GRB 100413B, exploded in constellation Cassiopeia as a long burst, a type usually associated with the death of a massive star. It wasn't detected in on-board analysis of data from the spacecraft's Burst Alert Telescope (BAT), which was interrupted 18 seconds after the burst as Swift slewed to a pre-planned target.
+
+Instead, GRB 100413B came to light when David Palmer, an astrophysicist at Los Alamos National Laboratory in New Mexico, later analyzed the data. "The BAT team regularly digs through the data once it comes to the ground and finds weak bursts like this one that take a bit of special care," said Goddard's Judith Racusin, who coordinated burst observations that day.
+
+Summaries of other notable bursts in Swift's storied career are listed below.
+
+Swift's main job is to quickly localize each gamma-ray burst, report its position so that others can immediately conduct follow-up observations, and then study the burst using its X-ray and Ultraviolet/Optical telescopes. But it does much more, including ultraviolet studies of exploding stars, monitoring black holes and neutron stars for surges of high-energy radiation, and carrying out a long-term X-ray survey of the entire sky.
+
+The spacecraft rocketed into orbit in November 2004. Managed by NASA's Goddard Space Flight Center, Swift was built and is operated in collaboration with Penn State, the Los Alamos National Laboratory in New Mexico, and General Dynamics of Gilbert, Ariz. Other partners include the University of Leicester and Mullard Space Science Laboratory in the United Kingdom, Brera Observatory and the Italian Space Agency in Italy, with additional collaborators in Germany and Japan.
+
+Origins
+
+Because gamma rays are the highest-energy form of light, the brief but brilliant blasts represent a colossal energy release. Gamma-ray bursts were discovered in 1967 by unclassified military satellites designed to look for clandestine nuclear tests. The first observations required extensive analysis to be sure that the bursts were truly originating beyond the solar system, and they weren't published until 1973.
+
+Over the following years, astronomers learned that sufficiently sensitive instruments could detect about two bursts per day, on average, somewhere in the sky. Of those twice-daily GRBs, Swift's Burst Alert Telescope snares about one in eight for detailed study.
+
+According to Lorella Angelini, a Goddard astrophysicist now developing a comprehensive burst database, the number of recorded GRBs is approaching 6,000. Yet if one considers only bursts with measured distances, Swift's share of the total is a whopping 75 percent.
+
+An earlier NASA satellite, the Compton Gamma Ray Observatory, showed that bursts come in long and short varieties, with long bursts (those lasting longer than two seconds) outnumbering short bursts three to one. Compton also showed that bursts occur randomly and evenly over the sky. Maps of GRB distribution bear no hint of our galaxy's structure. This means that they are extremely far away -- and all the more powerful.
+
+Across the universe
+
+A key breakthrough in understanding GRBs came from the Italian-Dutch satellite Beppo-SAX, which in 1997 provided the first precise burst positions. It later discovered lingering X-ray emission -- dubbed "afterglows" -- at burst locations. Observatories on the ground quickly discovered afterglows in visible light, which provided information that confirmed the burst's enormous distances. Astronomers now regularly study afterglows across the electromagnetic spectrum.
+
+Most of the time, the hard task of measuring burst distances falls to ground-based observatories, which can target a burst's location with telescopes far larger than the Ultraviolet/Optical Telescope aboard Swift.
+
+"Getting on the afterglows quickly with large ground-based telescopes remains a key element in understanding GRBs," said Fox, whose research focuses on follow-up observations. "It's this synergy between Swift and ground observatories that has really moved the ball forward, especially for short bursts."
+
+And the farther the burst, the more important rapid ground follow-up becomes. At distances greater than about 12 billion light-years, gas clouds block ultraviolet wavelengths before they can reach Earth, and all optical light becomes shifted into infrared wavelengths only detectable by specially-equipped ground-based telescopes. Astronomers scramble to detect afterglow from new bursts as soon as they can.
+
+"Thanks to such efforts, we know Swift has seen GRBs as close as about 100 million light-years and as far away as 13 billion light-years," adds Gehrels. Put another way, Swift sees gamma-ray bursts over a span of time equivalent to about 95 percent of the universe's age.
+
+The long and the short of GRBs
+
+By the time Swift launched, mounting evidence already pointed to the deaths of massive stars as the source of most long GRBs -- a scenario that still stands. When such a star runs out of fuel, its core collapses and likely forms a black hole surrounded by a dense hot disk of gas called an accretion disk. Somehow, the black hole diverts part of the infalling matter into a pair of high-energy jets that tear through the collapsing star.
+
+The jets move so fast -- upwards of 99.9 percent the speed of light -- that collisions within them produce gamma rays. As the jet breaches the star's surface, a gamma-ray burst is born. The jet continues on, later striking gas beyond the star to produce afterglows.
+
+Short bursts, however, proved much harder to pin down. "We didn't know their most basic properties," notes Ehud Nakar, an astrophysicist at Tel Aviv University in Israel. "We knew so little we weren't even sure that short GRBs were a unique astrophysical phenomenon."
+
+It turns out they are. "Long GRBs originate from the collapse of stars just millions of years old, but the objects that give rise to some short GRBs reach ages of billions of years before exploding," Nakar adds.
+
+The emerging picture is that short GRBs arise when two compact objects -- either a pair of neutron stars or a neutron star and a black hole -- collide and merge. These objects, which are the crushed cores of exploded stars, pack more mass than the sun into volumes just a few miles across. For those bound in a binary system, Einstein's relativity seals their fate.
+
+According to Einstein, massive orbiting objects give off a type of energy called gravitational radiation. Although no one has yet detected these waves, astronomers have observed an effect predicted by this energy loss -- the slowly shrinking orbits of binary neutron stars. Over billions of years, the stellar cinders grow ever closer and finally merge in an event that unleashes titanic energies and creates a short GRB.
+
+But Nakar thinks the full picture still eludes astronomers. "So far, the data favor merging neutron stars, and that is certainly the most popular idea, but other scenarios remain possible. We still do not know the origin of short GRBs."
+
+Thanks mainly to burst identifications from Swift and the afterglow observations they make possible, scientists now have details on dozens of short bursts and their afterglows. "We're now beginning to understand the home galaxies of short GRBs," Fox said.
+
+Over the past five years, Swift has delivered a great deal of revolutionary science. But its career isn't over yet -- and with a little luck, there will be much more to come.
+
+Swift GRB highlights
+
+April 13, 2010: NASA's Swift discovers its 500th burst. GRB 100413B is a long burst in the constellation Cassiopeia.
+
+April 23, 2009: GRB 090423 in Leo holds the record for the farthest burst yet known -- 13.04 billion light-years away. "The burst is beyond the farthest confirmed galaxies and quasars, making it the most distant object we know in the universe today," Fox said. This find validates models suggesting that galaxy and star formation were well under way in the universe's first billion years and that some early stars died as bursts.
+
+March 19, 2008: GRB 080319B, in Boötes, is truly extraordinary. It produces enough light to be seen briefly with the unaided eye, cresting at visual magnitude 5.3 despite occurring 7.5 billion light-years away -- or more than halfway across the visible universe. Scientists conclude that one of its particle jets appears to have been aimed squarely at Earth.
+
+July 14, 2007: GRB 070714B explodes in Taurus. Afterglow observations indicate a distance of 7.3 billion light-years, making this one of the farthest short bursts to date.
+
+Feb. 18, 2006: GRB 060218 explodes in Aries 450 million light-years away -- in our back yard, cosmically speaking. Although faint, the burst emits detectable gamma rays for more than 40 minutes and detectable optical and X-ray emission lasts more than 10 days. The event is a hybrid, showing characteristics of both a GRB and a supernova, and leads to the best observations yet exploring connections between these phenomena.
+
+Sept. 4, 2005: At a distance of 12.77 billion light-years, GRB 050904, located in Pisces, is the farthest-known GRB at the time, the first of many such Swift records.
+
+May 9, 2005: GRB 050509B, in Coma Berenices, erupts with a flash of gamma-rays that lasts just 0.03 second. Swift turns to the burst fast enough to detect 11 X-ray photons, making this the first short burst with a detected afterglow.
+
+Dec. 17, 2004: Swift's first burst, in Crater, is eight-second-long GRB 041217.

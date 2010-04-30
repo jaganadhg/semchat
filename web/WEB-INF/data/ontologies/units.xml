@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp1 (http://www.altova.com) by Ed Shaya (U. of Maryland) -->
+<rdf:RDF xmlns:q="http://archive.astro.umd.edu/ont/quantity.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns="http://archive.astro.umd.edu/ont/units.owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ui="http://archive.astro.umd.edu/ont/unitsInstances.owl#" xml:base="http://archive.astro.umd.edu/ont/units.owl">
+	<owl:Ontology rdf:about="">
+		<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">units.owl</dc:title>
+		<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology covers classes and properties dealing with physical units. </dc:description>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2</owl:versionInfo>
+		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ed Shaya, University of Maryland</dc:creator>
+	</owl:Ontology>
+	<owl:Class rdf:ID="baseUnit">
+		<rdfs:subClassOf rdf:resource="#unit"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These form the basis set of units.owl from which all other units are derived.  The fundamental SI units would be a good set of baseUnits.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="CgsUnit">
+		<rdfs:subClassOf rdf:resource="#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="mathConstant">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#specialNumber"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MksUnit">
+		<rdfs:subClassOf rdf:resource="#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="powerOf">
+		<rdfs:subClassOf rdf:resource="#unit"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This takes a unitType object and raises it to some power.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="prefix">
+		<rdfs:subClassOf rdf:resource="#specialNumber"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The standard prefixes on units.owl (kilo, deci, centi, etc)</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="SiUnit">
+		<rdfs:subClassOf rdf:resource="#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="specialNumber">
+		<rdfs:subClassOf rdf:resource="#unit"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl#numeric"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The usual number type thing</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="unit">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unit-like Things built from baseUnits and other derived Units.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="unitless">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#unit"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="hasInverseOfSpecialNumber">
+		<rdfs:domain rdf:resource="#unit"/>
+		<rdfs:range rdf:resource="#specialNumber"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasInverseOfUnit">
+		<rdfs:domain rdf:resource="#unit"/>
+		<rdfs:range rdf:resource="#unit"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasSpecialNumber">
+		<rdfs:domain rdf:resource="#unit"/>
+		<rdfs:range rdf:resource="#specialNumber"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasUnit">
+		<rdfs:domain rdf:resource="#unit"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#unit"/>
+					<owl:Class rdf:about="#unitless"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+	</owl:ObjectProperty>
+	<owl:DatatypeProperty rdf:ID="divisor">
+		<rdfs:domain rdf:resource="#unit"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="hasExponent">
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+		<rdfs:domain rdf:resource="#powerOf"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="symbol">
+		<rdfs:domain rdf:resource="#unit"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="type">
+		<rdfs:domain rdf:resource="#unitless"/>
+	</owl:DatatypeProperty>
+	<owl:FunctionalProperty rdf:ID="factor">
+		<rdfs:domain rdf:resource="#unit"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="isNumber">
+		<rdfs:domain rdf:resource="#specialNumber"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<prefix rdf:ID="centi">
+		<isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</isNumber>
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c</symbol>
+	</prefix>
+	<prefix rdf:ID="Giga">
+		<isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0E9</isNumber>
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</symbol>
+	</prefix>
+	<prefix rdf:ID="Hecto">
+		<isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</isNumber>
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H</symbol>
+	</prefix>
+	<prefix rdf:ID="Kilo">
+		<isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</isNumber>
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</symbol>
+	</prefix>
+	<prefix rdf:ID="Mega">
+		<isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000000.0</isNumber>
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</symbol>
+	</prefix>
+	<prefix rdf:ID="micro">
+		<isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0E-6</isNumber>
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mu</symbol>
+	</prefix>
+	<prefix rdf:ID="milli">
+		<isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010</isNumber>
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m</symbol>
+	</prefix>
+	<prefix rdf:ID="nano">
+		<isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0E-9</isNumber>
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</symbol>
+	</prefix>
+	<prefix rdf:ID="Tera">
+		<isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0E12</isNumber>
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</symbol>
+	</prefix>
+	<baseUnit rdf:ID="ampere">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A</symbol>
+	</baseUnit>
+	<baseUnit rdf:ID="candella">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cd</symbol>
+	</baseUnit>
+	<baseUnit rdf:ID="gram">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g</symbol>
+	</baseUnit>
+	<baseUnit rdf:ID="kelvin">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</symbol>
+	</baseUnit>
+	<baseUnit rdf:ID="meter">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m</symbol>
+	</baseUnit>
+	<baseUnit rdf:ID="mole">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mol</symbol>
+	</baseUnit>
+	<baseUnit rdf:ID="radian">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rad</symbol>
+	</baseUnit>
+	<baseUnit rdf:ID="second">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s</symbol>
+	</baseUnit>
+	<unitless rdf:ID="unitlessFraction">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---</symbol>
+	</unitless>
+	<unitless rdf:ID="unitlessLog">
+		<symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">log</symbol>
+	</unitless>
+	<unitless rdf:ID="unitlessNaturalLog">
+		<symbol
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ln</symbol>
+	</unitless>
+	<unitless rdf:ID="unitlessNumber">
+		<symbol
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</symbol>
+	</unitless>
+	<unitless rdf:ID="unitlessNumberOf">
+		<symbol
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#</symbol>
+	</unitless>
+</rdf:RDF>

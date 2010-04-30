@@ -1,6 +1,7 @@
 package sk.hasto.semchat.application;
 
 import java.util.List;
+import java.util.UUID;
 import sk.hasto.semchat.domain.model.ChatSegment;
 import sk.hasto.semchat.domain.model.Message;
 import sk.hasto.semchat.domain.model.Similarity;
@@ -19,16 +20,10 @@ public interface ChatReadService
 
 
 	/**
-	 * @return segmenty podobne aktualne otvorenemu segmentu
-	 */
-	List<Similarity> getSegmentsSimilarToCurrent();
-
-
-	/**
 	 * @param id id segmentu
-	 * @return segment so zadanym id
+	 * @return segment so zadanym id, alebo null, ak sa segment nenajde
 	 */
-	ChatSegment getSegment(long id);
+	ChatSegment getSegment(UUID id);
 
 
 	/**
@@ -36,5 +31,10 @@ public interface ChatReadService
 	 */
 	ChatSegment getCurrentSegment();
 
+
+	/**
+	 * @return segmenty podobne aktualne otvorenemu segmentu
+	 */
+	List<Similarity> getSegmentsSimilarToCurrent();
 	
 }

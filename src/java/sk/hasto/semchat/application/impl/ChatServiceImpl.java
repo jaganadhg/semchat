@@ -1,19 +1,20 @@
 package sk.hasto.semchat.application.impl;
 
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.Set;
+import java.util.UUID;
 import org.apache.commons.lang.Validate;
 import sk.hasto.semchat.application.ChatService;
+import sk.hasto.semchat.domain.DomainEventBus;
+import sk.hasto.semchat.domain.events.MessagesUpdated;
 import sk.hasto.semchat.domain.model.ChatSegment;
 import sk.hasto.semchat.domain.model.Message;
+import sk.hasto.semchat.domain.model.OntologyAnnotation;
 import sk.hasto.semchat.domain.model.Similarity;
 import sk.hasto.semchat.domain.model.User;
-import sk.hasto.semchat.domain.services.ChatSegmenterException;
+import sk.hasto.semchat.domain.services.Annotator;
 import sk.hasto.semchat.domain.services.repositories.ChatSegmentRepository;
 import sk.hasto.semchat.domain.services.repositories.MessageRepository;
-import sk.hasto.semchat.domain.services.OntologyGenerator;
-import sk.hasto.semchat.domain.services.ChatSegmenter;
 
 /**
  * Implementuje sluzby chatu.
@@ -21,61 +22,66 @@ import sk.hasto.semchat.domain.services.ChatSegmenter;
  */
 public class ChatServiceImpl implements ChatService
 {
-	/** pocet zobrazovanych sprav */
-	private static final int MESSAGES_COUNT = 30;
+	/** minimalna podobnost pri hladani podobnych segmentov */
+	private final float minSimilarity;
 
-	/** minimalne podobnost pri hladani podobnych segmentov */
-	private static final float MIN_SIMILARITY = .0f;
+	/** pocet zobrazenych sprav v chate */
+	private final int messageCount;
 
-	private static final Logger logger = Logger.getLogger(ChatServiceImpl.class.getName());
-	private final ChatSegmenter chatSegmenter;
-	private final OntologyGenerator ontologyGenerator;
-	private final ChatSegmentRepository segmentRepository;
+	private final Annotator annotator;
 	private final MessageRepository messageRepository;
+	private final ChatSegmentRepository segmentRepository;
 
 
-	public ChatServiceImpl(ChatSegmenter chatSegmenter, OntologyGenerator ontologyGenerator,
-			ChatSegmentRepository segmentRepository, MessageRepository messageRepository)
+	public ChatServiceImpl(Annotator annotator, MessageRepository messageRepository,
+						   ChatSegmentRepository segmentRepository, float minSimilarity,
+						   int messageCount)
 	{
-		Validate.notNull(chatSegmenter, "Chat segmenter must not be null.");
-		Validate.notNull(ontologyGenerator, "Ontology generator must not be null.");
-		Validate.notNull(segmentRepository, "Segment repository must not be null.");
-		Validate.notNull(messageRepository, "Message repository must not be null.");
+		Validate.notNull(annotator, "Annotator is null.");
+		Validate.notNull(messageRepository, "Message repository is null.");
+		Validate.notNull(segmentRepository, "Segment repository is null.");
+		Validate.isTrue(messageCount > 0, "Message count must be greater than 0.");
 
-		this.chatSegmenter = chatSegmenter;
-		this.ontologyGenerator = ontologyGenerator;
-		this.segmentRepository = segmentRepository;
+		this.annotator = annotator;
 		this.messageRepository = messageRepository;
+		this.segmentRepository = segmentRepository;
+		this.minSimilarity = minSimilarity;
+		this.messageCount = messageCount;
 	}
 
 
 	public void addMessage(String text, User user)
 	{
-		Validate.notEmpty(text, "Text must not be null or empty.");
-		Validate.notNull(user, "User must not be null.");
+		Validate.notEmpty(text, "Text is null or empty.");
+		Validate.notNull(user, "User is null.");
 
-		Message message = new Message(text, user);
+		Set<OntologyAnnotation> annotations = annotator.annotate(text);
+		Message message = new Message(text, user, annotations);
 		messageRepository.store(message);
-		// Events.raise(new MessageAddedEvent(message));
-		updateSegments(message);
+		DomainEventBus.publish(new MessagesUpdated());
+
+		ChatSegment currentSegment = segmentRepository.getLast();
+		if (currentSegment == null) {
+			currentSegment = new ChatSegment();
+		}
+		currentSegment.addMessage(message);
 	}
 
 
 	public List<Message> getLastMessages()
 	{
-		return messageRepository.getLast(MESSAGES_COUNT);
+		return messageRepository.getLast(messageCount);
 	}
 
 
 	public List<Similarity> getSegmentsSimilarToCurrent()
 	{
-		ChatSegment lastSegment = segmentRepository.getLast();
-		logger.info("Current segment: " + lastSegment);
-		return segmentRepository.getSimilarSegments(lastSegment, MIN_SIMILARITY);
+		ChatSegment current = segmentRepository.getLast();
+		return segmentRepository.findSimilarSegments(current, minSimilarity);
 	}
 
 
-	public ChatSegment getSegment(long id)
+	public ChatSegment getSegment(UUID id)
 	{
 		return segmentRepository.getById(id);
 	}
@@ -84,32 +90,6 @@ public class ChatServiceImpl implements ChatService
 	public ChatSegment getCurrentSegment()
 	{
 		return segmentRepository.getLast();
-	}
-
-
-	/**
-	 * Updatne segmenty na zaklade prijatej spravy.
-	 * @param message
-	 */
-	private void updateSegments(Message message)
-	{
-		try {
-			ChatSegment lastSegment = segmentRepository.getLast();
-
-			logger.info("Last segment: " + lastSegment);
-
-			ChatSegment newSegment = chatSegmenter.determineSegment(message, lastSegment);
-			newSegment.addMessage(message);
-			ontologyGenerator.generate(newSegment);
-
-			logger.info("New segment: " + newSegment);
-
-			segmentRepository.store(newSegment);
-		}
-
-		catch (ChatSegmenterException ex) {
-			logger.log(Level.SEVERE, "Segment couldn't be determined.", ex);
-		}
 	}
 
 }

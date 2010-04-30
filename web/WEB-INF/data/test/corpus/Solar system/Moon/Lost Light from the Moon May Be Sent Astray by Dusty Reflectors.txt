@@ -1,0 +1,37 @@
+Lost Light from the Moon May Be Sent Astray by Dusty Reflectors
+
+ScienceDaily (Apr. 18, 2010) — Light bounced off reflectors on the Moon is fainter than expected and mysteriously dims even more whenever the Moon is full. Astronomers think dust is a likely culprit, they report in a forthcoming issue of the journal Icarus.
+
+"Near full moon, the strength of the returning light decreases by a factor of ten," said first author Tom Murphy, associate professor of physics at the University of California, San Diego who leads an effort to precisely measure the distance from earth to moon by timing the reflections of pulses of laser light. "Something happens on the surface of the Moon to destroy the performance of the reflectors at full moon."
+
+Only a fraction of the light Murphy's team sends to the Moon from a telescope in New Mexico returns to the observatory. Earth's atmosphere scatters the outgoing beam so that it spreads over two kilometers of the surface of the Moon. Most of the laser light misses its target, which is about the size of a suitcase. And the reflectors diffract returning light so that it spreads over 15 kilometers on earth.
+
+The team only expects to recapture one in 100 million billion particles of light, or photons. But their instrument detects only a tenth as much light returns most nights. And when the Moon is full the results are ten times worse.
+
+They aim for polished blocks of glass, about one and half inches in diameter, called corner cube prisms that Apollo astronauts left behind 40 years ago.
+
+For optimum performance, the whole cube must be the same temperature. "It doesn't take much, just a few degrees, to significantly affect performance," Murphy said. NASA engineers took pains to minimize differences in temperatures across the prisms, which rest in arrays tilted toward earth. Individual prisms sit in recessed pockets so that they are shielded from direct light when the sun is low on the Moon's horizon. But when the full face of the Moon appears illuminated from earth, the sun is directly above the arrays. "At full moon, the sun is coming straight down the pipe into these recessed pockets," Murphy said.
+
+The cubes are clear glass without any sort of coating. Their reflective properties derive from the shape of their polished facets. NASA engineers chose the design, rather that one with a silvered back like an ordinary mirror, for precision. Uneven heating of the prisms, which might occur with absorption by a coating, would bend the shape of the light pulses they return, interfering with the accuracy of measurements.
+
+Murphy thinks the cubes are heating unevenly at full moon and that a likely cause is dust. "Dust is dark," he said. "It absorbs solar light and would warm the cube prism on the front face."
+
+Light travels faster through warmer glass. Although all paths through the cube prisms are the same length, photons that strike the edge of the reflector will stay near the surface, and those that strike the center will pass deeper into the cube before hitting a reflective surface. If the surface is warmer than the deeper parts of the cube, light striking the edges of the prism will re-emerge sooner than light striking the center, distorting the shape of the reflected laser pulses. "Outgoing light is deformed. It's spreading," Murphy said. "All you have to do is make a thermal gradient and you get the problem."
+
+The Moon has no atmosphere, and no wind, but electrostatic forces can move dust around. A constant rain of micrometeorites might puff dust onto the surface. Larger impacts that eject material from the surface across a greater distance could also contribute to an accretion of moon crud. Deposits from outgassing of the Teflon rings that hold each prism in place might also have accumulated on the back side of the prisms, the authors say.
+
+Sorting out which effect might play a role will be difficult. Murphy recently returned from a trip to Italy, where a chamber built to simulate lunar conditions may help sort through the possible explanations.
+
+"We think we have a thermal problem at full moon, plus optical loss at all phases of the Moon," Murphy said. Dust on the front surface of the reflectors could account for both observations.
+
+If sunlight-heated dust is really to blame, the effect should vanish during a lunar eclipse. That is, light should bounce back while the Moon passes through Earth's shadow, then dim again as sunlight hits the arrays.
+
+"Measurements during an eclipse -- there are just a few -- look fine. When you remove the solar flux, the reflectors recover quickly, on a time scale of about half an hour," Murphy said.
+
+The problem may be getting worse. The McDonald Observatory was able to run similar experiments at full moon between 1973 and 1976. But between 1979 and 1984, they had "a bite taken out of their data," during full moons, Murphy said. "Ours is deeper."
+
+So far, rotten weather has prevented the project from operating during a lunar eclipse. The next opportunity will be on the night of December 21, 2010. The team plans to be watching.
+
+Co-authors include E.L. Michelsen and R.L. Samad of UCSD, E.G. Adelberger and H.E. Swanson of the University of Washington, J.B.R. Battat of MIT, C.D. Hoyle of Humboldt State University in Arcata, Calif., R.J McMillan of Apache Point Observatory in Sunspot, N.M., and C.W. Stubbs of Harvard University.
+
+The National Science Foundation and NASA fund the APOLLO project.

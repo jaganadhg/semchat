@@ -19,24 +19,12 @@
         <servlet-class>sk.hasto.semchat.presentation.servlets.LoginServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>logout-servlet</servlet-name>
-        <servlet-class>sk.hasto.semchat.presentation.servlets.LogoutServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>index-servlet</servlet-name>
-        <servlet-class>sk.hasto.semchat.presentation.servlets.IndexServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>segment-servlet</servlet-name>
-        <servlet-class>sk.hasto.semchat.presentation.servlets.SegmentServlet</servlet-class>
+        <servlet-name>chat-servlet</servlet-name>
+        <servlet-class>sk.hasto.semchat.presentation.servlets.ChatServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>dwr-invoker</servlet-name>
         <url-pattern>/dwr/*</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>logout-servlet</servlet-name>
-        <url-pattern>/logout.do</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>login-servlet</servlet-name>
@@ -44,12 +32,12 @@
         <url-pattern>/login.do</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>index-servlet</servlet-name>
+        <servlet-name>chat-servlet</servlet-name>
+        <url-pattern>/segments-info.html</url-pattern>
         <url-pattern>/index.html</url-pattern>
+        <url-pattern>/messages.html</url-pattern>
+        <url-pattern>/logout.do</url-pattern>
         <url-pattern>/send.do</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>segment-servlet</servlet-name>
         <url-pattern>/segment.html</url-pattern>
     </servlet-mapping>
     <session-config>

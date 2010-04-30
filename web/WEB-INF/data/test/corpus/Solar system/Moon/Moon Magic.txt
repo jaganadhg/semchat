@@ -1,0 +1,17 @@
+Moon Magic: New Tool To Visualize Past, Future Lunar Eclipses
+
+ScienceDaily (June 10, 2009) — Lunar eclipses are well-documented throughout human history. The rare and breathtaking phenomena, which occur when the moon passes into the Earth’s shadow and seemingly changes shape, color, or disappears from the night sky completely, caught the attention of poets, farmers, leaders, and scientists alike. 
+
+Researchers at Rensselaer Polytechnic Institute have developed a new method for using computer graphics to simulate and render an accurate visualization of a lunar eclipse. The model uses celestial geometry of the sun, Earth, and moon, along with data for the Earth’s atmosphere and the moon’s peculiar optical properties to create picture-perfect images of lunar eclipses.
+
+The computer-generated images, which are virtually indistinguishable from actual photos of eclipses, offer a chance to look back into history at famous eclipses, or peek at future eclipses scheduled to occur in the coming years and decades. The model can also be configured to show how the eclipse would appear from any geographical perspective on Earth — the same eclipse would look different depending if the viewer was in New York, Seattle, or Rome. 
+
+“Other researchers have rendered the night sky, the moon, and sunsets, but this is the first time anyone has rendered lunar eclipses,” said Barbara Cutler, assistant professor of computer science at Rensselaer, who supervised the study. “Our models may help with investigations into historical atmospheric phenomena, and they could also be of interest to artists looking to add this special effect to their toolbox.”
+
+Graduate student Theodore C. Yapo presented the study, titled “Rendering Lunar Eclipses,” in late May at the Graphics Interface 2009 conference. 
+
+The appearance of lunar eclipses can vary considerably, ranging from nearly invisible jet black to deep red, rust, to bright copper-red or orange. The appearance depends on several different factors, including how sunlight is refracted and scattered in the Earth’s atmosphere. Yapo and Cutler combined and configured models for sunlight, the solar system, as well as the different layers and different effects of the Earth’s atmosphere, to develop their lunar eclipse models.
+
+For the study, Yapo and Cutler compared digital photos of the Feb. 21, 2008, total lunar eclipse with computer-rendered models of the same eclipse. The rendered images were nearly indistinguishable from the photos.
+
+Another model they created was a rendering of the expected 2010 lunar eclipse. Yapo said he looks forward to taking photographs of the event and comparing them to the renderings. One potential hiccup, he said, is the April eruption of Mt. Redoubt in Alaska – volcanic dust in the Earth’s stratosphere can make a lunar eclipse noticeably darker and more brown. Yapo and Cutler’s models can account for this dust, but they performed their simulation prior to the eruption, and assumed a low-dust atmosphere.

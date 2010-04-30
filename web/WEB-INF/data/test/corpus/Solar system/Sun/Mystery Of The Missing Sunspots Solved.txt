@@ -1,0 +1,18 @@
+Mystery Of The Missing Sunspots Solved?
+
+ScienceDaily (June 19, 2009) — The sun is in the pits of a century-class solar minimum, and sunspots have been puzzlingly scarce for more than two years. Now, for the first time, solar physicists might understand why.
+
+At an American Astronomical Society press conference in Boulder, Colorado, researchers announced that a jet stream deep inside the sun is migrating slower than usual through the star's interior, giving rise to the current lack of sunspots.
+Rachel Howe and Frank Hill of the National Solar Observatory (NSO) in Tucson, Arizona, used a technique called helioseismology to detect and track the jet stream down to depths of 7,000 km below the surface of the sun. The sun generates new jet streams near its poles every 11 years, they explained. The streams migrate slowly from the poles to the equator and when a jet stream reaches the critical latitude of 22 degrees, new-cycle sunspots begin to appear.
+Howe and Hill found that the stream associated with the next solar cycle has moved sluggishly, taking three years to cover a 10 degree range in latitude compared to only two years for the previous solar cycle.
+The jet stream is now, finally, reaching the critical latitude, heralding a return of solar activity in the months and years ahead.
+"It is exciting to see", says Hill, "that just as this sluggish stream reaches the usual active latitude of 22 degrees, a year late, we finally begin to see new groups of sunspots emerging."
+The current solar minimum has been so long and deep, it prompted some scientists to speculate that the sun might enter a long period with no sunspot activity at all, akin to the Maunder Minimum of the 17th century. This new result dispells those concerns. The sun's internal magnetic dynamo is still operating, and the sunspot cycle is not "broken."
+Because it flows beneath the surface of the sun, the jet stream is not directly visible. Hill and Howe tracked its hidden motions via helioseismology. Shifting masses inside the sun send pressure waves rippling through the stellar interior. So-called "p modes" (p for pressure) bounce around the interior and cause the sun to ring like an enormous bell. By studying the vibrations of the sun's surface, it is possible to figure out what is happening inside. Similar techniques are used by geologists to map the interior of our planet.
+In this case, researchers combined data from GONG and SOHO. GONG, short for "Global Oscillation Network Group," is an NSO-led network of telescopes that measures solar vibrations from various locations around Earth. SOHO, the Solar and Heliospheric Observatory, makes similar measurements from space.
+"This is an important discovery," says Dean Pesnell of NASA's Goddard Space Flight Center. "It shows how flows inside the sun are tied to the creation of sunspots and how jet streams can affect the timing of the solar cycle."
+There is, however, much more to learn.
+"We still don't understand exactly how jet streams trigger sunspot production," says Pesnell. "Nor do we fully understand how the jet streams themselves are generated."
+To solve these mysteries, and others, NASA plans to launch the Solar Dynamics Observatory (SDO) later this year. SDO is equipped with sophisticated helioseismology sensors that will allow it to probe the solar interior better than ever before.
+"The Helioseismic and Magnetic Imager (HMI) on SDO will improve our understanding of these jet streams and other internal flows by providing full disk images at ever-increasing depths in the sun," says Pesnell.
+Continued tracking and study of solar jet streams could help researchers do something unprecedented--accurately predict the unfolding of future solar cycles.

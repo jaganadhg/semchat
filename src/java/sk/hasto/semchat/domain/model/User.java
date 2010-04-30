@@ -18,7 +18,7 @@ public final class User
 	 */
 	public User(String name)
 	{
-		Validate.notEmpty(name, "Name must not be null or empty.");
+		Validate.notEmpty(name, "Name is null or empty.");
 		this.name = name;
 	}
 
@@ -49,9 +49,7 @@ public final class User
 	@Override
 	public int hashCode()
 	{
-		int hash = 5;
-		hash = 61 * hash + name.hashCode();
-		return hash;
+		return name.hashCode();
 	}
 
 }

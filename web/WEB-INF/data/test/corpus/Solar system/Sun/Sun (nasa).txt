@@ -1,0 +1,205 @@
+Sun
+ 
+The sun is one of over 100 billion stars in the Milky Way Galaxy. It is about 25,000 light-years from the center of the galaxy, and it revolves around the galactic center once about every 250 million years.
+
+The sun is one of over 100 billion stars in the Milky Way Galaxy. It is about 25,000 light-years from the center of the galaxy, and it revolves around the galactic center once about every 250 million years. One light-year, the distance that light travels in a vacuum in a year, equals about 5.88 trillion miles (9.46 trillion kilometers). Image credit: NASA/Transition Region & Coronal Explorer
+The Sun is a huge, glowing ball at the center of our solar system. The sun provides light, heat, and other energy to Earth. The sun is made up entirely of gas. Most of it is a type of gas that is sensitive to magnetism. This sensitivity makes this type of gas so special that scientists sometimes give it a special name: plasma. Nine planets and their moons, tens of thousands of asteroids, and trillions of comets revolve around the sun. The sun and all these objects are in the solar system. Earth travels around the sun at an average distance of about 92,960,000 miles (149,600,000 kilometers) from it.
+
+The sun's radius (distance from its center to its surface) is about 432,000 miles (695,500 kilometers), approximately 109 times Earth's radius. The following example may help you picture the relative sizes of the sun and Earth and the distance between them: Suppose the radius of Earth were the width of an ordinary paper clip. The radius of the sun would be roughly the height of a desk, and the sun would be about 100 paces from Earth.
+
+The part of the sun that we see has a temperature of about 5500 degrees C (10,000 degrees F). Astronomers measure star temperatures in a metric unit called the Kelvin (abbreviated K). One Kelvin equals exactly 1 Celsius degree (1.8 Fahrenheit degree), but the Kelvin and Celsius scales begin at different points. The Kelvin scale starts at absolute zero, which is -273.15 degrees C (- 459.67 degrees F). Thus, the temperature of the solar surface is about 5800 K. Temperatures in the sun's core reach over 15 million K.
+
+The sun is a star with a diameter of approximately 864,000 miles (1,390,000 kilometers), about 109 times the diameter of Earth. The largest stars have a diameter about 1,000 times that of the sun.
+
+The sun is a star with a diameter of approximately 864,000 miles (1,390,000 kilometers), about 109 times the diameter of Earth. The largest stars have a diameter about 1,000 times that of the sun. Image credit: NASA/NSSDC
+The energy of the sun comes from nuclear fusion reactions that occur deep inside the sun's core. In a fusion reaction, two atomic nuclei join together, creating a new nucleus. Fusion produces energy by converting nuclear matter into energy.
+
+The sun, like Earth, is magnetic. Scientists describe the magnetism of an object in terms of a magnetic field. This is a region that includes all the space occupied by the object and much of the surrounding space. Physicists define a magnetic field as the region in which a magnetic force could be detected -- as with a compass. Physicists describe how magnetic an object is in terms of field strength. This is a measure of the force that the field would exert on a magnetic object, such as a compass needle. The typical strength of the sun's field is only about twice that of Earth's field.
+
+But the sun's magnetic field becomes highly concentrated in small regions, with strengths up to 3,000 times as great as the typical strength. These regions shape solar matter to create a variety of features on the sun's surface and in its atmosphere, the part that we can see. These features range from relatively cool, dark structures known as sunspots to spectacular eruptions called flares and coronal mass ejections.
+
+Flares are the most violent eruptions in the solar system. Coronal mass ejections, though less violent than flares, involve a tremendous mass (amount of matter). A single ejection can spew approximately 20 billion tons (18 billion metric tons) of matter into space. A cube of lead 3/4 mile (1.2 kilometers) on a side would have about the same mass.
+
+The sun was born about 4.6 billion years ago. It has enough nuclear fuel to remain much as it is for another 5 billion years. Then it will grow to become a type of star called a red giant. Later in the sun's life, it will cast off its outer layers. The remaining core will collapse to become an object called a white dwarf, and will slowly fade. The sun will enter its final phase as a faint, cool object sometimes called a black dwarf.
+
+This article discusses Sun (Characteristics of the sun) (Zones of the sun) (Solar activity) (Evolution of the sun) (Studying the sun) (History of modern solar study).
+
+Characteristics of the sun
+
+Mass and density
+
+The sun has 99.8 percent of the mass in the solar system. The sun's mass is roughly 2 X 1027 tons. This number would be written out as a 2 followed by 27 zeros. The sun is 333,000 times as massive as Earth. The sun's average density is about 90 pounds per cubic foot (1.4 grams per cubic centimeter). This is about 1.4 times the density of water and less than one-third of Earth's average density.
+
+Composition
+
+The sun, like most other stars, is made up mostly of atoms of the chemical element hydrogen. The second most plentiful element in the sun is helium, and almost all the remaining matter consists of atoms of seven other elements. For every 1 million atoms of hydrogen in the entire sun, there are 98,000 atoms of helium, 850 of oxygen, 360 of carbon, 120 of neon, 110 of nitrogen, 40 of magnesium, 35 of iron, and 35 of silicon. So about 94 percent of the atoms are hydrogen, and 0.1 percent are elements other than hydrogen and helium.
+
+But hydrogen is the lightest of all elements, and so it accounts for only about 72 percent of the mass. Helium makes up around 26 percent.
+
+The inside of the sun and most of its atmosphere consist of plasma. Plasma is basically a gas whose temperature has been raised to such a high level that it becomes sensitive to magnetism. Scientists sometimes emphasize the difference in behavior between plasma and other gas. They say that plasma is a fourth state of matter, alongside solid, liquid, and gas. But in general, scientists make the distinction between plasma and gas only when technically necessary.
+
+The essential difference between plasma and other gas is an effect of the temperature increase: This increase has made the gas atoms come apart. What is left -- the plasma -- consists of electrically charged atoms called ions and electrically charged particles called electrons that move about independently.
+
+An electrically neutral atom contains one or more electrons that act as though they form a shell or shells around its central region, its nucleus. Each electron carries a single unit of negative electric charge. Deep inside the atom is the nucleus, which has almost all the atom's mass. The simplest nucleus, that of the most common form of hydrogen, consists of a single particle known as a proton. A proton carries a single unit of positive electric charge. All other nuclei have one or more protons and one or more neutrons. A neutron carries no net charge, and so every nucleus is electrically positive. But a neutral atom has as many electrons as protons. The net electric charge of a neutral atom is therefore zero.
+
+An atom or molecule that comes apart by losing one or more electrons has a positive charge and is called an ion or, sometimes, a positive ion. Most of the atoms inside the sun are positive ions of the most common form of hydrogen. Thus, most of the sun consists of single protons and independent electrons.
+
+The sun is much larger than Earth. From the sun's center to its surface, it is about 109 times the radius of Earth. Some of the streams of gas rising from the solar surface are larger than Earth.
+
+The sun is much larger than Earth. From the sun's center to its surface, it is about 109 times the radius of Earth. Some of the streams of gas rising from the solar surface are larger than Earth. Image credit: World Book illustration by Roberta Polfus
+The relative amounts of plasma and other gas in a given part of the solar atmosphere depends on the temperature. As the temperature increases, more and more atoms become ionized, and the atoms that are ionized lose more and more electrons. The highest part of the solar atmosphere, called the corona, is strongly ionized. The corona's temperature is usually about 3 million to 5 million K, more than enough to strip away over half the 26 electrons in its iron atoms.
+
+How much of a gas is made up of single atoms and how much of molecules also depends upon its temperature. If the gas is relatively hot, the atoms will move about independently. But if the gas is relatively cool, its atoms may bond (combine chemically), creating molecules. Much of the sun's surface consists of a gas of single atoms. But sunspots are so cool that some of their atoms can bond to form molecules.
+
+The remainder of this article follows the general practice of scientists by referring to both plasma and other gas simply as gas.
+
+Energy output
+
+Most of the energy emitted (sent out) by the sun is visible light and a related form of radiation known as infrared rays, which we feel as heat. Visible light and infrared rays are two forms of electromagnetic radiation. The sun also emits particle radiation, made up mostly of protons and electrons.
+
+Electromagnetic radiation
+
+Electromagnetic radiation consists of electrical and magnetic energy. The radiation can be thought of as waves of energy or as particle-like "packets" of energy called photons.
+
+Visible light, infrared rays, and other forms of electromagnetic radiation differ in their energy. Six bands of energy span the entire spectrum (range) of electromagnetic energy. From the least energetic to the most energetic, they are: radio waves, infrared rays, visible light, ultraviolet rays, X rays, and gamma rays. Microwaves, which are high-energy radio waves, are sometimes considered to be a separate band. The sun emits radiation of each type in the spectrum.
+
+The amount of energy in electromagnetic waves is directly related to their wavelength, the distance between successive wave crests. The more energetic the radiation, the shorter the wavelength. For example, gamma rays have shorter wavelengths than radio waves. The energy in an individual photon is related to the position of the photon in the spectrum. For instance, a gamma ray photon has more energy than a photon of radio energy.
+
+All forms of electromagnetic radiation travel through space at the same speed, commonly known as the speed of light: 186,282 miles (299,792 kilometers) per second. At this rate, a photon emitted by the sun takes only about 8 minutes to reach Earth.
+
+The amount of electromagnetic radiation from the sun that reaches the top of Earth's atmosphere is known as the solar constant. This amount is about 1,370 watts per square meter. But only about 40 percent of the energy in this radiation reaches Earth's surface. The atmosphere blocks some of the visible and infrared radiation, almost all the ultraviolet rays, and all the X rays and gamma rays. But nearly all the radio energy reaches Earth's surface.
+
+Particle radiation
+
+Protons and electrons flow continually outward from the sun in all directions as the solar wind. These particles come close to Earth, but Earth's magnetic field prevents them from reaching the surface.
+
+However, more intense concentrations of particles from flares and coronal mass ejections on the sun reach Earth's atmosphere. These particles are known as solar cosmic rays. Most of them are protons, but they also include heavier nuclei as well as electrons. They are extremely energetic. As a result, they can be hazardous to astronauts in orbit or to orbiting satellites.
+
+The cosmic rays cannot reach Earth's surface. When they collide with atoms at the top of the atmosphere, they change into a shower of less energetic particles. But, because the solar events are so energetic, they can create geomagnetic storms, major disturbances in Earth's magnetic field. The storms, in turn, can disrupt electrical equipment on Earth's surface. For example, they can overload power lines, leading to blackouts.
+
+Color
+
+In the visible-light band of the electromagnetic spectrum are all the colors of the rainbow. Sunlight consists of all these colors. Most of the sun's radiation comes to us in the yellow-green part of the visible spectrum. However, sunlight is white. When the atmosphere acts as a filter for the setting sun, the sun may look yellow or orange.
+
+You can view the colors in sunlight by using a prism to separate and spread them out. Red light, which is produced by the radiation with the least energy per photon -- and the longest waves -- will be at one end of the spectrum. The red light will gradually shade into orange light, which, in turn, will shade into yellow light. Next to yellow will be green, and then will come blue. In some lists of the colors of the rainbow, indigo comes after blue. The last color will be violet, produced by the radiation with the most energy per photon -- and the shortest waves. Such color listings are not meant to indicate that sunlight has only six or seven colors. Each shading is itself a color. Nature produces many more colors than people have ever named.
+
+Rotation
+
+The sun makes a complete rotation in about a month. But because the sun is a gaseous body rather than a solid one, different parts of the sun rotate at different rates. Gas near the sun's equator takes about 25 days to rotate once, while gas at higher latitudes may take slightly more than 28 days. The sun's axis of rotation is tilted by a few degrees from the axis of Earth's orbit. Thus, either the sun's north geographic pole or its south geographic pole is usually visible from Earth.
+
+Vibration
+
+The sun vibrates like a bell that is continually struck. But the sun produces more than 10 million individual "tones" at the same time. The vibrations of the solar gas are mechanically similar to the vibrations of air -- also a gas -- that we know as sound waves. Astronomers therefore refer to the solar waves as sound waves, though the vibrations are much too slow for us to hear. The fastest solar vibrations have a period of about 2 minutes. A vibration's period is the amount of time taken for a complete cycle of vibration -- one back-and-forth movement of the vibrating object. The slowest vibration that a human being can hear has a period of about 1/20 of a second.
+
+Most of the sun's sound waves originate in convection cells -- large concentrations, or clumps, of gas beneath the surface. These cells carry energy to the surface by rising, just as water boiling in a pan rises to the surface. The word convection refers to the boiling motions of the cells. As the cells rise, they cool. They then fall back down to the level at which the upward motion started. As the cells fall, they vibrate violently. The vibrations cause sound waves to move out from the cells.
+
+Because the sun's atmosphere has so little mass, sound waves cannot travel through it. Therefore, when a wave reaches the surface, it turns back inward. As a result, a bit of the surface bobs up and down. As the wave travels inward, it begins to curve back toward the surface. The amount by which it curves depends on the density of the gas through which it travels and other factors. Eventually, the wave reaches the surface and turns inward again. It continues to travel until it loses all its energy to the surrounding gas.
+
+The waves that travel downward the greatest distance have the longest periods. Some of these waves approach the sun's core and have periods of several hours.
+
+Magnetic field
+
+Some of the time, the sun's magnetic field has a simple overall shape. At other times, the field is extremely complex. The simple field resembles the field that would be present if the sun's axis of rotation were a huge bar magnet. You can see the shape of a bar magnet's field by conducting an experiment with iron filings. Place a sheet of paper on a bar magnet and then sprinkle iron filings on the paper. The filings will form a pattern that reveals the shape of the magnetic field. Many of the filings will gather in D-shaped loops that connect the ends of the magnet.
+
+Physicists define the field in terms of imaginary lines that give rise to the loops of filings. These lines are called field lines, flux lines, or lines of force. Scientists assign these lines a direction, and the bar magnet is said to have a magnetic north pole at one end and a magnetic south pole at the other end. The field lines go out of the magnet from the north pole, loop around, and return to the magnet at the south pole.
+
+The cause of the sun's magnetic field is, in part, the movement of the convection cells. Any electrically charged object can create a magnetic field simply by moving. The convection cells, which are composed of positive ions and electrons, circulate in a way that helps create the solar field.
+
+When the sun's magnetic field becomes complex, field lines resemble a kinked, twisted garden hose. The field develops kinks and twists for two reasons: (1) The sun rotates more rapidly at the equator than at higher latitudes, and (2) the inner parts of the sun rotate more rapidly than the surface. The differences in rotational speed stretch field lines in an easterly direction. Eventually, the lines become so distorted that the kinks and twists develop.
+
+In some areas, the field is thousands of times stronger than the overall magnetic field. In these places, clusters of field lines break through the surface, creating loops in the solar atmosphere. At one end of the loop, the breakthrough point is a magnetic north pole. At this point, the direction of the field lines is upward -- that is, away from the interior. At the other end of the loop, the breakthrough point is a magnetic south pole, and the lines point downward. A sunspot forms at each point. The field lines guide ions and electrons into the space above the sunspots, producing gigantic loops of gas.
+
+The number of sunspots on the sun depends on the amount of distortion in the field. The change in this number, from a minimum to a maximum and back to a minimum, is known as the sunspot cycle. The average period of the sunspot cycle is about 11 years.
+
+At the end of a sunspot cycle, the magnetic field quickly reverses its polarity and loses most of its distortion. Suppose the sun's magnetic north pole and its geographic north pole were at the same place at the start of a given cycle. At the beginning of the next cycle, the magnetic north pole would be at the same place as the geographic south pole. A change of polarity from one orientation to the other and back again equals the periods of two successive sunspot cycles and is therefore about 22 years.
+
+Nuclear fusion
+
+Nuclear fusion can occur in the core of the sun because the core is tremendously hot and dense. Because nuclei have a positive charge, they tend to repel one another. But the core's temperature and density are high enough to force nuclei together.
+
+The most common fusion process in the sun is called the proton-proton chain. This process begins when nuclei of the simplest form of hydrogen -- single protons -- are forced together one at a time. First, a nucleus with two particles forms, then a nucleus with three particles, and finally a nucleus with four particles. The process also produces an electrically neutral particle called a neutrino.
+
+The final nucleus consists of two protons and two neutrons, a nucleus of the most common form of helium. The mass of this nucleus is slightly less than the mass of the four protons from which it forms. The lost mass is converted into energy. The amount of energy can be calculated from the German-born physicist Albert Einstein's famous equation E = mc-squared (E=mc2). In this equation, the symbol E represents the energy, m the mass that is covered, and c-squared (c2) the speed of light multiplied by itself.
+
+Comparison with other stars
+
+Fewer than 5 percent of the stars in the Milky Way are brighter or more massive than the sun. But some stars are more than 100,000 times as bright as the sun, and some have as much as 100 times the sun's mass. At the other extreme, some stars are less than 1/10,000 as bright as the sun, and a star can have as little as 7/100 of the sun's mass. There are hotter stars, which are much bluer than the sun; and cooler stars, which are much redder.
+
+The sun is a relatively young star, a member of a generation of stars known as Population I stars. An older generation of stars is called Population II. There may have existed an earlier generation, called Population III. However, no members of this generation are known. The remainder of this section refers to three generations of stars.
+
+The three generations differ in their content of chemical elements heavier than helium. First-generation stars have the lowest percentage of these elements, and second-generation stars have a higher percentage. The sun and other third-generation stars have the highest percentage of elements heavier than helium.
+
+The percentages differ in this way because first- and second-generation stars that "died" passed along their heavier elements. Many of these stars produced successively heavier elements by means of fusion in and near their cores. The heaviest elements were created when the most massive stars exploded as supernovae. Supernovae enrich the clouds of gas and dust from which other stars form. Other sources of enrichment are planetary nebulae, the cast-off outer layers of less massive stars.
+
+Zones of the sun
+
+The sun and its atmosphere consist of several zones or layers. From the inside out, the solar interior consists of the core, the radiative zone, and the convection zone. The solar atmosphere is made up of the photosphere, the chromosphere, a transition region, and the corona. Beyond the corona is the solar wind, which is actually an outward flow of coronal gas.
+
+Because astronomers cannot see inside the sun, they have learned about the solar interior indirectly. Part of their knowledge is based on the observed properties of the sun as a whole. Some of it is based on calculations that produce phenomena in the observable zones.
+
+Core
+
+The core extends from the center of the sun about one-fourth of the way to the surface. The core has about 2 percent of the sun's volume, but it contains almost half the sun's mass. Its maximum temperature is over 15 million Kelvins. Its density reaches 150 grams per cubic centimeter, nearly 15 times the density of lead.
+
+The high temperature and density of the core result in immense pressure, about 200 billion times Earth's atmospheric pressure at sea level. The core's pressure supports all the overlying gas, preventing the sun from collapsing.
+
+Almost all the fusion in the sun takes place in the core. Like the rest of the sun, the core's initial composition, by mass, was 72 percent hydrogen, 26 percent helium, and 2 percent heavier elements. Nuclear fusion has gradually changed the core's contents. Hydrogen now makes up about 35 percent of the mass in the center of the core and 65 percent at its outer boundary.
+
+Radiative zone
+
+Surrounding the core is a huge spherical shell known as the radiative zone. The outer boundary of this zone is 70 percent of the way to the solar surface. The radiative zone makes up 32 percent of the sun's volume and 48 percent of its mass.
+
+The radiative zone gets its name from the fact that energy travels through it mainly by radiation. Photons emerging from the core pass through stable layers of gas. But they scatter from the dense particles of gas so often that an individual photon may take 1,000,000 years to pass through the zone.
+
+At the bottom of the radiative zone, the density is 22 grams per cubic centimeter -- about twice that of lead -- and the temperature is 8 million K. At the top of the zone, the density is 0.2 gram per cubic centimeter, and the temperature is 2 million K.
+
+The composition of the radiative zone has remained much the same since the sun's birth. The percentages of the elements are nearly the same from the top of the radiative zone to the solar surface.
+
+Convection zone
+
+The highest level of the solar interior, the convection zone, extends from the radiative zone to the sun's surface. This zone consists of the "boiling" convection cells. It makes up about 66 percent of the sun's volume but only slightly more than 2 percent of its mass. At the top of the zone, the density is near zero, and the temperature is about 5800 K. The convection cells "boil" to the surface because photons that spread outward from the radiative zone heat them.
+
+Astronomers have observed two main kinds of convection cells -- (1) granulation and (2) supergranulation. Granulation cells are about 600 miles (1,000 kilometers) across. Supergranulation cells reach a diameter of about 20,000 miles (30,000 kilometers).
+
+Photosphere
+
+The lowest layer of the atmosphere is called the photosphere. This zone emits the light that we see. The photosphere is about 300 miles (500 kilometers) thick. But most of the light that we see comes from its lowest part, which is only about 100 miles (150 kilometers) thick. Astronomers often refer to this part as the sun's surface. At the bottom of the photosphere, the temperature is 6400 K, while it is 4400 K at the top.
+
+The photosphere consists of numerous granules, which are the tops of granulation cells. A typical granule exists for 15 to 20 minutes. The average density of the photosphere is less than one-millionth of a gram per cubic centimeter. This may seem to be an extremely low density, but there are tens of trillions to hundreds of trillions of individual particles in each cubic centimeter.
+
+Chromosphere
+
+The next zone up is the chromosphere. The main characteristic of this zone is a rise in temperature, which reaches about 10,000 K in some places and 20,000 K in others.
+
+Astronomers first detected the chromosphere's spectrum during total eclipses of the sun. The spectrum is visible after the moon covers the photosphere, but before it covers the chromosphere. This period lasts only a few seconds. The emission lines in the spectrum seem to flash suddenly into visibility, so the spectrum is known as the flash spectrum.
+
+The chromosphere is apparently made up entirely of spike-shaped structures called spicules (SPIHK yoolz). A typical spicule is about 600 miles (1,000 kilometers) across and up to 6,000 miles (10,000 kilometers) high. The density of the chromosphere is about 10 billion to 100 billion particles per cubic centimeter.
+
+Transition region
+
+The temperature of the chromosphere ranges to about 20,000 K, and the corona is hotter than 500,000 K. Between the two zones is a region of intermediate temperatures known as the chromosphere-corona transition region, or simply the transition region. The transition region receives much of its energy from the overlying corona. The region emits most of its light in the ultraviolet spectrum.
+
+The thickness of the transition region is a few hundred to a few thousand miles or kilometers. In some places, relatively cool spicules extend from the chromosphere high into the solar atmosphere. Nearby may be areas where thin, hot coronal structures reach down close to the photosphere.
+
+Corona
+
+Corona is the part of the sun's atmosphere whose temperature is greater than 500,000 K. The corona consists of such structures as loops and streams of ionized gas. The structures connect vertically to the solar surface, and magnetic fields that emerge from inside the sun shape them. The temperature of a given structure varies along each field line. Near the surface, the temperature is typical of the photosphere. At higher levels, the temperature has chromospheric values, then values of the transition region, then coronal values.
+
+In the part of the corona nearest the solar surface, the temperature is about 1 million to 6 million K, and the density is about 100 million to 1 billion particles per cubic centimeter. The temperature reaches tens of millions of Kelvins when a flare occurs.
+
+Solar wind
+
+The corona is so hot that it extends far into space and continually expands. The flow of coronal gas into space is known as the solar wind. At the distance of Earth from the sun, the density of the solar wind is about 10 to 100 particles per cubic centimeter.
+
+The solar wind extends far into interplanetary space as a large, teardrop-shaped cavity called the heliosphere. The sun and all the planets are inside the heliosphere. Far beyond the orbit of Pluto, the farthest planet, the heliosphere joins the interstellar medium, the dust and gas that occupy the space between the stars.
+
+Solar activity
+
+The sun's magnetic fields rise through the convection zone and erupt through the photosphere into the chromosphere and corona. The eruptions lead to solar activity, which includes such phenomena as sunspots, flares, and coronal mass ejections. Areas where sunspots or eruptions occur are known as active regions. The amount of activity varies from a solar minimum at the beginning of a sunspot cycle to a solar maximum about 5 years later. The number of sunspots that exist at a given time varies. On the side of the solar disk that we see, this number ranges from none to approximately 250 individual sunspots and clusters of sunspots.
+
+Sunspots
+
+Sunspots are dark, often roughly circular features on the solar surface. They form where denser bundles of magnetic field lines from the solar interior break through the surface.
+
+ 
+ 

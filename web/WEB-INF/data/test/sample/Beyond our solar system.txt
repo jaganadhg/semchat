@@ -1,0 +1,23 @@
+Beyond Our Solar System:
+
+The companion to 51 Pegasi was the first planet discovered orbiting a normal, Sun-like star beyond our solar system.
+		
+In 1991, the nine worlds of our own solar system were the only known planets. Astronomers did not believe that our Sun's environment was the only planet producer in the universe. But they had no evidence of planets outside our solar system.
+
+How quickly things change.
+
+In 1991 radio astronomers detected the first extrasolar planets orbiting a dying pulsar star. This star was left over from a supernova explosion in the constellation Virgo. The pulsar's beam of radiation changed slightly due to the gravitational pull of three Earth-sized objects revolving around the host star, PSR B1257+12. Although the deadly radiation from the pulsar would not sustain life, it was the first example of a star other than our Sun producing planets.
+
+In 1995 Swiss astronomers found another extra-solar planetary candidate. It was discovered by noting a slight perturbation in the position of 51 Pegasi, a star in our nearby galactic neighborhood. This star, found in the constellation of Pegasus, is much more like our Sun with respect to its temperature, size, rotation speed and emitted radiation. The newly found planet orbiting 51 Peg had a size comparable to Jupiter or Saturn, however, it was positioned extremely close to its parent star - closer than Mercury sits from our own Sun. Although not a good candidate for a life, it was the first ever evidence of an extrasolar planet around a Sun-like star.
+
+Since then more than 100 planets have been found orbiting other stars. Some of them are orbiting extremely close to their parent star like the 51 Peg planetary system, while others are found to be at distances comparable to where Mars and Jupiter orbit in our solar system.
+
+Plans for Continued Searches
+
+The right size, the right distance, the right temperature: we finally have evidence for the existence of extrasolar worlds that may be candidates for life-bearing planets as well. A search of the nearest 1,000 stars to our Sun may reveal evidence of planets very much like Earth. "Earth-type" planets, the most conducive to sustaining life, must be solid bodies (unlike the gas giant planets in our outer solar system) with masses roughly between 0.5 - 10 Earth masses. These planets need to be found at distances from their parent star such that the planet's temperature and atmospheric pressure are supportive of the existence of liquid water.
+
+Direct methods for examining stars in our nearby neighborhood for the existence of planets would involve the detection of starlight reflected by an orbiting planet or perhaps by the emitted thermal radiation from the planet itself. Optical reflected light and infrared thermal radiation could both be analyzed spectroscopically (provided astronomers could actually detect this gentle signal amid the powerful fury of its host star) to present information about the size, sunlight reflectivity (albedo) and temperature of a planet.
+
+Indirect methods of planetary detection include measurements of radial velocities of nearby stars, measurements of pulsar rates, actual changes in the position of a host star based on gravitational pull of planets or changes in the apparent brightness of the host star due to transits and microlensing events. Each of these methods can indicate the presence of external bodies around nearby stars.
+	
+	

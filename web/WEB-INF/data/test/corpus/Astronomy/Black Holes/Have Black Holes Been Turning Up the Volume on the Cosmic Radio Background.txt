@@ -1,0 +1,19 @@
+Have Black Holes Been Turning Up the Volume on the Cosmic Radio Background?
+
+ScienceDaily (Apr. 18, 2010) — Astronomers investigating why the cosmic background radiation is much brighter at radio wavelengths than expected have identified a potential culprit: fast spinning black holes early in the galaxy formation process.
+
+The results were presented by Professor Andy Lawrence at the RAS National Astronomy Meeting in Glasgow on April 14.
+
+Last July, US astronomers announced surprising results from a high-altitude balloon experiment called ARCADE-2, which had made careful measurements of the sky at radio wavelengths. The background radio emission, which is the component smoothly distributed across the whole sky, was several times brighter than anyone was expecting. Now a team of astronomers from California and Scotland, including Jack Singal, Lukasz Stawarz, and Vahe Petrosian of Stanford University, and Andy Lawrence of the University of Edinburgh, believe that they have an explanation for this surprise.
+
+"We looked at many different ways this could happen -- a cosmic sea of relativistic particles, giant diffuse radio sources, distant exploding stars -- and found them all to fail various tests. We then noticed that we could explain the emissions by adding up the very faint emission from every ordinary galaxy in the observable universe. This was a surprising result, because it implied that weak emission from a large population of ordinary, but distant, sources added up to more than the emission from rarer but more luminous sources, whereas we were expecting the opposite," said Professor Lawrence, of the Institute for Astronomy at the University of Edinburgh.
+
+The background appears to be the sum of radio emissions from all ordinary galaxies, both nearby and distant, but because there are so many more distant ones, these are the ones that dominate. It would add up to an infinite amount were it not for the fact that the Universe is expanding and has a finite age.
+
+Having found one solution, the team faced another difficult problem. In the local universe, most radio emission is associated with supernova remnants in regions of star formation. The radio emission seems to be tightly linked with the infrared emission which star formation regions also produce. The infrared sky background should, therefore, match the radio background. However measurements of the infrared background predict a radio background between three and ten times less than ARCADE-2's observations.
+
+"Somehow, in the distant universe, the tight connection we see locally between radio and infrared emission gets broken. Distant galaxies early in the history of the universe must produce extra radio emission. This may be because the process of star formation works differently in the early universe. However, we believe that there could be an early epoch of radio jet emission from fast-spinning black holes at the centre of many ordinary galaxies, which then fades away," said Professor Lawrence.
+
+Astronomers believe that every galaxy probably contains a massive black hole. Fast-spinning black holes can give out energy in the form of radio jets.
+
+"A possibility is that as these black holes were forming, they were usually spinning fast but over time, as accreted material tries to spin the black hole in many different directions, they ended up with no net spin on average and the source of the radio emission disappeared," said Professor Lawrence.

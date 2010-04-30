@@ -1,0 +1,13 @@
+Big Bang Theory Saved
+
+ScienceDaily (Oct. 27, 2006) — An apparent discrepancy in the Big Bang theory of the universe's evolution has been reconciled by astrophysicists examining the movement of gases in stars.
+
+Professor John Lattanzio from Monash's School of Mathematical Sciences and Director of the Centre for Stellar and Planetary Astrophysics said the confusion surrounding the Big Bang revolved around the amount of the gas Helium 3 in the universe.
+"The Big Bang theory predicts a certain amount of Helium 3 in the universe," Professor Lattanzio said. "The trouble is, low mass stars (about one to two times the size of our sun) also make Helium 3 as a side product of burning the hydrogen in their cores.
+"It's been thought that when the star becomes a giant it mixes the helium 3 to its surface and, near the end of its life, spews the helium 3 into space just before it becomes a planetary nebula.
+"But there are inconsistencies with the amount of Helium 3 predicted to be in the universe and the amount that's actually there; there's much less than expected."
+Some scientists have theorised that the rapid rotation of low mass stars destroys the helium 3 they produce. But computer models that have included this rotation, while showing some destruction of helium 3, have not been able to reconcile the Big Bang theory.
+Professor Lattanzio, in collaboration with Dr Peter Eggleton and Dr David Dearborn from the Lawrence Livermore National Laboratories in the US, ran 3D computer models of a red giant's life on some of the world's fastest computers to investigate whether there was some sort of gaseous mixing occurring in stars that destroyed Helium 3.
+Their findings have been published in today's issue of the international journal Science.
+Near the end of a star's life there is a 'core flash' and it was at around this time that the computer models revealed a small instability in the movement of the gases in the star. "When we looked at this in 3D we found this hydrodynamic instability caused mixing and destroyed the helium 3 so that none was released into space," Professor Lattanzio said.
+"This apparent problem with the Big Bang has been solved -- the helium 3 in the universe comes from the Big Bang and low mass stars, although they produce helium 3, do not release any into the universe because they destroy it."

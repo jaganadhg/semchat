@@ -1,0 +1,10 @@
+Extrasolar Hot Jupiter: The Planet That 'Shouldn’t Exist'
+
+
+ScienceDaily (Aug. 27, 2009) — A planet has been discovered with ten times the mass of Jupiter, but which orbits its star in less than one Earth-day.
+
+The discovery, reported in this week’s Nature by Coel Hellier, of Keele University in the UK, and colleagues, poses a challenge to our understanding of tidal interactions in planetary systems.
+The planet, called WASP-18b, belongs to a now-common class of extrasolar planets known as ‘hot Jupiters’ — massive planets that are thought to have formed far from their host stars, and migrated inwards over time. WASP-18b is so massive, and so close to its star — only about three stellar radii away — that tidal interactions between star and planet should have caused the planet to spiral inwards to its destruction in less than a million years.
+Yet, as Hellier and colleagues show, the WASP-18 parent star is about a billion years old — making the likelihood of observing WASP-18b about one in a thousand.
+How can this unlikely discovery be explained? One possibility is that the tidal dissipation in the WASP-18 system is a thousandtimes less than in our Solar System; this and other possible explanations are discussed by Douglas Hamilton in an accompanying News and Views article.
+But if the planet’s remaining life is as short as predicted, the orbital decay should be measurable within a decade.

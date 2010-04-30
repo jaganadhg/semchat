@@ -1,0 +1,25 @@
+Lightning Strike in Africa Helps Take Pulse of Sun
+
+ScienceDaily (Nov. 14, 2009) — Sunspots, which rotate around the Sun's surface, tell us a great deal about our own planet. Scientists rely on them, for instance, to measure the Sun's rotation or to prepare long-range forecasts of Earth's health.
+
+But there are some years, like this one, where it's not possible to see Sunspots clearly. When we're at this "solar minimum," very few, if any, Sunspots are visible from Earth. That poses a problem for scientists in a new scientific field called "Space Weather," which studies the interaction between the Sun and Earth's environment.
+
+Thanks to a serendipitous discovery by Tel Aviv University's Prof. Colin Price, head of TAU's Department of Geophysics and Planetary Science, and his graduate student Yuval Reuveni, science now has a more definitive and reliable tool for measuring the Sun's rotation when Sunspots aren't visible -- and even when they are. The research, published in the Journal of Geophysical Research -- Space Physics, could have important implications for understanding the interactions between the Sun and Earth. Best of all, it's based on observations of common, garden-variety lightning strikes here on Earth.
+
+Waxing and waning, every 27 days
+
+Using Very Low Frequency (VLF) wire antennas that resemble clotheslines, Prof. Price and his team monitored distant lightning strikes from a field station in Israel's Negev Desert. Observing lightning signals from Africa, they noticed a strange phenomenon in the lightning strike data -- a phenomenon that slowly appeared and disappeared every 27 days, the length of a single full rotation of the Sun.
+
+"Even though Africa is thousands of miles from Israel, lightning signals there bounce off Earth's ionosphere -- the envelope surrounding Earth -- as they move from Africa to Israel," Prof. Price explains. "We noticed that this bouncing was modulated by the Sun, changing throughout its 27-day cycle. The variability of the lightning activity occurring in sync with the Sun's rotation suggested that the Sun somehow regulates the lightning pattern."
+
+He describes it as akin to hearing music or voices from across a lake: depending on the humidity, temperature and wind, sometimes they're crystal clear and sometimes they're inaudible. He discovered a similar anomaly in the lightning data due to the changes in Earth's ionosphere -- signals waxed and waned on a 27-day cycle. Prof. Price was able to show that this variability in the data was not due to changes in the lightning activity itself, but to changes in Earth's ionosphere, suspiciously in tandem with the Sun's rotation.
+
+Taking the pulse of the Sun
+
+The discovery describes a phenomenon not clearly understood by scientists. Prof. Price, an acclaimed climate change scientist, believes it may help scientists formulate new questions about the Sun's effect on our climate. "This is such a basic parameter and not much is known about it," says Prof. Price. "We know that Earth rotates once every 24 hours, and the moon once every 27.3 days. But we haven't been able to precisely measure the rotation rate of the Sun, which is a ball of gas rather than a solid object; 27 days is only an approximation. Our findings provide a more accurate way of knowing the real rotation rate, and how it changes over time," he says.
+
+Prof. Price cannot yet say how this finding will impact life on Earth. "It's an interesting field to explore," he says, "because nothing has been done to investigate the links between changing weather patterns and the rotation of the Sun.
+
+"Short-term changes in solar activity can also impact satellite performance, navigational accuracy, the health of astronauts, and even electrical power grid failures here on Earth. Many scientists claim that the Sun's variability is linked to changes in climate and weather patterns, so the small changes we observed every 27 days could also be related to small variations in weather patterns.
+
+"Our data may help researchers examine short-term connections between weather, climate, and Sun cycles. With this tool, we now have a good system for measuring the pulse of the Sun."

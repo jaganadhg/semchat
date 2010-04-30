@@ -1,0 +1,2440 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by Ed Shaya (U. of Maryland) -->
+<rdf:RDF xmlns:a="http://archive.astro.umd.edu/ont/astronomy.owl#" xmlns:phy="http://archive.astro.umd.edu/ont/physics.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:chem="http://archive.astro.umd.edu/ont/chemistry.owl#" xmlns="http://archive.astro.umd.edu/ont/instruments.owl#" xmlns:ivoao="http://archive.astro.umd.edu/ont/IVOAO.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://archive.astro.umd.edu/ont/skos-core.owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://archive.astro.umd.edu/ont/instruments.owl">
+	<owl:Ontology rdf:about="">
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/physics.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/chemistry.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/skos-core.owl"/>
+		<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instruments.owl</dc:title>
+		<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology covers classes and properties of instruments that are commonly used by astronomers. It includes terms from the IVOA Thesaurus plus terms frGom the UMD astronomical ontology</dc:description>
+		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ed Shaya</dc:creator>
+	</owl:Ontology>
+	<owl:Class rdf:ID="aberration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aberration</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="absorptionSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption spectroscopy</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="activeOptics">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">active optics</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#optics"/>
+	</owl:Class>
+	<owl:Class rdf:ID="adaptiveOptics">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adaptive optics</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#optics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="airplaneBorneInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">airplane-borne instrument</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">airplane borne instrument</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="AiryDisk">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Airy disk</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="alignmentOptics">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alignment optics</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="allSkyCamera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-sky camera</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all sky camera</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#camera"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#wideFieldTelescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="allSkyPhotography">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-sky photography</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all sky photography</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#photography"/>
+	</owl:Class>
+	<owl:Class rdf:ID="altazimuthMounting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altazimuth mounting</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">azimuth mounting</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alt-azimuth mounting</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#telescopeMounting"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="altimeter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altimeter</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#measuringInstrument"/>
+	</owl:Class>
+	<owl:Class rdf:ID="altimetry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altimetry</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="altitudeAngle">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altitude angle</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevation angle</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="aluminizing">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aluminizing</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="aluminumCoating">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aluminum coating</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#thinFilm"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/chemistry.owl#aluminum"/>
+		<rdfs:subClassOf rdf:resource="#coating"/>
+	</owl:Class>
+	<owl:Class rdf:ID="amplifier">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amplifier</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="analogRecorder">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analog recorder</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#dataStorage"/>
+	</owl:Class>
+	<owl:Class rdf:ID="anemometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anemometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="angularResolution">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angular resolution</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#resolution"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="antarcticObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antarctic observatory</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#observatory"/>
+	</owl:Class>
+	<owl:Class rdf:ID="antenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerials</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antennas</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radarEquipment"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="antennaDesign">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antenna design</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="antireflectionCoating">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antireflection coating</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#coating"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalFilm"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#thinFilm"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="aperture">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aperture</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="apertureSynthesis">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aperture synthesis</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthetic aperture</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="apodization">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apodization</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apodisation	UK</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="armillarySphere">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">armillary sphere</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="array">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">array</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="artificialSatellite">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artificial satellite</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="astigmatism">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astigmatism</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalAberration"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="astrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrograph</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#astrometricInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="astrographicCamera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrographic camera</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#camera"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="astrolabe">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrolabe</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#astrometricInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="astrometricInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrometric instrument</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="astronomicalOptics">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astronomical optics</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#optics"/>
+	</owl:Class>
+	<owl:Class rdf:ID="atomicClock">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic clock</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cesium clock</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caesium clock</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#clock"/>
+	</owl:Class>
+	<owl:Class rdf:ID="attenuation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attenuation</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="autoguider">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autoguider</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#controlSystem"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#guideSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="automatedTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automated telescope</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">robotic telescope</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#telescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="automaticPatrolTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automatic patrol telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#automatedTelescope"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#opticalTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="auxiliaryInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">auxiliary instrument</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="avalanchePhotodiode">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">avalanche photodiode</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#photodiode"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectronicDevice"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BakerNunnCamera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baker-Nunn camera</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#catadioptricSystem"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#meteorCamera"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#reflectingTelescope"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#wideFieldTelescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="balloonBorneInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">balloon-borne instrument</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">balloon borne instrument</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="barometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">barometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="beamSwitching">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beam switching</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="beamWaveguide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beam waveguide</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="beamwidth">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beamwidth</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="BesselPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bessel photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bessel UBVRI photometry</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="biasCalibration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bias calibration</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#calibration"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="blinkComparator">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blink comparator</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="bolometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bolometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BouwersTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bouwers telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#catadioptricSystem"/>
+		<rdfs:subClassOf rdf:resource="#reflectingTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="calibration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibration</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="camera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">camera</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalInstrument"/>
+		<rdfs:subClassOf rdf:resource="#photographicInstrument"/>
+	</owl:Class>
+	<owl:Class rdf:ID="cameraLens">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">camera lens</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#lens"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CapePhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cape photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UCBV photometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CapeRiPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cape RI photometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CassegrainAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassegrain antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassegrain antennas</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two reflector antennas</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two-reflector antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+		<rdfs:subClassOf rdf:resource="#radioTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CassegrainFocus">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassegrain focus</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#CassegrainTelescope"/>
+		<rdfs:subClassOf rdf:resource="#focus"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CassegrainTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassegrain telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#telescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="catadioptricSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">catadioptric system</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="cathode">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cathode</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#electrode"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="catoptricSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">catoptric system</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CcdDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCD detector</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCD camera</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#twoDimensionalDetector"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#multiChannelDetector"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CcdObservation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCD observation</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#observation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CcdPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCD photometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#photometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CerenkovCounter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cerenkov counter</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cherenkov counter</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#scintillationCounter"/>
+	</owl:Class>
+	<owl:Class rdf:ID="chargeCoupledDevice">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charge-coupled device</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charge coupled device</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCD</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#semiconductorDevice"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectronicDevice"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="chargeInjectionDevice">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charge-injection device</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charge injection device</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectronicDevice"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#semiconductorDevice"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="chargeTransferDevice">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charge-transfer device</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCD</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charge transfer device</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectronicDevice"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#semiconductorDevice"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="chromaticAberration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromatic aberration</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalAberration"/>
+	</owl:Class>
+	<owl:Class rdf:ID="cleanMethod">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clean method</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="clock">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clock</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#timingEquipment"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="cloudMonitor">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloud monitor</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#allSkyCamera"/>
+	</owl:Class>
+	<owl:Class rdf:ID="coelostat">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coelostat</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#reflectingTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="collimation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collimation</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="collimator">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collimator</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="colorimetry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colorimetry</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="colorPhotography">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">color photography</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#photography"/>
+	</owl:Class>
+	<owl:Class rdf:ID="coma">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coma</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="comaticAberration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comatic aberration</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coma</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#opticalAberration"/>
+	</owl:Class>
+	<owl:Class rdf:ID="comparisonLamp">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comparison lamp</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#lamp"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="controlSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">control system</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="coronagraph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coronagraph</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#instrument"/>
+		<rdfs:subClassOf rdf:resource="#opticalInstrument"/>
+	</owl:Class>
+	<owl:Class rdf:ID="correctorPlate">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corrector plate</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#lens"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalComponent"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CoudeFocus">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coude focus</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#focus"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CoudeSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coude spectrograph</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CoudeSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coude spectrum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#highResolutionSpectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="counter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">counter</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">count</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="cryogenics">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cryogenics</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="cryostat">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cryostat</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="DanjonAstrolabe">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Danjon astrolabe</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#astrolabe"/>
+	</owl:Class>
+	<owl:Class rdf:ID="darkCurrentCalibration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dark-current calibration</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#calibration"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="darkroom">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">darkroom</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="dataAcquisition">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data acquisition</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="DdoPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDO photometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#mediumBandPhotometry"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="deadTimeCalibration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dead-time calibration</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#calibration"/>
+	</owl:Class>
+	<owl:Class rdf:ID="densitometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">densitometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="densitometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">densitometry</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="detector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">detector</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="detectorArray">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">detector array</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#array"/>
+	</owl:Class>
+	<owl:Class rdf:ID="dichroicMirror">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dichroic mirror</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mirror"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="DickeRadiometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dicke radiometer</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#radiometer"/>
+	</owl:Class>
+	<owl:Class rdf:ID="differentialImageMotionMonitor">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">differential image motion monitor</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIMM</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#seeingMonitor"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="diffractionGrating">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffraction grating</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grating</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalComponent"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="digitalImage">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digital image</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#image"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="digitalRecorder">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digital recorder</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="diode">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diode</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#electronicEquipment"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="diodeArray">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diode array</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#array"/>
+		<rdfs:subClassOf rdf:resource="#multiChannelDetector"/>
+	</owl:Class>
+	<owl:Class rdf:ID="dioptricSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dioptric system</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="dipoleAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dipole antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dipole antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+		<rdfs:subClassOf rdf:resource="#directionalAntenna"/>
+	</owl:Class>
+	<owl:Class rdf:ID="directionalAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">directional antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">directional antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+	</owl:Class>
+	<owl:Class rdf:ID="dishAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dish antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dish antennas</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radioTelescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="dome">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dome</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">telescope dome</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="domeSeeing">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dome seeing</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#seeing"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="driftScan">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drift scan</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="drive">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drive</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="dustDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust detector</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#detector"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="echelleGrating">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">echelle grating</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">echelons</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#diffractionGrating"/>
+	</owl:Class>
+	<owl:Class rdf:ID="echelleSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">echelle spectrograph</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">echelle spectrometer</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="echelleSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">echelle spectrum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#highResolutionSpectrum"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#spectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="electrode">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrode</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="electronicCamera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronic camera</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="electronicEquipment">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronic equipment</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="electronics">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronics</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="electronographicCamera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronographic camera</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrographic camera</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#electronicCamera"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EnglishMounting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English mounting</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#equatorialMounting"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="equatorialMounting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equatorial mounting</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#telescopeMounting"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="eyepiece">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eyepiece</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="FabryPerotInterferometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabry-Perot interferometer</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabry Perot interferometer</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#interferometer"/>
+	</owl:Class>
+	<owl:Class rdf:ID="FabryPerotSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabry-Perot spectrograph</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabry Perot spectrograph</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabry Perot spectrometer</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabry-Perot spectrometer</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#spectrograph"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="falseColorPhotography">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false color photography</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photography"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="feed">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feed</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="feedHorn">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feed horn</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="fiberOptics">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fiber optics</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#optics"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="fieldCorrector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field corrector</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">correcting lens</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#lens"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalComponent"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="fieldCurvature">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field curvature</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curvature of field</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalAberration"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="fieldOfView">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field of view</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="figuring">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">figuring</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#polishing"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="filterWheel">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filter wheel</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="findingChart">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finding chart</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="flatField">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat field</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="flatFieldLamp">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat field lamp</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#lamp"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="flattening">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flattening</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="flexure">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flexure</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="focalReducer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">focal reducer</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="focus">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">focus</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="forkMounting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fork mounting</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#equatorialMounting"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="FourierSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fourier spectrograph</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fourier spectrometer</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="FourierTransformSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fourier transform spectroscopy</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="gammaRayObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-ray observatory</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma ray observatory</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#observatory"/>
+		<rdfs:subClassOf rdf:resource="#spaceObservatory"/>
+	</owl:Class>
+	<owl:Class rdf:ID="gammaRaySpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-ray spectrograph</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma ray spectrograph</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="gammaRaySpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-ray spectroscopy</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="gammaRayTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-ray telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spaceTelescope"/>
+		<rdfs:subClassOf rdf:resource="#telescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="GenevaPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geneva photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ubvgri photometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#mediumBandPhotometry"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="geophysicalObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geophysical observatory</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#observatory"/>
+	</owl:Class>
+	<owl:Class rdf:ID="geostationarySatellite">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geostationary satellite</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#artificialSatellite"/>
+	</owl:Class>
+	<owl:Class rdf:ID="GermanMounting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">German mounting</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#equatorialMounting"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="globalPositioningSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">global positioning system</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPS</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="gratingResponse">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grating response</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="gratingRing">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grating ring</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="gratingSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grating spectrograph</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="gravimetry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gravimetry</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="grazingIncidence">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grazing incidence</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="grazingIncidenceSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grazing incidence spectrograph</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="grazingIncidenceTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grazing incidence telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#telescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GregorianTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gregorian telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#telescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="grism">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grism</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalComponent"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="guideSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guide system</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GunnDiode">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gunn diode</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="GunnPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gunn photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gunn g,r,i,z photometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="halfWavePlate">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">half-wave plate</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">half wave plate</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">halfwave plate</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="HAlphaPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H alpha photometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#narrowBandPhotometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="HartmannTest">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hartmann test</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="HBetaPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H beta photometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#narrowBandPhotometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="heliograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heliograph</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="heliometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heliometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="heliostat">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heliostat</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#coelostat"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="heterodyne">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heterodyne</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="highResolutionSpectrosopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-resolution spectrosopy</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high dispersion spectroscopy</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution spectrosopy</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-dispersion spectroscopy</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="highResolutionSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-resolution spectrum</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high dispersion spectrum</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution spectrum</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-dispersion spectrum</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="highSpeedPhotometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-speed photometer</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high speed photometer</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometer"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="hornAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horn antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horn antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radioWaveguide"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="horseshoeMounting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horseshoe mounting</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#equatorialMounting"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="HstPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HST photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HST Fnnn[LMNW] photometry</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hubble photometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="HubbleSpaceTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hubble Space Telescope</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HST</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#opticalObservatory"/>
+		<rdfs:subClassOf rdf:resource="#spaceObservatory"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#ultravioletObservatory"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="image">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">image</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="imageTube">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">image tube</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoelectric image tube</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">image converters</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light amplifier</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">image intensifier</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#multiChannelDetector"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectronicDevice"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectricInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#twoDimensionalDetector"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="imagingInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imaging instrument</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="impersonalAstrolabe">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">impersonal astrolabe</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#astrolabe"/>
+	</owl:Class>
+	<owl:Class rdf:ID="inertialReferenceFrame">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inertial reference frame</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="infraredDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infrared detector</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#detector"/>
+	</owl:Class>
+	<owl:Class rdf:ID="infraredObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infrared observatory</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#observatory"/>
+	</owl:Class>
+	<owl:Class rdf:ID="infraredTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infrared telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#telescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="instrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instrument</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instrumentation</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astronomical instrument</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="instrumentalProfile">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instrumental profile</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#lineProfile"/>
+	</owl:Class>
+	<owl:Class rdf:ID="integralFieldSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integral field spectrograph</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="integrationTime">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integration time</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="intensityInterferometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intensity interferometer</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#interferometer"/>
+		<rdfs:subClassOf rdf:resource="#opticalInterferometer"/>
+	</owl:Class>
+	<owl:Class rdf:ID="interferenceFilter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interference filter</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalComponent"/>
+		<rdfs:subClassOf rdf:resource="#opticalFilter"/>
+	</owl:Class>
+	<owl:Class rdf:ID="interferenceFringe">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interference fringe</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fringe patterns</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fringe</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="interferenceNoise">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#noise"/>
+	</owl:Class>
+	<owl:Class rdf:ID="interferenceSpectrosocopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interference spectrosocopy</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="interferometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interferometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="interferometricCorrelation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interferometric correlation</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#correlation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="iodineCell">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iodine cell</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalFilter"/>
+	</owl:Class>
+	<owl:Class rdf:ID="IrasSatellite">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IRAS satellite</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IRAS</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#infraredObservatory"/>
+		<rdfs:subClassOf rdf:resource="#spaceObservatory"/>
+	</owl:Class>
+	<owl:Class rdf:ID="JohnsonNoise">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnson noise</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="JohnsonPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnson photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBVRIJKL photometry</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnson-Morgan filter system</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBV photometry</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">three-color photometry</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBVRI photometry</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="KellnerEyepiece">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kellner eyepiece</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#eyepiece"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="KronCousinsPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kron-Cousins photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kron Cousins photometry</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kron-Cousins R,I photometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="lamp">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lamp</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="laser">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="laserRanging">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser ranging</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="lens">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalComponent"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="lensAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+	</owl:Class>
+	<owl:Class rdf:ID="lensDesign">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens design</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="linearityCalibration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linearity calibration</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#calibration"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="longBaselineInterferometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long baseline interferometer</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#interferometer"/>
+		<rdfs:subClassOf rdf:resource="#radioInterferometer"/>
+	</owl:Class>
+	<owl:Class rdf:ID="longBaselineInterferometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long baseline interferometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#interferometry"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#radioInterferometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="longSlit">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long slit</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrographSlit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="longSlitSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long slit spectrum</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="magnetograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetograph</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="magnetoheliograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetoheliograph</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="magnetoOpticalEffect">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magneto-optical effect</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magneto optical effect</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="MaksutovTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maksutov telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#catadioptricSystem"/>
+		<rdfs:subClassOf rdf:resource="#reflectingTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="measuringInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measuring instrument</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="mechanicalComponent">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanical component</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="meridianCircle">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meridian circle</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#transitInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="meteorCamera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meteor camera</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="metrology">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metrology</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="MichelsonInterferometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michelson interferometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalInterferometer"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MichelsonInterferometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michelson interferometry</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="microchannelPlate">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microchannel plate</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#amplifier"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="microdensitometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microdensitometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="microdensitometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microdensitometry</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="micrometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micrometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="microphotometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microphotometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="microwaveAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microwave antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microwave antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+	</owl:Class>
+	<owl:Class rdf:ID="microwaveImaging">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microwave imaging</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="microwaveSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microwave spectroscopy</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="MillsCrossAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mills cross antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mills cross antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#directionalAntenna"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#radioTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="mirror">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mirror</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalComponent"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="mirrorCell">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mirror cell</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="model"/>
+	<owl:Class rdf:ID="modulationTransferFunction">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modulation transfer function</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTF</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#transferFunction"/>
+	</owl:Class>
+	<owl:Class rdf:ID="monochromator">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monochromator</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#opticalInstrument"/>
+	</owl:Class>
+	<owl:Class rdf:ID="multiChannelDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi-channel detector</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multichannel detector</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#detector"/>
+	</owl:Class>
+	<owl:Class rdf:ID="multiChannelSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi-channel spectrograph</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi-channel spectrometer</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multichannel spectrograph</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="multiFiberSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi-fiber spectrograph</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="multipleMirrorTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple mirror telescope</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMT</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#opticalTelescope"/>
+		<rdfs:subClassOf rdf:resource="#reflectingTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="multiSlitSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi-slit spectrograph</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="NasmythFocus">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nasmyth focus</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#focus"/>
+	</owl:Class>
+	<owl:Class rdf:ID="neutralDensityFilter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutral density filter</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalFilter"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="NewtonianFocus">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Newtonian focus</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#NewtonianTelescope"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#focus"/>
+	</owl:Class>
+	<owl:Class rdf:ID="NewtonianTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Newtonian telescope</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="objective">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="objectiveGrating">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective grating</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#diffractionGrating"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#transmissionGrating"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="objectivePrism">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective prism</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#prism"/>
+	</owl:Class>
+	<owl:Class rdf:ID="oblateness">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oblateness</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="observation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">observation</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="observatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">observatory</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="occultingDisk">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occulting disk</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalAberration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical aberration</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aberration</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalComponent">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical component</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalDesign">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical design</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalFiber">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical fiber</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glass fiber</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#opticalComponent"/>
+		<rdfs:subClassOf rdf:resource="#opticalWaveguide"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalFilm">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical film</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">film [optical]</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalFilter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical filter</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">color filter</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#opticalComponent"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#filter"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalGlass">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical glass</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#glass"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalMaterial"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical instrument</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical equipment</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalInterferometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical interferometer</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stellar interferometer</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#interferometer"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalInterferometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical interferometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light interferometry</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stellar interferometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#interferometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalMaterial">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical material</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalObservation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical observation</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#observation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical observatory</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#observatory"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalRadar">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical radar</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#radar"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalScanners">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical scanners</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalInstrument"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical spectrograph</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical spectrometer</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical spectroscopy</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalSurface">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical surface</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical system</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#telescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalTesting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical testing</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalTransferFunction">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical transfer function</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTF</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#transferFunction"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalTransmissionWindow">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical transmission window</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#atmosphericWindow"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalWaveguide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical waveguide</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalComponent"/>
+		<rdfs:subClassOf rdf:resource="#waveguide"/>
+	</owl:Class>
+	<owl:Class rdf:ID="opticalWindow">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical window</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalComponent"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="optics">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optics</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#physicalObject"/>
+	</owl:Class>
+	<owl:Class rdf:ID="orrery">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orrery</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#model"/>
+	</owl:Class>
+	<owl:Class rdf:ID="orthoscopicEyepiece">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orthoscopic eyepiece</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#eyepiece"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="parabolicAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parabolic antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parabolic antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#directionalAntenna"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="parabolicMirror">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parabolic mirror</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="parabolicReflector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parabolic reflector</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="parametricAmplifier">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parametric amplifier</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#amplifier"/>
+	</owl:Class>
+	<owl:Class rdf:ID="pendulum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pendulum</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#timingEquipment"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="phasedArray">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phased array</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#array"/>
+	</owl:Class>
+	<owl:Class rdf:ID="phaseSensitiveDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phase sensitive detector</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="phaseSwitching">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phase switching</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="phaseSwitchingInterferometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phase switching interferometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#interferometer"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="phosphorescentScintillation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphorescent scintillation</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#scintillation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="photocathode">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photocathode</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#cathode"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#electrode"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="photoconductiveCell">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoconductive cell</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photodiode">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photodiode</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectronicDevice"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="photoelectricInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoelectric instrument</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photoelectricPhotometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoelectric photometer</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#photometer"/>
+	</owl:Class>
+	<owl:Class rdf:ID="photoelectricPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoelectric photometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#photometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="photoelectronicDevice">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoelectronic device</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photogrammetry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photogrammetry</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photograph</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#image"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicAstrometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic astrometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#astrometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicDeveloper">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic developer</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicEmulsion">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic emulsion</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#detector"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photographicMaterial"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicFilm">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic film</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">film [photographic]</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#photographicMaterial"/>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicFilter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic filter</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalFilter"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic instrument</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicMaterial">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic material</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic photometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#photometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicPlate">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic plate</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photographicMaterial"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="photographicProcessing">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic processing</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photography">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photography</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photoheliograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoheliograph</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photometer</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#telescopeInstrument"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="photometricElement">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photometric element</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photometricSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photometric system</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photomultiplierTube">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photomultiplier tube</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photocell</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoelectric cell</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#detector"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectricInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectronicDevice"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="photonCountingSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon counting system</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photovoltaicCell">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photovoltaic cell</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#semiconductorDevice"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="pointSpreadFunction">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point spread function</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSF</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#transferFunction"/>
+	</owl:Class>
+	<owl:Class rdf:ID="polarimeter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polarimeter</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#telescopeInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="polishing">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polishing</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="positionSensitiveProportionalCounter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position sensitive proportional counter</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSPC</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#proportionalCounter"/>
+	</owl:Class>
+	<owl:Class rdf:ID="preamplifier">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preamplifier</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#amplifier"/>
+	</owl:Class>
+	<owl:Class rdf:ID="primaryLens">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary lens</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#lens"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#objective"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="primaryMirror">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary mirror</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mirror"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#objective"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#telescopeMirror"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="primeFocus">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prime focus</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#focus"/>
+	</owl:Class>
+	<owl:Class rdf:ID="prism">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prism</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="prismSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prism spectrograph</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="proportionalCounter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proportional counter</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#measuringInstrument"/>
+	</owl:Class>
+	<owl:Class rdf:ID="pulseCounter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulse counter</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="pulseCounting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulse counting</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="quadrant">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quadrant</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#astrometricInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="quadrantDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quadrant detector</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="quantumEfficiency">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quantum efficiency</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q.E.</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QE</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="quarterWavePlate">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quarter wave plate</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="radar">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radar</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="radarEquipment">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radar equipment</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="radarMapping">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radar mapping</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="radarTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radar telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#radioTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="radioAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+	</owl:Class>
+	<owl:Class rdf:ID="radioheliograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioheliograph</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radioTelescope"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#solarTelescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="radioInterference">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio interference</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio frequency interference</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio noise</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="radioInterferometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio interferometer</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#interferometer"/>
+		<rdfs:subClassOf rdf:resource="#radioTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="radiometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#detector"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="radiometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiometry</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="radioObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio observatory</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#observatory"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="radioSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio spectrograph</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio spectrometer</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="radioSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio spectroscopy</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="radioTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#telescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="radioTransmissionWindow">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio transmission window</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#atmosphericWindow"/>
+	</owl:Class>
+	<owl:Class rdf:ID="radioWaveguide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio waveguide</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#waveguide"/>
+	</owl:Class>
+	<owl:Class rdf:ID="RamsdenEyepiece">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ramsden eyepiece</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#eyepiece"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="rangeFinder">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range finder</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="readOutNoise">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">read out noise</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RON</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#noise"/>
+	</owl:Class>
+	<owl:Class rdf:ID="reflectingTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reflecting telescope</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reflector</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalTelescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="reflectionGrating">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reflection grating</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#diffractionGrating"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="reflectorAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reflector antenna</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reflector antennas</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+	</owl:Class>
+	<owl:Class rdf:ID="refractingTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refracting telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="remoteControlSystem">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remote control system</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#controlSystem"/>
+	</owl:Class>
+	<owl:Class rdf:ID="remoteSensing">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remote sensing</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="resolution">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resolution</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="reticle">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reticle</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="reticonArray">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reticon array</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#multiChannelDetector"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="rgbPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rgb photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red-green-blue photometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="rguPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rgu photometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="RitcheyChretienTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ritchey-Chretien telescope</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RC</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#reflectingTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="rocketBorneInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rocket-borne instrument</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rocket borne instrument</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="satellite">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">satellite</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="satelliteBorneInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">satellite-borne instrument</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">satellite borne instrument</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="satelliteLaserRanging">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">satellite laser ranging</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#laserRanging"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SchmidtCamera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schmidt camera</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#camera"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photographicInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SchmidtTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schmidt telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photographicInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#reflectingTelescope"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#catadioptricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="scintillationCounter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scintillation counter</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#counter"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="secondaryMirror">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary mirror</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#telescopeMirror"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="seeing">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeing</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="seeingMonitor">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeing monitor</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalInstrument"/>
+	</owl:Class>
+	<owl:Class rdf:ID="segmentedOptics">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">segmented optics</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="selfCalibrationMethod">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-calibration method</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self calibration method</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#calibration"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="semiconductorDevice">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semiconductor device</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="sensitivity">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensitivity</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="sensitometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensitometer</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="sextant">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sextant</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#astrometricInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="shapedReflector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shaped reflector</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="shotNoise">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shot noise</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#noise"/>
+	</owl:Class>
+	<owl:Class rdf:ID="shutter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shutter</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="sidelobe">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sidelobe</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lobe [telescope beam]</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="siderostat">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">siderostat</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="silverCoating">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver coating</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#coating"/>
+		<rdfs:subClassOf rdf:resource="#thinFilm"/>
+	</owl:Class>
+	<owl:Class rdf:ID="siteProtection">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">site protection</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="siteTesting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">site testing</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="slitMask">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slit mask</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrographSlit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="SloanPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sloan photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDSS photometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#broadBandPhotometry"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="solarObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solar observatory</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="solarOpticalTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solar optical telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#solarTelescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="solarRadioTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solar radio telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#solarTelescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="solarTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solar telescope</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tower telescope</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#telescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="spaceAstrometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">space astrometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#astrometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="spaceObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">space observatory</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbiting observatory</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#observatory"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#artificialSatellite"/>
+	</owl:Class>
+	<owl:Class rdf:ID="spaceProbeInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">space probe instrument</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="spaceTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">space telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spaceProbeInstrument"/>
+		<rdfs:subClassOf rdf:resource="#telescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="spaceVehicle">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">space vehicle</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="speckle">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speckle</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="speckleInterferometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speckle interferometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#interferometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="spectralBand">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral band</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="spectralResolution">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral resolution</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#resolution"/>
+	</owl:Class>
+	<owl:Class rdf:ID="spectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectrograph</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#telescopeInstrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="spectrographSlit">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectrograph slit</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slit</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="spectrography">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectrography</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectrophotography</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+		<rdfs:subClassOf rdf:resource="#photography"/>
+	</owl:Class>
+	<owl:Class rdf:ID="spectroheliograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectroheliograph</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="spectrophotometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectrophotometer</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#photometer"/>
+	</owl:Class>
+	<owl:Class rdf:ID="sphericalAberration">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spherical aberration</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalAberration"/>
+	</owl:Class>
+	<owl:Class rdf:ID="streakPhotography">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">streak photography</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#photography"/>
+	</owl:Class>
+	<owl:Class rdf:ID="stroboscope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stroboscope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="StromgrenPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stromgren photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stromgren uvby system</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uvby system</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">four-color photometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#mediumBandPhotometry"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="subreflector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subreflector</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="superconductingTunnelJunction">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superconducting tunnel junction</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#detector"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="synchronousDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synchronous detector</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#detector"/>
+	</owl:Class>
+	<owl:Class rdf:ID="tArray">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t array</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#radioInterferometer"/>
+		<rdfs:subClassOf rdf:resource="#array"/>
+	</owl:Class>
+	<owl:Class rdf:ID="telescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="telescopeArray">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">telescope array</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#array"/>
+	</owl:Class>
+	<owl:Class rdf:ID="telescopeConstruction">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">telescope construction</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="telescopeDesign">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">telescope design</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="telescopeInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">telescope instrument</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">telescope instrumentation</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#instrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="telescopeMirror">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">telescope mirror</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#mirror"/>
+	</owl:Class>
+	<owl:Class rdf:ID="telescopeMounting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">telescope mounting</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="television">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">television</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TV</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="televisionCamera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">television camera</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TV camera</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="televisionDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">television detector</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TV camera</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">television camera tube</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#twoDimensionalDetector"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#multiChannelDetector"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photoelectronicDevice"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="temperatureControl">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature control</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="tertiaryMirror">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tertiary mirror</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#telescopeMirror"/>
+	</owl:Class>
+	<owl:Class rdf:ID="thinFilm">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thin film</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#opticalFilm"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="threeDimensionalSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">three-dimensional spectroscopy</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">three dimensional spectroscopy</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="timeMeasurement">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time measurement</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time determination</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="timeResolvedSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time-resolved spectroscopy</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#spectroscopy"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="timeSignal">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time signal</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="timeSynchronization">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time synchronization</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time synchronisation	UK</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="timingEquipment">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timing equipment</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timing device</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="tipTiltMirror">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tip-tilt mirror</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tip tilt mirror</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="tracking">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tracking</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="transferFunction">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transfer function</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="transitCircle">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transit circle</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#transitInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="transitInstrument">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transit instrument</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#astrometricInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="transitTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transit telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#transitInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="transmissionGrating">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transmission grating</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#diffractionGrating"/>
+	</owl:Class>
+	<owl:Class rdf:ID="twoDimensionalDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two-dimensional detector</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two dimensional detector</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#detector"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="twoDimensionalSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two-dimensional spectroscopy</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two dimensional spectroscopy</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="ultravioletCamera">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet camera</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#camera"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ultravioletDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet detector</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#detector"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ultravioletFilter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet filter</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="ultravioletObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet observatory</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#observatory"/>
+	</owl:Class>
+	<owl:Class rdf:ID="ultravioletPhotography">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet photography</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photography"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ultravioletSpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet spectrograph</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="ultravioletTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spaceTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="vacuumTechnique">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vacuum technique</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="vaporDeposition">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vapor deposition</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="verticalCircle">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical circle</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="VeryLargeArray">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very Large Array</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VLA</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#veryLongBaselineInterferometer"/>
+	</owl:Class>
+	<owl:Class rdf:ID="veryLargeTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very large telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#opticalTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="veryLongBaselineInterferometer">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very long baseline interferometer</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VLBI</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#interferometer"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radioInterferometer"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#radioTelescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="veryLongBaselineInterferometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very long baseline interferometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VLBI</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#radioInterferometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="vignetting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vignetting</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="VilniusPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vilnius photometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#mediumBandPhotometry"/>
+	</owl:Class>
+	<owl:Class rdf:ID="visibilityFunction">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visibility function</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="VphGrating">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VPH grating</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#diffractionGrating"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="WalravenPhotometry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walraven photometry</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VBLUW photometry</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl#mediumBandPhotometry"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#photometricSystem"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="waveguide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waveguide</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="weatherStation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weather station</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#measuringInstrument"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="webcam">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">webcam</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#camera"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="wideAngleLens">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wide-angle lens</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wide angle lens</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="wideFieldTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wide-field telescope</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wide field telescope</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#reflectingTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="windVane">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wind vane</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#measuringInstrument"/>
+	</owl:Class>
+	<owl:Class rdf:ID="XRayDetector">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray detector</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#detector"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="XRayObservatory">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray observatory</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#observatory"/>
+		<rdfs:subClassOf rdf:resource="#spaceObservatory"/>
+	</owl:Class>
+	<owl:Class rdf:ID="XRaySpectrograph">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray spectrograph</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray spectrometer</skos:altLabel>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#grazingIncidenceSpectrograph"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#spectrograph"/>
+	</owl:Class>
+	<owl:Class rdf:ID="XRayTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray telescope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#grazingIncidenceTelescope"/>
+		<rdfs:subClassOf rdf:resource="#spaceTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="YagiAntenna">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yagi antenna</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#antenna"/>
+		<rdfs:subClassOf rdf:resource="#directionalAntenna"/>
+		<rdfs:subClassOf rdf:resource="#radioTelescope"/>
+	</owl:Class>
+	<owl:Class rdf:ID="yArray">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y array</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#radioInterferometer"/>
+		<rdfs:subClassOf rdf:resource="#array"/>
+	</owl:Class>
+	<owl:Class rdf:ID="yokeMounting">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yoke mounting</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#equatorialMounting"/>
+	</owl:Class>
+	<owl:Class rdf:ID="zenithTelescope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zenith telescope</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#refractingTelescope"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#transitTelescope"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="zenithTube">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zenith tube</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photographic zenith tube</skos:altLabel>
+		<rdfs:subClassOf rdf:resource="#zenithTelescope"/>
+	</owl:Class>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 3.4, Build 128)  http://protege.stanford.edu -->

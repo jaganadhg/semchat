@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by Ed Shaya (U. of Maryland) -->
+<rdf:RDF 
+	xmlns:q="http://archive.astro.umd.edu/ont/quantity.owl#" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+	xmlns:u="http://archive.astro.umd.edu/ont/units.owl#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/" 
+	xmlns:ui="http://archive.astro.umd.edu/ont/unitsInstances.owl#" 
+	xmlns="http://archive.astro.umd.edu/ont/statistics.owl#" 
+	xml:base="http://archive.astro.umd.edu/ont/statistics.owl">
+	<owl:Ontology rdf:about="">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+    
+		    Ontology of Statistics (background for Astronomy Ontology) by Ed Shaya,
+         University of Maryland, Astronomy Department (eshaya@umd.edu)en</rdfs:comment>
+	</owl:Ontology>
+	<owl:Class rdf:ID="average">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mean"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="error">
+		<rdfs:subClassOf rdf:resource="#uncertainty"/>
+	</owl:Class>
+	<owl:Class rdf:ID="Gaussian">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#probabilityDistribution"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MaxwellDistribution">
+		<rdfs:subClassOf rdf:resource="#statisticalDistribution"/>
+	</owl:Class>
+	<owl:Class rdf:ID="mean">
+		<rdfs:subClassOf rdf:resource="#statisticsEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="median">
+		<rdfs:subClassOf rdf:resource="#statisticsEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="mode">
+		<rdfs:subClassOf rdf:resource="#statisticsEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="Poisson">
+		<rdfs:subClassOf rdf:resource="#probabilityDistribution"/>
+	</owl:Class>
+	<owl:Class rdf:ID="probability">
+		<rdfs:subClassOf rdf:resource="#statisticsEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="probabilityDistribution">
+		<rdfs:subClassOf rdf:resource="#statisticsEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="probabilityOf">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#probability"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="probabilityofExceedingValue">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#probability"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="regressionRelation">
+		<rdfs:subClassOf rdf:resource="#statisticsEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="rootMeanSquare">
+		<rdfs:subClassOf rdf:resource="#statisticsEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="standardDeviation">
+		<rdfs:subClassOf rdf:resource="#statisticsEntity"/>
+	</owl:Class>
+	<owl:Class rdf:ID="statisticalDistribution">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#distributionFunction"/>
+	</owl:Class>
+	<owl:Class rdf:ID="uncertainty">
+		<rdfs:subClassOf>
+			<owl:Class rdf:ID="statisticsEntity"/>
+		</rdfs:subClassOf>
+		<owl:equivalentClass>
+			<owl:Class rdf:about="http://archive.astro.umd.edu/ont/quantity.owl#accuracy">
+				<owl:equivalentClass rdf:resource="#uncertainty"/>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:Class rdf:ID="variance">
+		<rdfs:subClassOf rdf:resource="#statisticsEntity"/>
+	</owl:Class>
+</rdf:RDF>

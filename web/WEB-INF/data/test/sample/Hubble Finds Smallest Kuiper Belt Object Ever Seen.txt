@@ -1,0 +1,17 @@
+Hubble Finds Smallest Kuiper Belt Object Ever Seen
+
+
+cienceDaily (Dec. 19, 2009) — NASA's Hubble Space Telescope has discovered the smallest object ever seen in visible light in the Kuiper Belt, a vast ring of icy debris that is encircling the outer rim of the solar system just beyond Neptune.
+
+The needle-in-a-haystack object found by Hubble is only 3,200 feet across and a whopping 4.2 billion miles away. The smallest Kuiper Belt Object (KBO) seen previously in reflected light is roughly 30 miles across, or 50 times larger.
+This is the first observational evidence for a population of comet-sized bodies in the Kuiper Belt that are being ground down through collisions. The Kuiper Belt is therefore collisionally evolving, meaning that the region's icy content has been modified over the past 4.5 billion years.
+The object detected by Hubble is so faint -- at 35th magnitude -- it is 100 times dimmer than what the Hubble can see directly.
+So then how did the space telescope uncover such a small body?
+In a paper published in the December 17th issue of the journal Nature, Hilke Schlichting of the California Institute of Technology in Pasadena, Calif., and her collaborators are reporting that the telltale signature of the small vagabond was extracted from Hubble's pointing data, not by direct imaging.
+Hubble has three optical instruments called Fine Guidance Sensors (FGS). The FGSs provide high-precision navigational information to the space observatory's attitude control systems by looking at select guide stars for pointing. The sensors exploit the wavelike nature of light to make precise measurement of the location of stars.
+Schlichting and her co-investigators determined that the FGS instruments are so good that they can see the effects of a small object passing in front of a star. This would cause a brief occultation and diffraction signature in the FGS data as the light from the background guide star was bent around the intervening foreground KBO.
+They selected 4.5 years of FGS observations for analysis. Hubble spent a total of 12,000 hours during this period looking along a strip of sky within 20 degrees of the solar system's ecliptic plane, where the majority of KBOs should dwell. The team analyzed the FGS observations of 50,000 guide stars in total.
+Scouring the huge database, Schlichting and her team found a single 0.3-second-long occultation event. This was only possible because the FGS instruments sample changes in starlight 40 times a second. The duration of the occultation was short largely because of the Earth's orbital motion around the Sun.
+They assumed the KBO was in a circular orbit and inclined 14 degrees to the ecliptic. The KBO's distance was estimated from the duration of the occultation, and the amount of dimming was used to calculate the size of the object. "I was very thrilled to find this in the data," says Schlichting.
+Hubble observations of nearby stars show that a number of them have Kuiper Belt-like disks of icy debris encircling them. These disks are the remnants of planetary formation. The prediction is that over billions of years the debris should collide, grinding the KBO-type objects down to ever smaller pieces that were not part of the original Kuiper Belt population.
+The finding is a powerful illustration of the capability of archived Hubble data to produce important new discoveries. In an effort to uncover additional small KBOs, the team plans to analyze the remaining FGS data for nearly the full duration of Hubble operations since its launch in 1990.

@@ -1,0 +1,11 @@
+Pinning Down a Proton
+
+ScienceDaily (Apr. 16, 2010) — A researcher at North Carolina State University has helped to develop a new method for describing the binding of protons and neutrons within nuclei. This method may improve scientists' ability to predict and understand astrophysical reactions within stars.
+
+
+When protons and neutrons bind, the process releases energy. This fusion energy is how stars burn. If scientists can determine where these particles are, what they are doing, and how they are binding, they will then be able to more accurately predict and understand the life cycles of stars.
+NC State physicist Dr. Dean Lee and German colleagues Evgeny Epelbaum, Hermann Krebs, and Ulf-G. Meissner, set out to see if there was a more straightfoward approach to describing particle interactions than currently used.
+Their results were published in the April 9 issue of Physical Review Letters.
+"These particles can literally be anywhere," Lee says, "so pinning them down is hard. However, we do know that there are hierarchies of attractions between particles and we were able to use these hierarchies to give us a framework for describing how the protons and neutrons could bind with one another. That hierarchy is known as effective field theory."
+Lee and his colleagues used a numerical lattice which took into account all of the possible positions of the particles within the nucleus and the corresponding interaction energies. They ran a supercomputer simulation for the elements helium-4, lithium-6 and carbon-12, and demonstrated that the results of those simulations were accurate.
+"Currently the indications are that our effective field theory calculations should let us describe nuclei with 16 or fewer protons and neutrons," Lee says. "But our ability to describe larger nuclei using this approach also looks promising."

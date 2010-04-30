@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+	xmlns:q="http://archive.astro.umd.edu/ont/quantity.owl#" 
+	xmlns:phy="http://archive.astro.umd.edu/ont/physics.owl#" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+	xmlns:u="http://archive.astro.umd.edu/ont/units.owl#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/" 
+	xmlns="http://archive.astro.umd.edu/ont/unitsInstances.owl#" 
+	xml:base="http://archive.astro.umd.edu/ont/unitsInstances.owl">
+	<owl:Ontology rdf:about="">
+		<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology covers instances of  physical units following a prescription defined in units.owl. </dc:description>
+		<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unitsInstances.owl</dc:title>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2</owl:versionInfo>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/units.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/physics.owl"/>
+		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ed Shaya, University of Maryland</dc:creator>
+	</owl:Ontology>
+	<owl:Class rdf:ID="accelerationUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="amountOfSubstanceUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="angleUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="angularVelocityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="areaUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="atomicMassUnit">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#massUnit"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="capacitanceUnit">
+		<rdfs:subClassOf rdf:resource="#electromagneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="chargeUnit">
+		<rdfs:subClassOf rdf:resource="#electromagneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="cgsUnit">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#metricUnit"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="concentrationUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="conductanceUnit">
+		<rdfs:subClassOf rdf:resource="#electromagneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="currentDensityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="currentUnit">
+		<rdfs:subClassOf rdf:resource="#electromagneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="dispersionUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="electricalUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="electromagneticUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="energyUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="forceUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="frequencyUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="heatUnit">
+		<rdfs:subClassOf rdf:resource="#energyUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="inductanceUnit">
+		<rdfs:subClassOf rdf:resource="#electromagneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="inverseAngle">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#powerOf"/>
+	</owl:Class>
+	<owl:Class rdf:ID="inverseArea">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#powerOf"/>
+	</owl:Class>
+	<owl:Class rdf:ID="inverseLength">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#powerOf"/>
+	</owl:Class>
+	<owl:Class rdf:ID="inverseMassUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#powerOf"/>
+	</owl:Class>
+	<owl:Class rdf:ID="inverseTimeUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#powerOf"/>
+	</owl:Class>
+	<owl:Class rdf:ID="inverseVolumeUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#powerOf"/>
+	</owl:Class>
+	<owl:Class rdf:ID="lengthUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="linearMassDensityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="linearVelocityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="luminousIntensityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="luminanceUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="magneticUnit">
+		<rdfs:subClassOf rdf:resource="#electromagneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="magneticFluxUnit">
+		<rdfs:subClassOf rdf:resource="#magneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="magneticFluxDensityUnit">
+		<rdfs:subClassOf rdf:resource="#magneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="magneticFieldIntensityUnit">
+		<rdfs:subClassOf rdf:resource="#magneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="massFractionUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="massDensityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="massUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="metricUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="mksUnit">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#metricUnit"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="molality">
+		<rdfs:subClassOf rdf:resource="#concentrationUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="molarity">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#concentrationUnit"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="nuclearScienceUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="particleDensityUnit">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#concentrationUnit"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="electricPotentialUnit">
+		<rdfs:subClassOf rdf:resource="#electromagneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="photometryUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="powerUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="pressureUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="radioactivityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="resistanceUnit">
+		<rdfs:subClassOf rdf:resource="#electromagneticUnit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="solidAngleUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="stressUnit">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#pressureUnit"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="surfaceMassDensityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="temperatureUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="thermalConductivityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="timeUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="velocityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="viscosityUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="volumeUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="waveNumberUnit">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unit"/>
+	</owl:Class>
+	<owl:Class rdf:ID="workUnit">
+		<rdfs:subClassOf rdf:resource="#energyUnit"/>
+	</owl:Class>
+	<atomicMassUnit rdf:ID="atomicMassUnitH">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amuH</u:symbol>
+	</atomicMassUnit>
+	<u:powerOf rdf:ID="srad">
+		<u:hasUnit>
+			<angleUnit rdf:about="http://archive.astro.umd.edu/ont/units.owl#radian"/>
+		</u:hasUnit>
+		<u:hasExponent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</u:hasExponent>
+	</u:powerOf>
+	<inverseArea rdf:ID="perSquareMeter">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m-2</u:symbol>
+		<u:hasInverseOfUnit>
+			<areaUnit rdf:ID="squareMeter">
+				<u:hasUnit>
+					<u:powerOf rdf:ID="m2">
+						<u:hasUnit>
+							<lengthUnit rdf:about="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+						</u:hasUnit>
+						<u:hasExponent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</u:hasExponent>
+					</u:powerOf>
+				</u:hasUnit>
+				<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m2</u:symbol>
+			</areaUnit>
+		</u:hasInverseOfUnit>
+	</inverseArea>
+	<atomicMassUnit rdf:ID="atomicMassUnitC12">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amuC12</u:symbol>
+	</atomicMassUnit>
+	<angleUnit rdf:ID="arcminute">
+		<u:divisor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.0</u:divisor>
+		<u:hasUnit>
+			<angleUnit rdf:ID="degree">
+				<u:hasInverseOfSpecialNumber>
+					<u:mathConstant rdf:ID="pi">
+						<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pi</u:symbol>
+						<u:isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.1415927</u:isNumber>
+					</u:mathConstant>
+				</u:hasInverseOfSpecialNumber>
+				<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.0</u:factor>
+				<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deg</u:symbol>
+				<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#radian"/>
+			</angleUnit>
+		</u:hasUnit>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arcmin</u:symbol>
+	</angleUnit>
+	<phy:physicalConstant rdf:ID="speedOfLight">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c_0</u:symbol>
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.99792448e8</u:factor>
+		<u:hasUnit>
+			<inverseTimeUnit rdf:ID="perSecond">
+				<u:hasUnit>
+					<u:powerOf>
+						<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#second"/>
+						<u:hasExponent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-1.0</u:hasExponent>
+					</u:powerOf>
+				</u:hasUnit>
+				<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s-1</u:symbol>
+			</inverseTimeUnit>
+		</u:hasUnit>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+	</phy:physicalConstant>
+	<angleUnit rdf:ID="arcsecond">
+		<u:divisor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.0</u:divisor>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arcsec</u:symbol>
+		<u:hasUnit rdf:resource="#arcminute"/>
+	</angleUnit>
+	<lengthUnit rdf:ID="foot"/>
+	<molarity rdf:ID="molesPerCubicMeter">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mol.m-3</u:symbol>
+		<u:hasUnit>
+			<inverseVolumeUnit rdf:ID="perCubicMeter">
+				<u:hasInverseOfUnit>
+					<volumeUnit rdf:ID="cubicMeter">
+						<u:hasUnit>
+							<u:powerOf rdf:ID="m3">
+								<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+								<u:hasExponent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</u:hasExponent>
+							</u:powerOf>
+						</u:hasUnit>
+						<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m3</u:symbol>
+					</volumeUnit>
+				</u:hasInverseOfUnit>
+				<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m-3</u:symbol>
+			</inverseVolumeUnit>
+		</u:hasUnit>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#mole"/>
+	</molarity>
+	<lengthUnit rdf:ID="kilometer">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">km</u:symbol>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#Kilo"/>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+	</lengthUnit>
+	<photometryUnit rdf:about="http://archive.astro.umd.edu/ont/units.owl#candella"/>
+	<u:mathConstant rdf:ID="GoldenRatio">
+		<u:isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6180339887</u:isNumber>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phi</u:symbol>
+	</u:mathConstant>
+	<massUnit rdf:ID="pound">
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#gram"/>
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">453.59238</u:factor>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lb</u:symbol>
+	</massUnit>
+	<photometryUnit rdf:ID="Jansky">
+		<u:hasUnit>
+			<powerUnit rdf:ID="watt">
+				<u:hasUnit>
+					<energyUnit rdf:ID="joule">
+						<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J</u:symbol>
+						<u:hasUnit>
+							<forceUnit rdf:ID="newton">
+								<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N</u:symbol>
+								<u:hasInverseOfUnit>
+									<u:powerOf rdf:ID="squareSecond">
+										<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#second"/>
+										<u:hasExponent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</u:hasExponent>
+										<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s2</u:symbol>
+									</u:powerOf>
+								</u:hasInverseOfUnit>
+								<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+								<u:hasUnit>
+									<massUnit rdf:ID="kilogram">
+										<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#Kilo"/>
+										<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#gram"/>
+										<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kg</u:symbol>
+									</massUnit>
+								</u:hasUnit>
+							</forceUnit>
+						</u:hasUnit>
+						<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+					</energyUnit>
+				</u:hasUnit>
+				<u:hasUnit rdf:resource="#perSecond"/>
+				<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W</u:symbol>
+			</powerUnit>
+		</u:hasUnit>
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.e-26</u:factor>
+		<u:hasInverseOfUnit rdf:resource="#squareMeter"/>
+		<u:hasInverseOfUnit>
+			<frequencyUnit rdf:ID="hz">
+				<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hz</u:symbol>
+				<u:hasUnit rdf:resource="#perSecond"/>
+			</frequencyUnit>
+		</u:hasInverseOfUnit>
+	</photometryUnit>
+	<inverseMassUnit rdf:ID="perKg">
+		<u:hasInverseOfUnit rdf:resource="#kilogram"/>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kg-1</u:symbol>
+	</inverseMassUnit>
+	<u:unit rdf:ID="perSquareKg">
+		<u:hasInverseOfUnit>
+			<u:powerOf rdf:ID="squareKg">
+				<u:hasExponent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</u:hasExponent>
+				<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kg2</u:symbol>
+				<u:hasUnit rdf:resource="#kilogram"/>
+			</u:powerOf>
+		</u:hasInverseOfUnit>
+	</u:unit>
+	<massUnit rdf:ID="metricTon">
+		<u:hasUnit rdf:resource="#kilogram"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Same as megagram</rdfs:comment>
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</u:factor>
+	</massUnit>
+	<lengthUnit rdf:ID="angstrom">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A</u:symbol>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0e-10</u:factor>
+	</lengthUnit>
+	<solidAngleUnit rdf:ID="steradian">
+		<u:hasUnit rdf:resource="#srad"/>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">srad</u:symbol>
+	</solidAngleUnit>
+	<massUnit rdf:ID="shortTon">
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">907.18475</u:factor>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">US Conventional ton.  Now defined in terms of kilograms.  Also equal to about 2000 pounds.</rdfs:comment>
+		<u:hasUnit rdf:resource="#kilogram"/>
+	</massUnit>
+	<concentrationUnit rdf:ID="unitlessMolarFraction">
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unitlessFraction"/>
+	</concentrationUnit>
+	<inverseLength rdf:ID="perMeter">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m-1</u:symbol>
+		<u:hasInverseOfUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+	</inverseLength>
+	<temperatureUnit rdf:about="http://archive.astro.umd.edu/ont/units.owl#kelvin"/>
+	<particleDensityUnit rdf:ID="numberPerCubicMeter">
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unitlessNumber"/>
+		<u:hasUnit rdf:resource="#perCubicMeter"/>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m-3</u:symbol>
+	</particleDensityUnit>
+	<concentrationUnit rdf:ID="unitlessMassFraction">
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unitlessFraction"/>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m_i</u:symbol>
+	</concentrationUnit>
+	<lengthUnit rdf:ID="parsec">
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">648000</u:factor>
+		<u:hasUnit>
+			<lengthUnit rdf:about="http://archive.astro.umd.edu/ont/astronomy.owl#astronomicalUnit"/>
+		</u:hasUnit>
+		<u:hasInverseOfSpecialNumber rdf:resource="#pi"/>
+	</lengthUnit>
+	<lengthUnit rdf:ID="mile"/>
+	<linearVelocityUnit rdf:ID="meterPerSecond">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m.s-1</u:symbol>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+		<u:hasUnit rdf:resource="#perSecond"/>
+	</linearVelocityUnit>
+	<inverseAngle rdf:ID="perRadian">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rad-1</u:symbol>
+		<u:hasExponent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-1.0</u:hasExponent>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#radian"/>
+	</inverseAngle>
+	<inverseAngle rdf:ID="perDegree">
+		<u:hasInverseOfUnit rdf:resource="#degree"/>
+	</inverseAngle>
+	<lengthUnit rdf:ID="planckLength"/>
+	<energyUnit rdf:ID="erg">
+		<rdf:type rdf:resource="http://archive.astro.umd.edu/ont/units.owl#CgsUnit"/>
+	</energyUnit>
+	<electricalUnit rdf:about="http://archive.astro.umd.edu/ont/units.owl#ampere"/>
+	<angularVelocityUnit rdf:ID="degreesPerSecond">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deg.s-1</u:symbol>
+		<u:hasUnit rdf:resource="#perSecond"/>
+		<u:hasUnit rdf:resource="#degree"/>
+	</angularVelocityUnit>
+	<angularVelocityUnit rdf:ID="radiansPerSecond">
+		<u:hasUnit rdf:resource="#perSecond"/>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#radian"/>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rad.s-1</u:symbol>
+	</angularVelocityUnit>
+	<u:mathConstant rdf:ID="EulerConstant">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma</u:symbol>
+		<u:isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.577215664901532</u:isNumber>
+	</u:mathConstant>
+	<concentrationUnit rdf:ID="unitlessAtomicFraction">
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#unitlessFraction"/>
+	</concentrationUnit>
+	<forceUnit rdf:ID="dyne">
+		<rdf:type rdf:resource="http://archive.astro.umd.edu/ont/units.owl#CgsUnit"/>
+	</forceUnit>
+	<timeUnit rdf:ID="minute">
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.0</u:factor>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min</u:symbol>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#second"/>
+	</timeUnit>
+	<timeUnit rdf:ID="meanSolarSecond"/>
+	<timeUnit rdf:ID="month"/>
+	<timeUnit rdf:ID="nodicalMonth">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nodical month</rdfs:label>
+	</timeUnit>
+	<timeUnit rdf:ID="synodicMonth">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synodic month</rdfs:label>
+	</timeUnit>
+	<timeUnit rdf:ID="anomalisticYear">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anomalistic Year</rdfs:label>
+	</timeUnit>
+	<timeUnit rdf:ID="anomalisticMonth">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anomalistic month</rdfs:label>
+	</timeUnit>
+	<lengthUnit rdf:ID="solarRadius"/>
+	<lengthUnit rdf:about="http://archive.astro.umd.edu/ont/astronomy.owl#astronomicalUnit">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AU</u:symbol>
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4959787e11</u:factor>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distance from the Sun of a massless particle moving in a circular orbit with period of one Gaussian year.</rdfs:comment>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#meter"/>
+	</lengthUnit>
+	<temperatureUnit rdf:ID="Rankine"/>
+	<temperatureUnit rdf:ID="Fahrenheit"/>
+	<temperatureUnit rdf:ID="Celsius"/>
+	<chargeUnit rdf:ID="statcoulomb">
+		<rdf:type rdf:resource="http://archive.astro.umd.edu/ont/units.owl#CgsUnit"/>
+	</chargeUnit>
+	<pressureUnit rdf:ID="bar">
+		<rdf:type rdf:resource="http://archive.astro.umd.edu/ont/units.owl#CgsUnit"/>
+	</pressureUnit>
+	<lengthUnit rdf:ID="inch">
+		<u:divisor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12</u:divisor>
+		<u:hasUnit rdf:resource="http://archive.astro.umd.edu/ont/units.owl#foot"/>
+	</lengthUnit>
+	<magneticFluxDensityUnit rdf:ID="gauss">
+		<rdf:type rdf:resource="http://archive.astro.umd.edu/ont/units.owl#CgsUnit"/>
+	</magneticFluxDensityUnit>
+	<magneticFluxDensityUnit rdf:ID="tesla">
+		<rdf:type rdf:resource="http://archive.astro.umd.edu/ont/units.owl#MksUnit"/>
+	</magneticFluxDensityUnit>
+	<magneticFluxUnit rdf:ID="maxwell">
+		<rdf:type rdf:resource="http://archive.astro.umd.edu/ont/units.owl#CgsUnit"/>
+	</magneticFluxUnit>
+	<magneticFluxUnit rdf:ID="weber">
+		<rdf:type rdf:resource="http://archive.astro.umd.edu/ont/units.owl#MksUnit"/>
+	</magneticFluxUnit>
+	<magneticFieldIntensityUnit rdf:ID="oersted">
+		<rdf:type rdf:resource="http://archive.astro.umd.edu/ont/units.owl#MksUnit"/>
+	</magneticFieldIntensityUnit>
+	<dispersionUnit rdf:ID="angstromsPerDegree">
+		<u:hasInverseOfUnit rdf:resource="#degree"/>
+	</dispersionUnit>
+	<atomicMassUnit rdf:ID="atomicMassUnitO16">
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amuO16</u:symbol>
+	</atomicMassUnit>
+	<timeUnit rdf:ID="day">
+		<u:hasUnit>
+			<timeUnit rdf:ID="hour">
+				<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.0</u:factor>
+				<u:hasUnit rdf:resource="#minute"/>
+				<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hr</u:symbol>
+			</timeUnit>
+		</u:hasUnit>
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.0</u:factor>
+	</timeUnit>
+	<timeUnit rdf:ID="ephemerisSecond"/>
+	<timeUnit rdf:ID="week"/>
+	<lengthUnit rdf:ID="lightYear"/>
+	<u:mathConstant rdf:ID="EulerNumber">
+		<u:isNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.718281828459</u:isNumber>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e</u:symbol>
+	</u:mathConstant>
+	<lengthUnit rdf:ID="fermi"/>
+	<massUnit rdf:ID="longTon">
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1016.04694</u:factor>
+		<u:hasUnit rdf:resource="#kilogram"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An avoirdupois unit commonly used in the UK.  It is within 2% of metricTon</rdfs:comment>
+	</massUnit>
+	<u:unit rdf:ID="perSquareSecond">
+		<u:hasInverseOfUnit rdf:resource="#squareSecond"/>
+	</u:unit>
+	<lengthUnit rdf:ID="yard"/>
+	<phy:physicalConstant rdf:ID="gravitationalConstant">
+		<u:factor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.6726e-11</u:factor>
+		<u:hasUnit rdf:resource="#newton"/>
+		<u:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</u:symbol>
+	</phy:physicalConstant>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 3.4, Build 128)  http://protege.stanford.edu -->

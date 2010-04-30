@@ -6,7 +6,7 @@
 package sk.hasto.semchat.domain.services.repositories;
 
 import java.util.List;
-import sk.hasto.semchat.domain.common.Repository;
+import sk.hasto.semchat.domain.Repository;
 import sk.hasto.semchat.domain.model.Message;
 
 /**

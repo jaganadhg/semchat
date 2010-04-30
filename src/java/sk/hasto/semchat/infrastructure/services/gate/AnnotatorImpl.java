@@ -1,5 +1,6 @@
 package sk.hasto.semchat.infrastructure.services.gate;
 
+import sk.hasto.semchat.infrastructure.GateResourceFactory;
 import gate.Annotation;
 import gate.AnnotationSet;
 import gate.Document;
@@ -12,9 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 import org.apache.commons.lang.Validate;
 import sk.hasto.semchat.domain.model.ChatSegmentOntology.ConceptType;
-import sk.hasto.semchat.domain.model.Message;
 import sk.hasto.semchat.domain.model.OntologyAnnotation;
-import sk.hasto.semchat.domain.services.AnnotatorException;
 import sk.hasto.semchat.domain.services.Annotator;
 
 /**
@@ -33,13 +32,11 @@ public final class AnnotatorImpl implements Annotator
 	}
 
 
-	public void annotate(Message message) throws AnnotatorException
+	public Set<OntologyAnnotation> annotate(String text)
 	{
-		Validate.notNull(message, "Message must not be null.");
-
 		Document document = null;
 		try {
-			document = factory.newDocument(message.getText());
+			document = factory.newDocument(text);
 			gazetteer.setDocument(document);
 			gazetteer.execute();
 
@@ -52,11 +49,11 @@ public final class AnnotatorImpl implements Annotator
 				}
 			}
 
-			message.setAnnotations(annotations);
+			return annotations;
 		}
 
 		catch (GateException ex) {
-			throw new AnnotatorException(ex);
+			throw new RuntimeException(ex);
 		}
 
 		finally {

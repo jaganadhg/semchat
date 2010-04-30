@@ -1,7 +1,8 @@
 package sk.hasto.semchat.domain.services.repositories;
 
 import java.util.List;
-import sk.hasto.semchat.domain.common.Repository;
+import java.util.UUID;
+import sk.hasto.semchat.domain.Repository;
 import sk.hasto.semchat.domain.model.ChatSegment;
 import sk.hasto.semchat.domain.model.Similarity;
 
@@ -13,7 +14,16 @@ public interface ChatSegmentRepository extends Repository<ChatSegment>
 {
 
 	/**
-	 * @return najnovsi (aktualny) segment
+	 * Vrati segment podla identifikatora.
+	 * Ak sa segment nenajde, metoda by mala vratit null.
+	 * @param id id segmentu
+	 * @return segment so zadanym id, alebo null, ak sa nenajde
+	 */
+	ChatSegment getById(UUID id);
+
+
+	/**
+	 * @return posledny ulozeny segment
 	 */
 	ChatSegment getLast();
 
@@ -27,8 +37,7 @@ public interface ChatSegmentRepository extends Repository<ChatSegment>
 	 * @param minSimilarity minimalna pozadovana podobnost
 	 * @return zoradene vysledky hladania
 	 */
-	List<Similarity> getSimilarSegments(ChatSegment segment,
-			                            float minSimilarity);
+	List<Similarity> findSimilarSegments(ChatSegment segment, float minSimilarity);
 
 
 	/**
@@ -36,15 +45,5 @@ public interface ChatSegmentRepository extends Repository<ChatSegment>
 	 * @param updatedSegment
 	 */
 	void store(ChatSegment segment);
-
-
-	/**
-	 * Vrati segment podla identifikatora.
-	 * Ak sa segment nenajde, mal by vratit null.
-	 * @param id id segmentu
-	 * @return segment so zadanym id, alebo null,
-	 * ak segment so zadanym id nie je v databaze
-	 */
-	public ChatSegment getById(long id);
 
 }

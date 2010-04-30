@@ -1,0 +1,25 @@
+Black Holes Lead Galaxy Growth
+
+ScienceDaily (Jan. 7, 2009) — Astronomers may have solved a cosmic chicken-and-egg problem -- the question of which formed first in the early Universe -- galaxies or the supermassive black holes seen at their cores.
+
+"It looks like the black holes came first. The evidence is piling up," said Chris Carilli, of the National Radio Astronomy Observatory (NRAO). Carilli outlined the conclusions from recent research done by an international team studying conditions in the first billion years of the Universe's history in a lecture presented to the American Astronomical Society's meeting in Long Beach, California.
+
+Earlier studies of galaxies and their central black holes in the nearby Universe revealed an intriguing linkage between the masses of the black holes and of the central "bulges" of stars and gas in the galaxies. The ratio of the black hole and the bulge mass is nearly the same for a wide range of galactic sizes and ages. For central black holes from a few million to many billions of times the mass of our Sun, the black hole's mass is about one one-thousandth of the mass of the surrounding galactic bulge.
+
+"This constant ratio indicates that the black hole and the bulge affect each others' growth in some sort of interactive relationship," said Dominik Riechers, of Caltech. "The big question has been whether one grows before the other or if they grow together, maintaining their mass ratio throughout the entire process."
+
+In the past few years, scientists have used the National Science Foundation's Very Large Array radio telescope and the Plateau de Bure Interferometer in France to peer far back in the 13.7 billion-year history of the Universe, to the dawn of the first galaxies.
+
+"We finally have been able to measure black-hole and bulge masses in several galaxies seen as they were in the first billion years after the Big Bang, and the evidence suggests that the constant ratio seen nearby may not hold in the early Universe. The black holes in these young galaxies are much more massive compared to the bulges than those seen in the nearby Universe," said Fabian Walter of the Max-Planck Institute for Radioastronomy (MPIfR) in Germany.
+
+"The implication is that the black holes started growing first."
+
+The next challenge is to figure out how the black hole and the bulge affect each others' growth. "We don't know what mechanism is at work here, and why, at some point in the process, the 'standard' ratio between the masses is established," Riechers said.
+
+New telescopes now under construction will be key tools for unraveling this mystery, Carilli explained. "The Expanded Very Large Array (EVLA) and the Atacama Large Millimeter/submillimeter Array (ALMA) will give us dramatic improvements in sensitivity and the resolving power to image the gas in these galaxies on the small scales required to make detailed studies of their dynamics," he said.
+
+"To understand how the Universe got to be the way it is today, we must understand how the first stars and galaxies were formed when the Universe was young. With the new observatories we'll have in the next few years, we'll have the opportunity to learn important details from the era when the Universe was only a toddler compared to today's adult," Carilli said.
+
+Carilli, Riechers and Walter worked with Frank Bertoldi of Bonn University; Karl Menten of MPIfR; and Pierre Cox and Roberto Neri of the Insitute for Millimeter Radio Astronomy (IRAM) in France.
+
+The National Radio Astronomy Observatory is a facility of the National Science Foundation, operated under cooperative agreement by Associated Universities, Inc.

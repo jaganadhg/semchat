@@ -1,0 +1,650 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY ast "http://archive.astro.umd.edu/ont/astronomy.owl#">
+	<!ENTITY ivoao "http://archive.astro.umd.edu/ont/IVOAO.owl#">
+	<!ENTITY geo "http://archive.astro.umd.edu/ont/geometry.owl#">
+	<!ENTITY chem "http://archive.astro.umd.edu/ont/chemistry.owl#">
+	<!ENTITY ui "http://archive.astro.umd.edu/ont/unitsInstances.owl#">
+	<!ENTITY phy "http://archive.astro.umd.edu/ont/physics.owl#">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns/">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by Ed Shaya (U. of Maryland) -->
+<rdf:RDF 
+	xmlns:q="http://archive.astro.umd.edu/ont/quantity.owl#" 
+	xmlns="http://archive.astro.umd.edu/ont/operation.owl#" 
+	xmlns:phy="http://archive.astro.umd.edu/ont/physics.owl#" 
+	xmlns:ivoao="http://archive.astro.umd.edu/ont/IVOAO.owl#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
+	xmlns:inst="http://archive.astro.umd.edu/ont/instrument.owl#" 
+	xmlns:geo="http://archive.astro.umd.edu/ont/geometry.owl#" 
+	xmlns:a="http://archive.astro.umd.edu/ont/astronomy.owl#" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+	xmlns:u="http://archive.astro.umd.edu/ont/units.owl#" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/" 
+	xmlns:stat="http://archive.astro.umd.edu/ont/statistics.owl#" 
+	xmlns:ui="http://archive.astro.umd.edu/ont/unitsInstances.owl#" 
+	xml:base="http://archive.astro.umd.edu/ont/operation.owl">
+	<owl:Ontology rdf:about="">
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl"/>
+	</owl:Ontology>
+	<owl:Class rdf:ID="addition">
+		<rdfs:subClassOf rdf:resource="#binaryOperation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="amplitudeOfVector">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#unaryOperation"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#vectorOperation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="binaryOperation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#mathOperation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="blackBodyFit">
+		<rdfs:subClassOf rdf:resource="#analysis"/>
+	</owl:Class>
+	<owl:Class rdf:ID="compiledProgram">
+		<rdfs:subClassOf rdf:resource="&ivoao;computerProgram"/>
+	</owl:Class>
+	<owl:Class rdf:ID="computerLanguage">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#invention"/>
+	</owl:Class>
+	<owl:Class rdf:ID="correlation">
+		<rdfs:subClassOf rdf:resource="#relationship"/>
+	</owl:Class>
+	<owl:Class rdf:ID="difference">
+		<rdfs:subClassOf rdf:resource="#subtraction"/>
+	</owl:Class>
+	<owl:Class rdf:ID="division">
+		<rdfs:subClassOf rdf:resource="#binaryOperation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="exactRelationship">
+		<rdfs:subClassOf rdf:resource="#relationship"/>
+	</owl:Class>
+	<owl:Class rdf:ID="fileLocation">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#Url"/>
+	</owl:Class>
+	<owl:Class rdf:ID="logarithm">
+		<rdfs:subClassOf rdf:resource="#MLogarithm"/>
+	</owl:Class>
+	<owl:Class rdf:ID="MAddition">
+		<rdfs:subClassOf rdf:resource="#operationOnMeasurement"/>
+		<rdfs:subClassOf rdf:resource="#binaryOperation"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Addition of measured quantities.  This requires unit checking and handling combining accuracies.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="mathOperation">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#operation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MDivision">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#binaryOperation"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#operationOnMeasurement"/>
+		</rdfs:subClassOf>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Division of measured quantities.  This requires unit checking and handling combining accuracies.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="MLogarithm">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#operationOnMeasurement"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#unaryOperation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MMultiplication">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#binaryOperation"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#operationOnMeasurement"/>
+		</rdfs:subClassOf>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiplication of measured quantities.  This requires unit checking and handling combining accuracies.</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="MNaturalLogarithm">
+		<rdfs:subClassOf rdf:resource="#unaryOperation"/>
+		<rdfs:subClassOf rdf:resource="#operationOnMeasurement"/>
+	</owl:Class>
+	<owl:Class rdf:ID="MSubtract">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:FunctionalProperty rdf:about="#Urn"/>
+				</owl:onProperty>
+				<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urn:archive.astro.umd.edu/java/subtract.exe</owl:hasValue>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="&ivoao;computerProgram"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom rdf:resource="#subtraction"/>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#implements"/>
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MSubtraction">
+		<rdfs:subClassOf rdf:resource="#binaryOperation"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#operationOnMeasurement"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="multiplication">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#operationOnMeasurement"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#binaryOperation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Multiplication"/>
+	<owl:Class rdf:ID="naturalLogarithm">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#MNaturalLogarithm"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="operatingSystem">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#invention"/>
+	</owl:Class>
+	<owl:Class rdf:ID="operationOnMeasurement">
+		<rdfs:subClassOf rdf:resource="#mathOperation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="physicalRelation">
+		<rdfs:subClassOf rdf:resource="#analysis"/>
+	</owl:Class>
+	<owl:Class rdf:ID="powerLawFit">
+		<rdfs:subClassOf rdf:resource="#analysis"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The value is the amplitude A of the PowerLawFit.  There is also the SpectralIndex, base, and WaveMeasurement where A is referenced.
+Fit = A(Wave)*base^(SpectralIndex)</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="ratio">
+		<rdfs:subClassOf rdf:resource="#MDivision"/>
+	</owl:Class>
+	<owl:Class rdf:ID="relationship">
+		<rdfs:subClassOf>
+			<owl:Class rdf:ID="analysis"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="reverseVector">
+		<rdfs:subClassOf rdf:resource="#unaryOperation"/>
+		<rdfs:subClassOf rdf:resource="#vectorOperation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="segmentedPowerLawFit">
+		<rdfs:subClassOf rdf:resource="#analysis"/>
+	</owl:Class>
+	<owl:Class rdf:ID="setting">
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#parameter"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This could be a dial setting, a flag setting, a parameter setting.  </rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="simulation">
+		<rdfs:subClassOf rdf:resource="#analysis"/>
+	</owl:Class>
+	<owl:Class rdf:ID="subtraction">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#binaryOperation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="unaryOperation">
+		<rdfs:subClassOf rdf:resource="#mathOperation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="vectorAddition">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#vectorOperation"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#binaryOperation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="vectorCrossProduct">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#vectorOperation"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#binaryOperation"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="vectorDotProduct">
+		<rdfs:subClassOf rdf:resource="#vectorOperation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="vectorOperation">
+		<rdfs:subClassOf rdf:resource="#mathOperation"/>
+	</owl:Class>
+	<owl:Class rdf:ID="vectorSubtraction">
+		<rdfs:subClassOf rdf:resource="#vectorOperation"/>
+		<rdfs:subClassOf rdf:resource="#binaryOperation"/>
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="compiledOn">
+		<rdfs:domain rdf:resource="#compiledProgram"/>
+		<rdfs:range rdf:resource="#operatingSystem"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasFileAt">
+		<rdfs:domain rdf:resource="&ivoao;computerProgram"/>
+		<rdfs:range rdf:resource="#fileLocation"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasProgram">
+		<rdfs:domain rdf:resource="#analysis"/>
+		<rdfs:range rdf:resource="&ivoao;computerProgram"/>
+		<owl:inverseOf>
+			<owl:ObjectProperty rdf:about="#programFor"/>
+		</owl:inverseOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasRelationship">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/physics.owl#physicalObject"/>
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/quantity.owl#quantity"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#relationship"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="implements">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="&ivoao;computerProgram"/>
+					<owl:Class rdf:about="#operation"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#analysis"/>
+					<owl:Class rdf:about="#operation"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="input">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="&ivoao;computerProgram"/>
+					<owl:Class rdf:about="#operation"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/quantity.owl#quantity"/>
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/astronomy.owl#astroObject"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<owl:inverseOf rdf:resource="#inputTo"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="inputQuantity2">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#inputQuantity1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="inputQuantity3">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#inputQuantity1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="inputQuantity4">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#inputQuantity1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="inputThing2">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#inputThing1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="inputThing3">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#inputThing1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="inputThing4">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#inputThing1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="inputTo">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/quantity.owl#quantity"/>
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/astronomy.owl#astroObject"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="&ivoao;computerProgram"/>
+					<owl:Class rdf:about="#operation"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<owl:inverseOf>
+			<owl:ObjectProperty rdf:about="#input"/>
+		</owl:inverseOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="isInLanguage">
+		<rdfs:domain rdf:resource="&ivoao;computerProgram"/>
+		<rdfs:range rdf:resource="#computerLanguage"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="Maddends">
+		<rdfs:domain rdf:resource="#MAddition"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="mDivisor">
+		<rdfs:domain rdf:resource="#MDivision"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="mFactor">
+		<rdfs:domain rdf:resource="#MMultiplication"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="ofNumeric">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#MNaturalLogarithm"/>
+					<owl:Class rdf:about="#MLogarithm"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl#numeric"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="ouputThing2">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#ouputThing1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="ouputThing3">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#ouputThing1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="ouputThing4">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#ouputThing1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="output">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="&ivoao;computerProgram"/>
+					<owl:Class rdf:about="#operation"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/quantity.owl#quantity"/>
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/astronomy.owl#astroObject"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<owl:inverseOf>
+			<owl:ObjectProperty rdf:about="#outputFrom"/>
+		</owl:inverseOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="outputFrom">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/quantity.owl#quantity"/>
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/astronomy.owl#astroObject"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="&ivoao;computerProgram"/>
+					<owl:Class rdf:about="#operation"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<owl:inverseOf rdf:resource="#output"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="outputM">
+		<rdfs:domain rdf:resource="#operationOnMeasurement"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="outputNumber">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#vectorDotProduct"/>
+					<owl:Class rdf:about="#amplitudeOfVector"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl#number"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="outputQuantity2">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#outputQuantity1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="outputQuantity3">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#outputQuantity1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="outputQuantity4">
+		<rdfs:subPropertyOf>
+			<owl:FunctionalProperty rdf:about="#outputQuantity1"/>
+		</rdfs:subPropertyOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="outputVector">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#vectorCrossProduct"/>
+					<owl:Class rdf:about="#vectorSubtraction"/>
+					<owl:Class rdf:about="#vectorAddition"/>
+					<owl:Class rdf:about="#reverseVector"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/geometry.owl#vector"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="programFor">
+		<rdfs:domain rdf:resource="&ivoao;computerProgram"/>
+		<rdfs:range rdf:resource="#analysis"/>
+		<owl:inverseOf rdf:resource="#hasProgram"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="reduceByM">
+		<rdfs:domain rdf:resource="#MSubtraction"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="relates">
+		<rdfs:domain rdf:resource="#analysis"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/physics.owl#physicalObject"/>
+					<owl:Class rdf:about="http://archive.astro.umd.edu/ont/quantity.owl#quantity"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="takesSetting">
+		<rdfs:domain rdf:resource="&ivoao;computerProgram"/>
+		<rdfs:range rdf:resource="#setting"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="vector">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#amplitudeOfVector"/>
+					<owl:Class rdf:about="#reverseVector"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/geometry.owl#vector"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="vector1">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#vectorCrossProduct"/>
+					<owl:Class rdf:about="#vectorDotProduct"/>
+					<owl:Class rdf:about="#vectorAddition"/>
+					<owl:Class rdf:about="#vectorSubtraction"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/geometry.owl#vector"/>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="vector2">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#vectorCrossProduct"/>
+					<owl:Class rdf:about="#vectorDotProduct"/>
+					<owl:Class rdf:about="#vectorAddition"/>
+					<owl:Class rdf:about="#vectorSubtraction"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/geometry.owl#vector"/>
+	</owl:ObjectProperty>
+	<owl:DatatypeProperty rdf:ID="addends">
+		<rdfs:domain rdf:resource="#addition"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="base">
+		<rdfs:domain rdf:resource="#MLogarithm"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="divisor">
+		<rdfs:domain rdf:resource="#division"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What divides into the numerator.</rdfs:comment>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="floatDivisor">
+		<rdfs:domain rdf:resource="#MDivision"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Divisor on Measurements besides another Measurement.</rdfs:comment>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="floatFactor">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#MMultiplication"/>
+					<owl:Class rdf:about="#Multiplication"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiplier allowed in Measuremnts.</rdfs:comment>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="isVersion">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#operatingSystem"/>
+					<owl:Class rdf:about="&ivoao;computerProgram"/>
+					<owl:Class rdf:about="#computerLanguage"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="reduceBy">
+		<rdfs:domain rdf:resource="#subtraction"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="takeSettingNamed">
+		<rdfs:domain rdf:resource="&ivoao;computerProgram"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<owl:FunctionalProperty rdf:ID="choiceOfBase">
+		<rdfs:domain rdf:resource="#powerLawFit"/>
+		<rdfs:range>
+			<owl:DataRange>
+				<owl:oneOf rdf:parseType="Resource">
+					<rdf:rest rdf:parseType="Resource">
+						<rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0</rdf:first>
+						<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+					</rdf:rest>
+					<rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naturalLogBase</rdf:first>
+				</owl:oneOf>
+			</owl:DataRange>
+		</rdfs:range>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 or e is used for the base of the power law.</rdfs:comment>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasInitial">
+		<rdfs:domain rdf:resource="#subtraction"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasSpectralIndex">
+		<rdfs:domain rdf:resource="#powerLawFit"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/chemistry.owl#spectralIndex"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="initialM">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#MSubtraction"/>
+					<owl:Class rdf:about="#MDivision"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#measurement"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="initialValue">
+		<rdfs:domain rdf:resource="#division"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="inputQuantity1">
+		<rdfs:domain rdf:resource="#operation"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl#quantity"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="inputThing1">
+		<rdfs:domain rdf:resource="#operation"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="ouputThing1">
+		<rdfs:domain rdf:resource="#operation"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="outputQuantity1">
+		<rdfs:domain rdf:resource="#operation"/>
+		<rdfs:range rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl#quantity"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="Urn">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="&ivoao;computerProgram"/>
+					<owl:Class rdf:about="#operation"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	</owl:FunctionalProperty>
+	<computerLanguage rdf:ID="Python"/>
+</rdf:RDF>

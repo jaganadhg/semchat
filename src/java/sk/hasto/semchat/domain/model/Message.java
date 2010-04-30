@@ -2,7 +2,6 @@ package sk.hasto.semchat.domain.model;
 
 import java.util.Collections;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Set;
 import org.apache.commons.lang.Validate;
 
@@ -23,7 +22,7 @@ public final class Message
 	private final User user;
 
 	/** anotacie pre tuto spravu */
-	private Set<OntologyAnnotation> annotations;
+	private final Set<OntologyAnnotation> annotations;
 
 	
 	/**
@@ -32,14 +31,16 @@ public final class Message
 	 * @param user autor spravy
 	 * @throws IllegalArgumentException ak je text null, alebo prazdny
 	 */
-	public Message(String text, User user)
+	public Message(String text, User user, Set<OntologyAnnotation> annotations)
 	{
-		Validate.notEmpty(text, "Text must not be null or empty.");
-		Validate.notNull(user, "User must not be null.");
+		Validate.notEmpty(text, "Text is null or empty.");
+		Validate.notNull(user, "User is null.");
+		Validate.notNull(annotations, "Annotation set is null.");
 
 		this.user = user;
 		this.text = text.trim();
-		time = new Date();
+		this.annotations = annotations;
+		this.time = new Date();
 	}
 
 	
@@ -48,7 +49,7 @@ public final class Message
 	 */
 	public String getText()
 	{
-		return this.text;
+		return text;
 	}
 
 	
@@ -71,16 +72,6 @@ public final class Message
 
 
 	/**
-	 * Nastavi anotacie pre tuto spravu.
-	 * @param annotations
-	 */
-	public void setAnnotations(Set<OntologyAnnotation> annotations)
-	{
-		this.annotations = new HashSet<OntologyAnnotation>(annotations);
-	}
-
-
-	/**
 	 * @return anotacie pre tuto spravu
 	 */
 	Set<OntologyAnnotation> getAnnotations()
@@ -90,27 +81,12 @@ public final class Message
 
 
 	/**
-	 * Zisti, ci je sprava uz anotovana.
-	 * @return
-	 */
-	public boolean isAnnotated()
-	{
-		return annotations != null;
-	}
-
-
-	/**
 	 * Zisti, ci ma tato sprava semanticku hodnotu.
-	 * Semanticku hodnotu ma sprava vtedy, ak sa
-	 * v nej nachadzaju vyrazy z ontologie.
+	 * Semanticku hodnotu ma, ak obsahuje vyrazy z ontologie.
 	 * @return
 	 */
-	public boolean hasSemanticValue()
+	boolean hasSemanticValue()
 	{
-		if (!isAnnotated()) {
-			throw new IllegalStateException("Message must be annotated.");
-		}
-		
 		return !annotations.isEmpty();
 	}
 

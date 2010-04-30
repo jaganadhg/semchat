@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:q="http://archive.astro.umd.edu/ont/quantity.owl#"
+    xmlns:op="http://archive.astro.umd.edu/ont/operation.owl#"
+    xmlns:phy="http://archive.astro.umd.edu/ont/physics.owl#"
+    xmlns:inst="http://archive.astro.umd.edu/ont/instruments.owl#"
+    xmlns:chem="http://archive.astro.umd.edu/ont/chemistry.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ivoao="http://archive.astro.umd.edu/ont/IVOAO.owl#"
+    xmlns:pt="http://archive.astro.umd.edu/ont/physicalTheory.owl#"
+    xmlns:geo="http://archive.astro.umd.edu/ont/geometry.owl#"
+    xmlns:a="http://archive.astro.umd.edu/ont/astronomy.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:u="http://archive.astro.umd.edu/ont/units.owl#"
+    xmlns:ui="http://archive.astro.umd.edu/ont/unitsInstances.owl#"
+    xmlns:skos="http://archive.astro.umd.edu/ont/skos-core.owl#"
+    xmlns:stat="http://archive.astro.umd.edu/ont/statistics.owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://archive.astro.umd.edu/ont/IVOAO_root.owl#"
+  xml:base="http://archive.astro.umd.edu/ont/IVOAO_root.owl">
+  <owl:Ontology rdf:about="">
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ed Shaya</dc:creator>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/astronomy.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/geometry.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/physics.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/instruments.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/quantity.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/operation.owl"/>
+
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/skos-core.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/physicalTheory.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/statistics.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/units.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/unitsInstances.owl"/>
+    <owl:imports rdf:resource="http://archive.astro.umd.edu/ont/chemistry.owl"/>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This ontology is the root for all of the pieces of the astronomy ontology. It just imports other ontologies. The full set includes terms from the IVOA Thesaurus plus terms from the UMD astronomical ontology</dc:description>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IVOAO_root.owl</dc:title>
+  </owl:Ontology>
+</rdf:RDF>

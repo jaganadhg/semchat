@@ -1,0 +1,188 @@
+Asteroid
+
+Asteroids, sometimes called minor planets or planetoids, are small Solar System bodies in orbit around the Sun, especially in the inner Solar System; they are smaller than planets but larger than meteoroids. The term "asteroid" has historically been applied primarily to minor planets of the inner Solar System, as the outer Solar System was poorly known when it came into common usage. The distinction between asteroids and comets is made on visual appearance: Comets show a perceptible coma while asteroids do not.
+
+Traditionally, small bodies orbiting the Sun were classified as asteroids, comets or meteoroids, with anything smaller than ten metres across being called a meteoroid.[1] The term "asteroid" is ill-defined. It never had a formal definition, with the broader term minor planet being preferred by the International Astronomical Union until 2006, when the term "small Solar System body" (SSSB) was introduced to cover both minor planets and comets. The 2006 definition of SSSB says that they "include most of the Solar System asteroids, most Trans-Neptunian Objects (TNOs), comets, and other small bodies".[2] Other languages prefer "planetoid" (Greek for "planet-like"), and this term is occasionally used in English for the larger asteroids. The word "planetesimal" has a similar meaning, but refers specifically to the small building blocks of the planets that existed when the Solar System was forming. The term "planetule" was coined by the geologist William Daniel Conybeare to describe minor planets,[3] but is not in common use.
+
+When found, asteroids were seen as a class of objects distinct from comets, and there was no unified term for the two until "small Solar System body" was coined in 2006. The main difference between an asteroid and a comet is that a comet shows a coma due to sublimation of near surface ices by solar radiation. A few objects have ended up being dual-listed because they were first classified as minor planets but later showed evidence of cometary activity. Conversely, some (perhaps all) comets are eventually depleted of their surface volatile ices and become asteroids. A further distinction is that comets typically have more eccentric orbits than most asteroids; most "asteroids" with notably eccentric orbits are probably dormant or extinct comets.[citation needed]
+
+For almost two centuries, from the discovery of the first asteroid, Ceres, in 1801 until the discovery of the first centaur, 2060 Chiron, in 1977, all known asteroids spent most of their time at or within the orbit of Jupiter, though a few such as 944 Hidalgo ventured far beyond Jupiter for part of their orbit. When astronomers started finding more small bodies that permanently resided further out than Jupiter, now called centaurs, they numbered them among the traditional asteroids, though there was debate over whether they should be classified as asteroids or as a new type of object. Then, when the first trans-Neptunian object, 1992 QB1, was discovered in 1992, and especially when large numbers of similar objects started turning up, new terms were invented to sidestep the issue: Kuiper Belt object (KBO), trans-Neptunian object (TNO), scattered-disc object (SDO), and so on. These inhabit the cold outer reaches of the Solar System where ices remain solid and comet-like bodies are not expected to exhibit much cometary activity; if centaurs or TNOs were to venture close to the Sun, their volatile ices would sublimate, and traditional approaches would classify them as comets and not asteroids.
+
+The innermost of these are the Kuiper Belt Objects (KBOs), called "objects" partly to avoid the need to classify them as asteroids or comets.[4] KBOs are believed to be predominantly comet-like in composition, though some may be more akin to asteroids.[5] Furthermore, most do not have the highly eccentric orbits associated with comets, and the ones so far discovered are larger than traditional comet nuclei. (The much more distant Oort cloud is hypothesized to be the main reservoir of dormant comets.) Other recent observations, such as the analysis of the cometary dust collected by the Stardust probe, are increasingly blurring the distinction between comets and asteroids,[6] suggesting "a continuum between asteroids and comets" rather than a sharp dividing line.[7]
+
+The minor planets beyond Jupiter's orbit are rarely called "asteroids", but all are commonly lumped together under the term "asteroid" in popular presentations. For instance, a joint NASA-JPL public-outreach website states,
+
+    We include Trojans (bodies captured in Jupiter's 4th and 5th Lagrange points), Centaurs (bodies in orbit between Jupiter and Neptune), and trans-Neptunian objects (orbiting beyond Neptune) in our definition of "asteroid" as used on this site, even though they may more correctly be called "minor planets" instead of asteroids.[8]
+
+Because it is becoming increasingly common for the term "asteroid" to be restricted to minor planets of the inner Solar System,[9] this article will restrict itself for the most part to the classical asteroids: objects of the main asteroid belt, Jupiter trojans, and near-Earth objects.
+
+When the IAU introduced the class small solar system bodies in 2006 to include most objects previously classified as minor planets and comets, they created the class of dwarf planets for the largest minor planets—those that have enough mass to have become ellipsoidal under their own gravity. According to the IAU, "the term 'minor planet' may still be used, but generally the term 'small solar system body' will be preferred."[10] Currently only the largest object in the asteroid belt, Ceres, at about 950 km (590 mi) across, has been placed in the dwarf planet category, although there are several large asteroids (Vesta, Pallas, and Hygiea) that may be classified as dwarf planets when their shapes are better known.[11]
+[edit] Formation
+
+It is believed that planetesimals in the main asteroid belt evolved much like the rest of the Solar Nebula until Jupiter neared its current mass, at which point excitation from orbital resonances with Jupiter ejected over 99% of planetesimals in the belt. Simulations and a discontinuity in spin rate and spectral properties suggest that asteroids larger than approximately 120 km (75 mi) in diameter accreted during that early era, whereas smaller bodies are fragments from collisions between asteroids during or after the Jovian disruption.[12] At least two asteroids, Ceres and Vesta, grew large enough to melt and differentiate, with heavy metallic elements sinking to the core, leaving rocky minerals in the crust.[13]
+
+In the Nice model, many Kuiper Belt objects are captured in the outer Main Belt, at distances greater than 2.6 AU. Most were later ejected by Jupiter, but those that remained may be the D-type asteroids, and possibly include Ceres.[14]
+[edit] Characteristics
+
+Objects in the main asteroid belt vary greatly in size, from a diameter of 950 kilometres for the dwarf planet Ceres and over 500 kilometres for the asteroids 2 Pallas and 4 Vesta down to rocks just tens of metres across.[note 1] The three largest are very much like miniature planets: they are roughly spherical, have at least partly differentiated interiors, and are thought to be surviving protoplanets. The vast majority, however, are much smaller and are irregularly shaped; they are thought to be either surviving planetesimals or fragments of larger bodies.
+
+The physical composition of asteroids is varied and in most cases poorly understood. Ceres appears to be composed of a rocky core covered by an icy mantle, where Vesta is thought to have a nickel-iron core, olivine mantle, and basaltic crust.[15] 10 Hygiea, however, which appears to have a uniformly primitive composition of carbonaceous chondrite, is thought to be the largest undifferentiated asteroid. Many, perhaps most, of the smaller asteroids are piles of rubble held together loosely by gravity. Some have moons or are co-orbiting binary asteroids. The rubble piles, moons, binaries, and scattered asteroid families are believed to be the results of collisions that disrupted a parent asteroid.
+
+Asteroids contain traces of amino-acids and other organic compounds, and some speculate that asteroid impacts may have seeded the early Earth with the chemicals necessary to initiate life, or may have even brought life itself to Earth. (See also panspermia.)[16]
+
+Only one asteroid, 4 Vesta, which has a reflective surface, is normally visible to the naked eye, and this only in very dark skies when it is favorably positioned. Rarely, small asteroids passing close to Earth may be naked-eye visible for a short time.[17]
+
+The orbits of asteroids are often influenced by the gravity of other bodies in the solar system or the Yarkovsky effect.
+The relative masses of the nine large main-belt asteroids for which precise (< 15% estimated error) data is available.[18] Given the poor precision for asteroids estimated to be somewhat less massive than 16 Psyche, a few other may turn out to be more massive than Psyche, 3 Juno, or 15 Eunomia.
+	
+The same nine objects, compared to the remaining mass of the main belt.[19]
+	
+
+     Ceres      4 Vesta      2 Pallas      10 Hygeia      704 Interamnia
+	
+
+     511 Davida      15 Eunomia      3 Juno      16 Psyche      other
+[edit] Distribution within the Solar System
+See also: Asteroid group, List of noteworthy asteroids, and List of asteroids
+The Main asteroid belt (white) and the Trojan asteroids (green)
+
+The majority of known asteroids orbit within the main asteroid belt between the orbits of Mars and Jupiter, generally in relatively low-eccentricity (i.e., not very elongated) orbits. This belt is now estimated to contain between 1.1 and 1.9 million asteroids larger than 1 km (0.6 mi) in diameter,[20] and millions of smaller ones.[21] These asteroids may be remnants of the protoplanetary disk, and in this region the accretion of planetesimals into planets during the formative period of the solar system was prevented by large gravitational perturbations by Jupiter. Although fewer Trojan asteroids sharing Jupiter's orbit are known, it is thought that there are as many as there are asteroids in the main belt.
+
+The dwarf planet Ceres is the largest object in the asteroid belt, with a diameter of over 975 km (606 mi). The next largest are the asteroids 2 Pallas and 4 Vesta, both with diameters of over 500 km (311 mi). Normally Vesta is the only main belt asteroid that can, on occasion, become visible to the naked eye. However, on some rare occasions, a near-Earth asteroid may briefly become visible without technical aid; see 99942 Apophis.
+Ceres (center) and Vesta (left), with Earth's Moon (right) shown to scale
+
+The mass of all the objects of the Main asteroid belt, lying between the orbits of Mars and Jupiter, is estimated to be about 3.0-3.6 × 1021 kg, or about 4 percent of the mass of the Moon. Of this, Ceres comprises 0.95 × 1021 kg, some 32 percent of the total.[22][23] Adding in the next three most massive objects, Vesta (9%), Pallas (7%), and Hygiea (3%), brings this figure up to 51%; while the three after that, 511 Davida (1.2%), 704 Interamnia (1.0%), and 52 Europa (0.9%), only add another 3% to the total mass. The number of asteroids then increases rapidly as their individual masses decrease.
+
+Various classes of asteroid have been discovered outside the main asteroid belt. Near-Earth asteroids have orbits near that of Earth. Trojan asteroids are gravitationally locked into synchronisation with Jupiter, either leading or trailing the planet in its orbit. A couple trojans have been found orbiting with Mars.[note 2] A group of asteroids called Vulcanoids are hypothesised by some to lie very close to the Sun, within the orbit of Mercury, but none has so far been found.
+[edit] Classification
+
+Asteroids are commonly classified according to two criteria: the characteristics of their orbits, and features of their reflectance spectrum.
+[edit] Orbit groups and families
+Main articles: Asteroid group and Asteroid family
+
+Many asteroids have been placed in groups and families based on their orbital characteristics. Apart from the broadest divisions, it is customary to name a group of asteroids after the first member of that group to be discovered. Groups are relatively loose dynamical associations, whereas families are tighter and result from the catastrophic break-up of a large parent asteroid sometime in the past.[24] Families have only been recognized within the main asteroid belt. They were first recognised by Kiyotsugu Hirayama in 1918 and are often called Hirayama families in his honor.
+
+About 30% to 35% of the bodies in the main belt belong to dynamical families each thought to have a common origin in a past collision between asteroids. A family has also been associated with the plutoid dwarf planet Haumea.
+[edit] Quasi-satellites and horseshoe objects
+
+Some asteroids have unusual horseshoe orbits that are co-orbital with the Earth or some other planet. Examples are 3753 Cruithne and 2002 AA29. The first instance of this type of orbital arrangement was discovered between Saturn's moons Epimetheus and Janus.
+
+Sometimes these horseshoe objects temporarily become quasi-satellites for a few decades or a few hundred years, before returning to their earlier status. Both Earth and Venus are known to have quasi-satellites.
+
+Such objects, if associated with Earth or Venus or even hypothetically Mercury, are a special class of Aten asteroids. However, such objects could be associated with outer planets as well.
+[edit] Spectral classification
+This picture of 433 Eros shows the view looking from one end of the asteroid across the gouge on its underside and toward the opposite end. Features as small as 35 m (115 ft) across can be seen.
+Main article: Asteroid spectral types
+
+In 1975, an asteroid taxonomic system based on colour, albedo, and spectral shape was developed by Clark R. Chapman, David Morrison, and Ben Zellner.[25] These properties are thought to correspond to the composition of the asteroid's surface material. The original classification system had three categories: C-types for dark carbonaceous objects (75% of known asteroids), S-types for stony (silicaceous) objects (17% of known asteroids) and U for those that did not fit into either C or S. This classification has since been expanded to include many other asteroid types. The number of types continues to grow as more asteroids are studied.
+
+The two most widely used taxonomies now used are the Tholen classification and SMASS classification. The former was proposed in 1984 by David J. Tholen, and was based on data collected from an eight-color asteroid survey performed in the 1980s. This resulted in 14 asteroid categories.[26] In 2002, the Small Main-Belt Asteroid Spectroscopic Survey resulted in a modified version of the Tholen taxonomy with 24 different types. Both systems have three broad categories of C, S, and X asteroids, where X consists of mostly metallic asteroids, such as the M-type. There are also several smaller classes.[27]
+
+Note that the proportion of known asteroids falling into the various spectral types does not necessarily reflect the proportion of all asteroids that are of that type; some types are easier to detect than others, biasing the totals.
+[edit] Problems with spectral classification
+
+Originally, spectral designations were based on inferences of an asteroid's composition.[28] However, the correspondence between spectral class and composition is not always very good, and a variety of classifications is in use. This has led to significant confusion. While asteroids of different spectral classifications are likely to be composed of different materials, there are no assurances that asteroids within the same taxonomic class are composed of similar materials.
+
+At present, the spectral classification based on several coarse resolution spectroscopic surveys in the 1990s is still the standard. Scientists cannot agree on a better taxonomic system,[citation needed] largely due to the difficulty of obtaining detailed measurements consistently for a large sample of asteroids (e.g. finer resolution spectra, or non-spectral data such as densities would be very useful).
+[edit] Discovery
+243 Ida and its moon Dactyl, the first satellite of an asteroid to be discovered.
+
+The first named minor planet, Ceres, was discovered in 1801 by Giuseppe Piazzi, and was originally considered a new planet.[note 3] This was followed by the discovery of other similar bodies, which with the equipment of the time appeared to be points of light, like stars, showing little or no planetary disc (though readily distinguishable from stars due to their apparent motions). This prompted the astronomer Sir William Herschel to propose the term "asteroid", from Greek aste??e?d??, asteroeides = star-like, star-shaped, from ancient Greek Ast??, aster = star. In the early second half of the nineteenth century, the terms "asteroid" and "planet" (not always qualified as "minor") were still used interchangeably; for example, the Annual of Scientific Discovery for 1871, page 316, reads "Professor J. Watson has been awarded by the Paris Academy of Sciences, the astronomical prize, Lalande foundation, for the discovery of 8 new asteroids in one year. The planet Lydia (No. 110), discovered by M. Borelly at the Marseilles Observatory [...] M. Borelly had previously discovered 2 planets bearing the numbers 91 and 99 in the system of asteroids revolving between Mars and Jupiter" (emphasis added).
+[edit] Historical methods
+
+Asteroid discovery methods have dramatically improved over the past two centuries.
+
+In the last years of the 18th century, Baron Franz Xaver von Zach organized a group of 24 astronomers to search the sky for the missing planet predicted at about 2.8 AU from the Sun by the Titius-Bode law, partly because of the discovery, by Sir William Herschel in 1781, of the planet Uranus at the distance predicted by the law. This task required that hand-drawn sky charts be prepared for all stars in the zodiacal band down to an agreed-upon limit of faintness. On subsequent nights, the sky would be charted again and any moving object would, hopefully, be spotted. The expected motion of the missing planet was about 30 seconds of arc per hour, readily discernible by observers.
+
+The first asteroid, 1 Ceres, was not discovered by a member of the group, but rather by accident in 1801 by Giuseppe Piazzi, director of the observatory of Palermo in Sicily. He discovered a new star-like object in Taurus and followed the displacement of this object during several nights. His colleague, Carl Friedrich Gauss, used these observations to find the exact distance from this unknown object to the Earth. Gauss' calculations placed the object between the planets Mars and Jupiter. Piazzi named it after Ceres, the Roman goddess of agriculture.
+
+Three other asteroids (2 Pallas, 3 Juno, and 4 Vesta) were discovered over the next few years, with Vesta found in 1807. After eight more years of fruitless searches, most astronomers assumed that there were no more and abandoned any further searches.
+
+However, Karl Ludwig Hencke persisted, and began searching for more asteroids in 1830. Fifteen years later, he found 5 Astraea, the first new asteroid in 38 years. He also found 6 Hebe less than two years later. After this, other astronomers joined in the search and at least one new asteroid was discovered every year after that (except the wartime year 1945). Notable asteroid hunters of this early era were J. R. Hind, Annibale de Gasparis, Robert Luther, H. M. S. Goldschmidt, Jean Chacornac, James Ferguson, Norman Robert Pogson, E. W. Tempel, J. C. Watson, C. H. F. Peters, A. Borrelly, J. Palisa, the Henry brothers and Auguste Charlois.
+
+In 1891, however, Max Wolf pioneered the use of astrophotography to detect asteroids, which appeared as short streaks on long-exposure photographic plates. This dramatically increased the rate of detection compared with earlier visual methods: Wolf alone discovered 248 asteroids, beginning with 323 Brucia, whereas only slightly more than 300 had been discovered up to that point. Still, a century later, only a few thousand asteroids were identified, numbered and named. It was known that there were many more, but most astronomers did not bother with them, calling them "vermin of the skies".
+[edit] Manual methods of the 1900s and modern reporting
+
+Until 1998, asteroids were discovered by a four-step process. First, a region of the sky was photographed by a wide-field telescope, or Astrograph. Pairs of photographs were taken, typically one hour apart. Multiple pairs could be taken over a series of days. Second, the two films of the same region were viewed under a stereoscope. Any body in orbit around the Sun would move slightly between the pair of films. Under the stereoscope, the image of the body would seem to float slightly above the background of stars. Third, once a moving body was identified, its location would be measured precisely using a digitizing microscope. The location would be measured relative to known star locations.[29]
+
+These first three steps do not constitute asteroid discovery: the observer has only found an apparition, which gets a provisional designation, made up of the year of discovery, a letter representing the half-month of discovery, and finally a letter and a number indicating the discovery's sequential number (example: 1998 FJ74).
+
+The last step of discovery is to send the locations and time of observations to the Minor Planet Center, where computer programs determine whether an apparition ties together earlier apparitions into a single orbit. If so, the object receives a catalogue number and the observer of the first apparition with a calculated orbit is declared the discoverer, and granted the honor of naming the object subject to the approval of the International Astronomical Union.
+[edit] Computerized methods
+2004 FH is the center dot being followed by the sequence; the object that flashes by during the clip is an artificial satellite.
+
+There is increasing interest in identifying asteroids whose orbits cross Earth's, and that could, given enough time, collide with Earth (see Earth-crosser asteroids). The three most important groups of near-Earth asteroids are the Apollos, Amors, and Atens. Various asteroid deflection strategies have been proposed, as early as the 1960s.
+
+The near-Earth asteroid 433 Eros had been discovered as long ago as 1898, and the 1930s brought a flurry of similar objects. In order of discovery, these were: 1221 Amor, 1862 Apollo, 2101 Adonis, and finally 69230 Hermes, which approached within 0.005 AU of the Earth in 1937. Astronomers began to realize the possibilities of Earth impact.
+
+Two events in later decades increased the alarm: the increasing acceptance of Walter Alvarez' hypothesis that an impact event resulted in the Cretaceous-Tertiary extinction, and the 1994 observation of Comet Shoemaker-Levy 9 crashing into Jupiter. The U.S. military also declassified the information that its military satellites, built to detect nuclear explosions, had detected hundreds of upper-atmosphere impacts by objects ranging from one to 10 metres across.
+
+All these considerations helped spur the launch of highly efficient automated systems that consist of Charge-Coupled Device (CCD) cameras and computers directly connected to telescopes. Since 1998, a large majority of the asteroids have been discovered by such automated systems. A list of teams using such automated systems includes:[30]
+
+    * The Lincoln Near-Earth Asteroid Research (LINEAR) team
+    * The Near-Earth Asteroid Tracking (NEAT) team
+    * Spacewatch
+    * The Lowell Observatory Near-Earth-Object Search (LONEOS) team
+    * The Catalina Sky Survey (CSS)
+    * The Campo Imperatore Near-Earth Objects Survey (CINEOS) team
+    * The Japanese Spaceguard Association
+    * The Asiago-DLR Asteroid Survey (ADAS)
+
+The LINEAR system alone has discovered 97,470 asteroids, as of September 18, 2008.[31] Among all the automated systems, 4711 near-Earth asteroids have been discovered[32] including over 600 more than 1 km (1 mi) in diameter. The rate of discovery peaked in 2000, when 38,679 minor planets were numbered, and has gone down steadily since then (719 minor planets were numbered in 2007).[33]
+[edit] Naming
+Main article: Minor planet#Naming
+
+A newly discovered asteroid is given a provisional designation (such as 2002 AT4) consisting of the year of discovery and an alphanumeric code indicating the half-month of discovery and the sequence within that half-month. Once an asteroid's orbit has been confirmed, it is given a number, and later may also be given a name (e.g. 433 Eros). The formal naming convention uses parentheses around the number (e.g. (433) Eros), but dropping the parentheses is quite common. Informally, it is common to drop the number altogether, or to drop it after the first mention when a name is repeated in running text.
+[edit] Symbols
+
+The first few asteroids discovered were assigned symbols like the ones traditionally used to designate Earth, the Moon, the Sun and planets. The symbols quickly became ungainly, hard to draw and recognize. By the end of 1851 there were 15 known asteroids, each (except one) with its own symbol(s).[34]
+Asteroid 	Symbol
+Ceres 	Old planetary symbol of Ceres Variant symbol of Ceres Other sickle variant symbol of Ceres
+2 Pallas 	Old symbol of Pallas Variant symbol of Pallas
+3 Juno 	Old symbol of Juno Other symbol of Juno Symbol 3.jpg
+4 Vesta 	Old symbol of Vesta Old planetary symbol of Vesta Modern astrological symbol of Vesta4 Vesta Unsimplified Symbol.svg
+5 Astraea 	5 Astraea Symbol.svg
+6 Hebe 	6 Hebe Astronomical Symbol.svg
+7 Iris 	7 Iris Astronomical Symbol.svg
+8 Flora 	8 Flora Astronomical Symbol.svg
+9 Metis 	9 Metis symbol.svg
+10 Hygiea 	10 Hygiea Astronomical Symbol.svg
+11 Parthenope 	11 Parthenope symbol.svg
+12 Victoria 	12 Victoria symbol.svg
+13 Egeria 	Never assigned.
+14 Irene 	"A dove carrying an olive-branch, with a star on its head," never drawn.[35]
+15 Eunomia 	15 Eunomia symbol.svg
+28 Bellona 	28 Bellona symbol.svg
+35 Leukothea 	35 Leukothea symbol.png
+37 Fides 	37 Fides symbol.svg
+2060 Chiron 	Chiron symbol.svg
+
+Johann Franz Encke made a major change in the Berliner Astronomisches Jahrbuch (BAJ, Berlin Astronomical Yearbook) for 1854. He introduced encircled numbers instead of symbols, although his numbering began with Astraea, the first four asteroids continuing to be denoted by their traditional symbols. This symbolic innovation was adopted very quickly by the astronomical community. The following year (1855), Astraea's number was bumped up to 5, but Ceres through Vesta would be listed by their numbers only in the 1867 edition. A few more asteroids (28 Bellona,[36] 35 Leukothea,[37] and 37 Fides[38]) would be given symbols and numbers. The circle would become a pair of parentheses, and the parentheses sometimes omitted altogether over the next few decades.[35]
+[edit] Exploration
+Vesta, imaged by the Hubble Space Telescope
+951 Gaspra, the first asteroid to be imaged in close up.
+
+Until the age of space travel, objects in the asteroid belt were merely pinpricks of light in even the largest telescopes and their shapes and terrain remained a mystery. The best modern ground-based telescopes and the Earth-orbiting Hubble Space Telescope can resolve a small amount of detail on the surfaces of the largest asteroids, but even these mostly remain little more than fuzzy blobs. Limited information about the shapes and compositions of asteroids can be inferred from their light curves (their variation in brightness as they rotate) and their spectral properties, and asteroid sizes can be estimated by timing the lengths of star occulations (when an asteroid passes directly in front of a star). Radar imaging can yield good information about asteroid shapes and orbital and rotational parameters, especially for near-Earth asteroids.
+
+The first close-up photographs of asteroid-like objects were taken in 1971 when the Mariner 9 probe imaged Phobos and Deimos, the two small moons of Mars, which are probably captured asteroids. These images revealed the irregular, potato-like shapes of most asteroids, as did later images from the Voyager probes of the small moons of the gas giants.
+
+The first true asteroid to be photographed in close-up was 951 Gaspra in 1991, followed in 1993 by 243 Ida and its moon Dactyl, all of which were imaged by the Galileo probe en route to Jupiter.
+
+The first dedicated asteroid probe was NEAR Shoemaker, which photographed 253 Mathilde in 1997, before entering into orbit around 433 Eros, finally landing on its surface in 2001.
+
+Other asteroids briefly visited by spacecraft en route to other destinations include 9969 Braille (by Deep Space 1 in 1999), and 5535 Annefrank (by Stardust in 2002).
+
+In September 2005, the Japanese Hayabusa probe started studying 25143 Itokawa in detail and may return samples of its surface to earth. The Hayabusa mission has been plagued with difficulties, including the failure of two of its three control wheels, rendering it difficult to maintain its orientation to the sun to collect solar energy. Following that, the next asteroid encounters will involve the European Rosetta probe (launched in 2004), which flew by 2867 Šteins in 2008 and will buzz 21 Lutetia in 2010.
+
+In September 2007, NASA launched the Dawn Mission, which will orbit the dwarf planet Ceres and the asteroid 4 Vesta in 2011-2015, with its mission possibly then extended to 2 Pallas.
+
+It has been suggested that asteroids might be used as a source of materials that may be rare or exhausted on earth (asteroid mining), or materials for constructing space habitats (see Colonization of the asteroids). Materials that are heavy and expensive to launch from earth may someday be mined from asteroids and used for space manufacturing and construction.
+[edit] In fiction
+Main article: Asteroids in fiction
+
+Asteroids and asteroid belts are a staple of science fiction stories. Asteroids play several potential roles in science fiction: as places human beings might colonize, resources for extracting minerals, hazards encountered by spaceships traveling between two other points, and as a threat to life on Earth by potential impact.
+[edit] Notes
+
+   1. ^ At 10 metres and below, these rocks are generally considered to be meteoroids.
+   2. ^ Neptune also has a few known trojans, and these are thought to be actually be much more numerous than the Jovian trojans. However, they are often included in the trans-Neptunian population rather than counted with the asteroids.
+   3. ^ Ceres, originally considered a new planet, is the largest main belt object and is now classified as a dwarf planet. All other asteroids are now classified as small solar system bodies along with comets, centaurs, and the smaller TNOs.

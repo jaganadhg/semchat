@@ -1,0 +1,1747 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp1 (http://www.altova.com) by Ed Shaya (U. of Maryland) -->
+<!DOCTYPE rdf:RDF [
+	<!ENTITY ui "http://archive.astro.umd.edu/ont/unitsInstances.owl#">
+	<!ENTITY ivoao "http://archive.astro.umd.edu/ont/IVOAO.owl#">
+	<!ENTITY chem "http://archive.astro.umd.edu/ont/chemistry.owl#">
+	<!ENTITY geo "http://archive.astro.umd.edu/ont/geometry.owl#">
+	<!ENTITY phy "http://archive.astro.umd.edu/ont/physics.owl#">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns/">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xmlns:q="http://archive.astro.umd.edu/ont/quantity.owl#" xmlns:op="http://archive.astro.umd.edu/ont/operation.owl#" xmlns:phy="http://archive.astro.umd.edu/ont/physics.owl#" xmlns:inst="http://archive.astro.umd.edu/ont/instruments.owl#" xmlns="http://archive.astro.umd.edu/ont/chemistry.owl#" xmlns:ivoao="http://archive.astro.umd.edu/ont/IVOAO.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:pt="http://archive.astro.umd.edu/ont/physicalTheory.owl#" xmlns:dcam="http://purl.org/dc/dcam/" xmlns:geo="http://archive.astro.umd.edu/ont/geometry.owl#" xmlns:a="http://archive.astro.umd.edu/ont/astronomy.owl#" xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:u="http://archive.astro.umd.edu/ont/units.owl#" xmlns:skos="http://archive.astro.umd.edu/ont/skos-core.owl#" xmlns:daml="http://www.daml.org/2001/03/daml+oil#" xmlns:stat="http://archive.astro.umd.edu/ont/statistics.owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ui="http://archive.astro.umd.edu/ont/unitsInstances.owl#" xml:base="http://archive.astro.umd.edu/ont/chemistry.owl">
+	<owl:Ontology rdf:about="">
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/skos-core.owl"/>
+		<owl:imports rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl"/>
+		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ed Shaya</dc:creator>
+		<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology covers classes and properties in chemistry that are commonly used by astronomers. It includes terms from the IVOA Thesaurus plus terms from the UMD astronomical ontology</dc:description>
+		<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemistry.owl</dc:title>
+	</owl:Ontology>
+	<owl:Class rdf:ID="ABand">
+		<rdfs:subClassOf rdf:resource="#FraunhoferLine"/>
+		<rdfs:subClassOf rdf:resource="#molecularBand"/>
+	</owl:Class>
+	<owl:Class rdf:ID="abnormalSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abnormal spectrum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#spectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="absorptionEdge">
+		<rdfs:subClassOf rdf:resource="#spectralFeature"/>
+	</owl:Class>
+	<owl:Class rdf:ID="absorptionLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#spectralLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="absorptionSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption spectrum</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#lineSpectrum"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="abundance">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abundance</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">element abundance</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical abundance</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stellar abundance</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="abundanceRatio">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abundance ratio</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="actinium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actinium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ac</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="aluminum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aluminum</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Al</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="americium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">americium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Am</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="ammonia">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ammonia</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#molecule"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="antimony">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antimony</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sb</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="argon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">argon</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ar</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="arsenic">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arsenic</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="astatine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astatine</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">At</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="atom">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#chemicalElement"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="atomicSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic spectrum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#spectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="AvogadroNumber">
+		<rdfs:subClassOf rdf:resource="#physicoChemicalConstant"/>
+	</owl:Class>
+	<owl:Class rdf:ID="BalmerContinuum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balmer continuum</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogenSpectrum"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BalmerJump">
+		<rdfs:subClassOf rdf:resource="#absorptionEdge"/>
+	</owl:Class>
+	<owl:Class rdf:ID="BalmerLimit">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balmer limit</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BalmerSeries"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BalmerLine">
+		<rdfs:subClassOf rdf:resource="#hydrogenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="BalmerSeries">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balmer series</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#hydrogenSpectralFeature"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balmer line</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="bandHead">
+		<rdfs:subClassOf rdf:resource="#setOfMolecularLines"/>
+	</owl:Class>
+	<owl:Class rdf:ID="barium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">barium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ba</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="BBand">
+		<rdfs:subClassOf rdf:resource="#FraunhoferLine"/>
+		<rdfs:subClassOf rdf:resource="#molecularBand"/>
+	</owl:Class>
+	<owl:Class rdf:ID="berkelium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">berkelium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bk</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="beryllium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beryllium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Be</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="bismuth">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bismuth</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#fundamentalChemicalElement"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bi</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="bLines">
+		<rdfs:subClassOf rdf:resource="#absorptionLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="bohrium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bohrium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bh</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="boron">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boron</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#fundamentalChemicalElement"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="BrackettLine">
+		<rdfs:subClassOf rdf:resource="#hydrogenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="BrackettSeries">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brackett series</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#infraredRadiation"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogenSpectrum"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BrAlpha">
+		<rdfs:subClassOf rdf:resource="#BrackettLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="bromine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bromine</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Br</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="C2Band">
+		<rdfs:subClassOf rdf:resource="#molecularBand"/>
+	</owl:Class>
+	<owl:Class rdf:ID="cadmium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cadmium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cd</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="caesium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caesium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cesium</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cs</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="CaHLine">
+		<rdfs:subClassOf rdf:resource="#HKLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="CaIiEmissionLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ca II emission line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#metalLine"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#emissionLine"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#calciumLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CaKLine">
+		<rdfs:subClassOf rdf:resource="#HKLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="calcium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ca</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="calciumLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#metalLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="californium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">californium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cf</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="carbon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="carbonCompound">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon compound</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#molecule"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="carbonDioxide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon dioxide</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#gas"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#carbonCompound"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO_2</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO2</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="carbonDisulfide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon disulfide</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#carbonCompound"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="carbonLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#metalLine"/>
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="carbonMonosulfide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon monosulfide</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#carbonCompound"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="carbonMonoxide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon monoxide</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#gas"/>
+		<rdfs:subClassOf rdf:resource="#carbonCompound"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="cerium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cerium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ce</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="chemicalComposition">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical composition</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#composition"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="chemicalCompound">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#chemicalSubstance"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> a chemical substance that is composed of a particular set of molecules or ions. Two or more elements combined into one substance, through a chemical reaction, form what is called a chemical compound</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="chemicalElement">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical element</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#chemicalSubstance"/>
+		</rdfs:subClassOf>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> a chemical substance that is made up of a particular kind of atoms and hence cannot be broken down or transformed by a chemical reaction into a different element, though it can be transmutated into another element through a nuclear reaction</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="chemicalEquilibrium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical equilibrium</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#equilibrium"/>
+	</owl:Class>
+	<owl:Class rdf:ID="chemicalEvolution">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical evolution</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="chemicalMixture"/>
+	<owl:Class rdf:ID="chemicalSubstance">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical Substance</rdfs:label>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> any material with a definite chemical composition</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="chemiluminescence">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemiluminescence</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#luminescence"/>
+	</owl:Class>
+	<owl:Class rdf:ID="chemistry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemistry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#scientificField"/>
+	</owl:Class>
+	<owl:Class rdf:ID="chlorine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chlorine</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cl</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="chromium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cr</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="cobalt">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cobalt</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="composition">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">composition</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="continuousSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuous spectrum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#spectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="copper">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copper</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cu</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="Cs">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrocarbon"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#carbonCompound"/>
+	</owl:Class>
+	<owl:Class rdf:ID="curium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cm</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="cyanoacetylene">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyanoacetylene</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#carbonCompound"/>
+	</owl:Class>
+	<owl:Class rdf:ID="cyanodiacetylene">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyanodiacetylene</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#carbonCompound"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="cyanogen">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyanogen</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#carbonCompound"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CN</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="cyanogenBand">
+		<rdfs:subClassOf rdf:resource="#molecularBand"/>
+	</owl:Class>
+	<owl:Class rdf:ID="cyanogenLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyanogen line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#spectralLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="cyanopolyene">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyanopolyene</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#carbonCompound"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="D1Line">
+		<rdfs:subClassOf rdf:resource="#DLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="D2Line">
+		<rdfs:subClassOf rdf:resource="#DLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="darmtadtium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">darmtadtium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ds</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="deuterium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deuterium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogen"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="DLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#spectralLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="doublet">
+		<rdfs:subClassOf rdf:resource="#multiplet"/>
+	</owl:Class>
+	<owl:Class rdf:ID="dubnium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dubnium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Db</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="dysprosium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dysprosium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dy</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="einsteinium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">einsteinium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Es</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="ELine">
+		<rdfs:subClassOf rdf:resource="#FraunhoferLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="emissionLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emission line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="erbium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erbium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Er</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="ethane">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethane</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrocarbon"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ethylene">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethylene</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrocarbon"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="europium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">europium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eu</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="excitationPotential">
+		<rdfs:subClassOf rdf:resource="&phy;energy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="fermium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fermium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fm</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="florine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">florine</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#fundamentalChemicalElement"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="forbiddenLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">forbidden line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#emissionLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="francium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">francium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fr</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="FraunhoferLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fraunhofer line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="fundamentalChemicalElement">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fundamental chemical element</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#chemicalElement"/>
+		<rdfs:subClassOf rdf:resource="#atom"/>
+	</owl:Class>
+	<owl:Class rdf:ID="gadolinium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gadolinium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gd</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="gallium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gallium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ga</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="gammaRayLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-ray line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#gammaRayRadiation"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma ray line</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="gas"/>
+	<owl:Class rdf:ID="gasContent">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas content</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#composition"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GBand">
+		<rdfs:subClassOf rdf:resource="#FraunhoferLine"/>
+		<rdfs:subClassOf rdf:resource="#molecularBand"/>
+	</owl:Class>
+	<owl:Class rdf:ID="germanium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">germanium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ge</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="gold">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gold</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Au</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="graphite">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">graphite</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#chemicalSubstance"/>
+	</owl:Class>
+	<owl:Class rdf:ID="groundState">
+		<rdfs:subClassOf rdf:resource="&phy;energy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="hafnium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hafnium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hf</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="HAlpha">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H alpha</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#resonanceLine"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BalmerLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="HAndKLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H and K line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#calciumLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="hassium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hassium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hs</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="HBeta">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H beta</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BalmerLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="HDelta">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H delta</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#BalmerLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="HeI">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He I</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#neutralGas"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#helium"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="HeIi">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He II</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#helium"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="HeIii">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He III</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#helium"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="HeiiLymanAlpha">
+		<rdfs:subClassOf rdf:resource="#resonanceLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="helium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="HeliumDiscontinuity">
+		<rdfs:subClassOf rdf:resource="#absorptionEdge"/>
+	</owl:Class>
+	<owl:Class rdf:ID="HEpsilon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H epsilon</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#BalmerLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="HGamma">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H gamma</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BalmerLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="HIi">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H II</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#ionizedGas"/>
+		<rdfs:subClassOf rdf:resource="#hydrogen"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionized hydrogen</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="HKLine"/>
+	<owl:Class rdf:ID="HLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#HAndKLine"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#FraunhoferLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="holmium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">holmium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ho</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="hydratedCarbon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrated carbon</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#molecule"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrocarbon"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#carbonCompound"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CH</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="hydrocarbon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrocarbon</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#chemicalCompound"/>
+	</owl:Class>
+	<owl:Class rdf:ID="hydrogen">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrogen</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="hydrogenLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrogen line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#hydrogenSpectralFeature"/>
+	</owl:Class>
+	<owl:Class rdf:ID="hydrogenSpectralFeature">
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="hydrogenSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrogen spectrum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#spectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="hydroxylRadical">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydroxyl radical</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#radical"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#ion"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OH</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OH radical</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="hyperfineLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyperfine line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#spectralLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="indium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="intercombinationLine">
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion temperature>A spectral line emitted in a transition between energy levels that have different multiplicities, that is, different values of the total spin quantum number. </skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="iodine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iodine</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="ion">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#particle"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#compositeParticle"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="ionComposition">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion composition</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#composition"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ionization">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionization</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionisation	UK</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="ionizationEquilibrium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionization equilibrium</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionisation equilibrium	UK</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="ionizedGas">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionized gas</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/IVOAO.owl#gas"/>
+	</owl:Class>
+	<owl:Class rdf:ID="ionTemperature">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion temperature</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#temperature"/>
+	</owl:Class>
+	<owl:Class rdf:ID="iridium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iridium</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#fundamentalChemicalElement"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ir</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="iron">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="isotope">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isotope</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#chemicalElement"/>
+	</owl:Class>
+	<owl:Class rdf:ID="isotopicAbundance">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isotopic abundance</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#abundance"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="isotopicComposition">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isotopic composition</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#composition"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="KEdge">
+		<rdfs:subClassOf rdf:resource="#absorptionEdge"/>
+	</owl:Class>
+	<owl:Class rdf:ID="KIDoublet">
+		<rdfs:subClassOf rdf:resource="#absorptionLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="kLine">
+		<rdfs:subClassOf rdf:resource="#absorptionLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="krypton">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">krypton</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kr</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="lambdaDoublet">
+		<rdfs:subClassOf rdf:resource="#setOfLines"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two microwave lines in of the spectrum of the OH molecule caused by the splitting of electronic levels.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="lanthanum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lanthanum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#rareEarth"/>
+		<rdfs:subClassOf rdf:resource="#fundamentalChemicalElement"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="lawrencium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lawrencium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lr</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="lead">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lead</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pb</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="lightEmission"/>
+	<owl:Class rdf:ID="lineBroadening">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line broadening</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#lineFormation"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral line broadening</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="lineCenter">
+		<rdfs:subClassOf rdf:resource="#lineParameter"/>
+	</owl:Class>
+	<owl:Class rdf:ID="lineFormation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line formation</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral line formation</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="lineIntensity">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line intensity</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#lineParameter"/>
+	</owl:Class>
+	<owl:Class rdf:ID="lineParameter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line parameter</rdfs:label>
+		<rdfs:subClassOf rdf:resource="&phy;radiationMeasurement"/>
+	</owl:Class>
+	<owl:Class rdf:ID="lineRatio">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line ratio</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="lineSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line spectrum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#spectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="lineWidth">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line width</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#lineParameter"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral line width</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="lithium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lithium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="LoschmidtConstant">
+		<rdfs:subClassOf rdf:resource="#physicoChemicalConstant"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the number of molecules in a cubic metre of an ideal gas at s.t.p. It is equal to the Avogadro constant divided by the molar volume.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="lutetium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lutetium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lu</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="LymanAlpha">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyman alpha</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#resonanceLine"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LymanLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LymanBeta">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyman beta</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LymanLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LymanContinuum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyman continuum</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogenSpectrum"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LymanLine">
+		<rdfs:subClassOf rdf:resource="#hydrogenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="LymanSeries">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyman series</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogenSpectrum"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="magnesium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnesium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mg</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="manganese">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manganese</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mn</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="MeinelBand">
+		<rdfs:subClassOf rdf:resource="#molecularBand"/>
+	</owl:Class>
+	<owl:Class rdf:ID="meitnerium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meitnerium</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#fundamentalChemicalElement"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mt</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="mendelevium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mendelevium</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#fundamentalChemicalElement"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Md</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="mercury">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mercury</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hg</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="metalAbundance">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metal abundance</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#abundance"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metallicity</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="metalLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metal line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="methane">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methane</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#molecule"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CH_4</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CH4</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="molarVolumeOfIdealGas">
+		<rdfs:subClassOf rdf:resource="#physicoChemicalConstant"/>
+	</owl:Class>
+	<owl:Class rdf:ID="molecularBand">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular band</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectralBand"/>
+	</owl:Class>
+	<owl:Class rdf:ID="molecularHydrogen">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular hydrogen</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#molecule"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogen"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="molecularLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="molecularSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular spectroscopy</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/instruments.owl#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="molecularSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular spectrum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#spectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="molecule">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecule</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#matter"/>
+	</owl:Class>
+	<owl:Class rdf:ID="molybdenum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molybdenum</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mo</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="MullikenBand">
+		<rdfs:subClassOf rdf:resource="#molecularBand"/>
+	</owl:Class>
+	<owl:Class rdf:ID="multiplet">
+		<rdfs:subClassOf rdf:resource="#setOfLines"/>
+	</owl:Class>
+	<owl:Class rdf:ID="naturalLineBroadening">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural line broadening</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#lineBroadening"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="naturalLineWidth">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural line width</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#lineWidth"/>
+	</owl:Class>
+	<owl:Class rdf:ID="negativeHIon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative H ion</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogen"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H- ion</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H-</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H minus ion</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="neodymium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neodymium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nd</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="neon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neon</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="neptunium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neptunium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Np</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="nickel">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nickel</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ni</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="niobium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">niobium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nb</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="nitrogen">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrogen</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="nobelium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nobelium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="OhLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OH line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="OIiiLine">
+		<rdfs:subClassOf rdf:resource="#forbiddenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="OIiLine">
+		<rdfs:subClassOf rdf:resource="#forbiddenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="OILine">
+		<rdfs:subClassOf rdf:resource="#forbiddenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="OIvLine">
+		<rdfs:subClassOf rdf:resource="#forbiddenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="organicMatter">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic matter</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="organicMolecule">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic molecule</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#organicMatter"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#molecule"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="orthohydrogen">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orthohydrogen</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#molecularHydrogen"/>
+	</owl:Class>
+	<owl:Class rdf:ID="osmium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osmium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Os</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="overabundance">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overabundance</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#abundance"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="OViLine">
+		<rdfs:subClassOf rdf:resource="#forbiddenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="OVLine">
+		<rdfs:subClassOf rdf:resource="#forbiddenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="oxygen">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxygen</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="PaAlpha">
+		<rdfs:subClassOf rdf:resource="#PaschenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="palladium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palladium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pd</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="parahydrogen">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parahydrogen</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#molecularHydrogen"/>
+	</owl:Class>
+	<owl:Class rdf:ID="PaschenLine">
+		<rdfs:subClassOf rdf:resource="#hydrogenLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="PaschenSeries">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paschen series</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogenSpectrum"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paschen line</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="PBranch">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P-branch</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#setOfMolecularLines"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of lines in the spectra of molecules corresponding to unit increases in rotational energy.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="PfundSeries">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pfund series</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#infraredRadiation"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogenSpectrum"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="PhillipsBand">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phillips band</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#infraredRadiation"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/chemistry.owl#molecularBand"/>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/chemistry.owl#molecularSpectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="phosphorus">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphorus</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="photochemistry">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photochemistry</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photodissociation">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photodissociation</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="photoionization">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoionization</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#ionization"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoionisation	UK</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="photoluminescence">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoluminescence</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#lightEmission"/>
+	</owl:Class>
+	<owl:Class rdf:ID="physicoChemicalConstant">
+		<rdfs:subClassOf rdf:resource="&phy;physicalConstant"/>
+	</owl:Class>
+	<owl:Class rdf:ID="PiAlpha">
+		<rdfs:subClassOf rdf:resource="#PickeringLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="PiBeta">
+		<rdfs:subClassOf rdf:resource="#PickeringLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="PickeringLine">
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="platinum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">platinum</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pt</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="plutonium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plutonium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pu</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="polonium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polonium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Po</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="polycyclicHydrocarbon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polycyclic hydrocarbon</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrocarbon"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="potassium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potassium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="praseodymium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">praseodymium</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#rareEarth"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pr</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="promethium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promethium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pm</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="protactinium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protactinium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pa</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="QBranch">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q-branch</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#setOfMolecularLines"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of lines in the spectra of molecules corresponding to unit increases in vibrational energy.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="radical">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radical</rdfs:label>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic or molecular species with unpaired electrons on an otherwise open shell configuration. These unpaired electrons are usually highly reactive</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="radium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ra</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="radon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radon</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rn</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="RamanEffect">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raman effect</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="RamanSpectroscopy">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raman spectroscopy</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/instruments.owl#spectroscopy"/>
+	</owl:Class>
+	<owl:Class rdf:ID="RamanSpectrum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raman spectrum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://archive.astro.umd.edu/ont/physics.owl#spectrum"/>
+	</owl:Class>
+	<owl:Class rdf:ID="rareEarth">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare earth</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="RBranch">
+		<rdfs:subClassOf rdf:resource="#setOfMolecularLines"/>
+	</owl:Class>
+	<owl:Class rdf:ID="recombination">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recombination</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="recombinationLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recombination line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#emissionLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="resonanceLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonance line</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="rhenium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rhenium</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#fundamentalChemicalElement"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Re</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="rhodium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rhodium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rh</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="roentgenium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roentgenium</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#fundamentalChemicalElement"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rg</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="rubidium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rubidium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rb</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="ruthenium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ruthenium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ru</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="rutherfordium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rutherfordium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rf</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="samarium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">samarium</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#rareEarth"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sm</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="scandium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scandium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sc</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="seaborgium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seaborgium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sg</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="selenium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selenium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Se</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="semiForbiddenLine">
+		<rdfs:subClassOf rdf:resource="#emissionLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="setOfLines">
+		<rdfs:subClassOf rdf:resource="#spectralFeature"/>
+	</owl:Class>
+	<owl:Class rdf:ID="setOfMolecularLines">
+		<rdfs:subClassOf rdf:resource="#setOfLines"/>
+	</owl:Class>
+	<owl:Class rdf:ID="silicon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Si</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="siliconMonoxide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon monoxide</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SiO</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="silver">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ag</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="sodium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Na</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="spectralBand"/>
+	<owl:Class rdf:ID="spectralFeature">
+		<rdfs:subClassOf rdf:resource="&phy;radiationMeasurement"/>
+	</owl:Class>
+	<owl:Class rdf:ID="spectralIndex">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral index</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="spectralLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral line</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectrum line</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="spectroscopicAnalysis">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectroscopic analysis</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral analysis</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="strontium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strontium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sr</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="sulfur">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfur</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulphur</skos:altLabel>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="supermultiplet">
+		<rdfs:subClassOf rdf:resource="#multiplet"/>
+		<skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multiplet of multiplets.</skos:definition>
+	</owl:Class>
+	<owl:Class rdf:ID="SwanBand">
+		<rdfs:subClassOf rdf:resource="#C2Band"/>
+	</owl:Class>
+	<owl:Class rdf:ID="tantalum">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tantalum</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="technetium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">technetium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tc</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="technetiumLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">technetium line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#metalLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="tellurium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tellurium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Te</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="temperatureEffect">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature effect on reaction rate</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal effect</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="terbium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terbium</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#rareEarth"/>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tb</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="thallium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thallium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tl</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="thorium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thorium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Th</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="thulium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thulium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tm</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="tin">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tin</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sn</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="titanium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">titanium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ti</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="titaniumOxide">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">titanium oxide</rdfs:label>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TiO</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="traceElement">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trace element</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#chemicalElement"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="tritium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tritium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#hydrogen"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="tungsten">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tungsten</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="ultravioletLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet line</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#spectralLine"/>
+	</owl:Class>
+	<owl:Class rdf:ID="underabundance">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">underabundance</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#abundance"/>
+	</owl:Class>
+	<owl:Class rdf:ID="uranium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uranium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="vanadium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vanadium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="volatile">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volatile</rdfs:label>
+	</owl:Class>
+	<owl:Class rdf:ID="water">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#molecule"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="waterIce">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water ice</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#water"/>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="waterLiquid">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water vapor</rdfs:label>
+		<rdfs:subClassOf rdf:resource="#water"/>
+	</owl:Class>
+	<owl:Class rdf:ID="waterVapor">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water vapor</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#water"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="WernerLine">
+		<rdfs:subClassOf rdf:resource="#molecularBand"/>
+	</owl:Class>
+	<owl:Class rdf:ID="xenon">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xenon</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xe</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="XRayLine">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray line</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#emissionLine"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ytterbium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ytterbium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yb</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="yttrium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yttrium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#rareEarth"/>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="zinc">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zinc</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zn</skos:altLabel>
+	</owl:Class>
+	<owl:Class rdf:ID="zirconium">
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zirconium</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#fundamentalChemicalElement"/>
+		</rdfs:subClassOf>
+		<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zr</skos:altLabel>
+	</owl:Class>
+	<owl:DatatypeProperty rdf:ID="chirality">
+		<rdfs:domain rdf:resource="#molecule"/>
+		<rdfs:range rdf:resource="&xsd;string"/>
+		<skos:definition>The term chiral is used to describe an object that is non-superimposable on its mirror image.  Usually chirality of isomers are designated left-handed or right-handed.  Other designations are R/S (for configurations), +/- and d/l (for optical activity). or D/L</skos:definition>
+	</owl:DatatypeProperty>
+	<owl:ObjectProperty rdf:ID="ofSubstance">
+		<rdfs:domain rdf:resource="#abundance"/>
+		<rdfs:range rdf:resource="#chemicalSubstance"/>
+		<skos:definition>Usage: abundance (Measurement) ofSubstance substance (like chlorine) </skos:definition>
+	</owl:ObjectProperty>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 3.4, Build 128)  http://protege.stanford.edu -->
